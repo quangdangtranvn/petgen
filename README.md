@@ -11,6 +11,7 @@ https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drive
 | Nội dung | Link |
 |----------|------|
 | Demo UI | [preview.quangbluekie.io](https://preview.quangbluekie.io)  
+[petgen](https://petgen.rf.gd/scan)  
 | Gói ZIP | [cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip](https://cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip)  
 | CDN ảnh | [cdn.quangbluekie.io/images/](https://cdn.quangbluekie.io/images/)  
 | GTX folder | [cdn.quangbluekie.io/gtx-lang/](https://cdn.quangbluekie.io/gtx-lang/)  
