@@ -1,0 +1,52 @@
+{
+  "apiKey": "afTatfu2kIIzNK4U1gWrzoAoJ14ywEKG",
+  "network": "polygon",
+  "limits": {
+    "maxMintPerDay": 10,
+    "minIntervalMs": 30000,
+    "maxConcurrent": 1
+  },
+  "branding": {
+    "signature": "powered-by-quangbluekie",
+    "theme": "hologram-cipher",
+    "panelGlow": true
+  },
+  "allowList": [
+    "0xDevWallet1",
+    "0xDevWallet2",
+    "0xDevWallet3"
+  ],
+"logging": {
+  "webhook": "https://cdn.quangbluekie.io/php/log-mint/index.php?save=1",
+  "fallbackWebhook": "https://cloud.quangbluekie.io/mint-log-fallback",
+  "saveLog": true
+}
+}
+{
+  "panels": [
+    {
+      "id": "firewolf",
+      "theme": "glow-hologram",
+      "style": "pulse",
+      "color": "#ff6b6b",
+      "class": "fire"
+    },
+    {
+      "id": "icefox",
+      "theme": "crystal-glow",
+      "style": "frost",
+      "color": "#4dd0e1",
+      "class": "ice"
+    }
+  ]
+}
+{
+  "name": "FireWolf",
+  "description": "Thần thú hệ lửa hologram glowing trong vũ trụ Web4.",
+  "image": "https://cdn.quangbluekie.io/images/firewolf.png",
+  "attributes": [
+    { "trait_type": "Element", "value": "Fire" },
+    { "trait_type": "VerifiedContract", "value": "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45" },
+    { "trait_type": "Powered By", "value": "quangbluekie" }
+  ]
+}
