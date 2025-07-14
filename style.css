@@ -1,0 +1,34 @@
+/**
+ * Theme Name: PetGen Cipher
+ * Template:   petgen-cipher
+ * ...other header fields
+ */
+
+/*
+Theme Name: PetGen Cipher
+Theme URI: https://petgen.rf.gd
+Author: Quang Bluekie
+Author URI: https://petgen.rf.gd
+Description: Giao diện tối ưu Tailwind cho Guild PetGen DEX Wallet — hiển thị bài viết, trang và form đăng ký
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.5
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-content/themes/petgen-cipher
+Tags: crypto, guild, tailwind, dex, wallet, landing
+*/
+
+/* Bạn có thể thêm mã CSS tùy chỉnh nếu không dùng Tailwind CDN */
+body {
+  margin: 0;
+  font-family: monospace, system-ui, sans-serif;
+  background-color: #0f0f1c;
+  color: #eaeaea;
+}
+
+/* Đảm bảo responsive tiêu chuẩn nếu Tailwind chưa load */
+img, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
