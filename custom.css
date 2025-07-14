@@ -1,0 +1,25 @@
+.glow {
+  animation: glowPulse 2s infinite;
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px #7c3aed; }
+  50% { box-shadow: 0 0 20px #a78bfa; }
+  100% { box-shadow: 0 0 10px #7c3aed; }
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #1f1b2e, #0b051b);
+}
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 1rem;
+}
+.btn-glow {
+  background: #7c3aed;
+  color: white;
+  padding: 12px;
+  border-radius: 999px;
+  font-weight: bold;
+}
