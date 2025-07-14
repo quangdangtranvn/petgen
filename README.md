@@ -3,7 +3,7 @@
 https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk
 
 → Giao diện glowing sẽ hiện tab thần thú · Glowing UI tabs will render immediately.
-----------|------|
+|----------|------|
 | UI PREVIEW |[Petgen Cipher](https://petgen.rf.gd/) 
 ---
 
