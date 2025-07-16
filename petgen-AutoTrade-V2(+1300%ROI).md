@@ -1,5 +1,5 @@
 # PetGen Cipher — REST API Status Audit
-> Tổng hợp trạng thái test endpoint, key gắn, và log phản hồi của toàn bộ API launcher Quang Protocol™
+> Tổng hợp trạng thái test endpoint, key gắn, và log phản hồi của toàn bộ API launcher AZT Protocol™
 
 | Endpoint                  | API Key      | Trạng thái Test | HTTP Code | Trace Status                | Ghi chú |
 |--------------------------|--------------|------------------|-----------|-----------------------------|--------|
