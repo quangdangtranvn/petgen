@@ -6,7 +6,7 @@
 
 | [UI](https://wallet.kesug.com/go/) |
 [>Inspect Code Only](https://github.com/quangdangtranvn/petgen/blob/main/launcher.html) |
-[Petgen Cipher](https://petgen.rf.gd/) | [Video Guild Moblie 🎮](https://youtu.be/dKkyz1-yRa4?si=ziWzkDYYuqsjKdF9)《
+[Petgen Cipher](https://petgen.rf.gd/) | [Hướng dẫn triển khai copilot WEB4 trên điện thoại thông minh hay xbox 🇻🇳 || Video Guild Moblie 🎮](https://youtu.be/dKkyz1-yRa4?si=ziWzkDYYuqsjKdF9)《
 
 ---
 
