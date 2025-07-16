@@ -4,7 +4,7 @@
 
 → Giao diện glowing sẽ hiện tab thần thú · Glowing UI tabs will render immediately.
 
-| [UI](https://wallet.kesug.com/go/)
+| [UI](https://wallet.kesug.com/go/) |
 [>Inspect Code Only](https://github.com/quangdangtranvn/petgen/blob/main/launcher.html) |
 [Petgen Cipher](https://petgen.rf.gd/) 
 
