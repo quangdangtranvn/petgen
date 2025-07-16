@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>PetGen Launcher — Quang Protocol™</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: { fade: "fadeIn 0.5s ease-out" },
+          keyframes: {
+            fadeIn: { "0%": { opacity: 0 }, "100%": { opacity: 1 } }
+          },
+          colors: {
+            petgen: "#1a6abf",
+            cipher: "#3f3f64",
+            gtxbg: "#f1f5f9"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-gtxbg min-h-screen flex items-center justify-center font-sans animate-fade">
+  <div class="bg-white shadow-xl rounded-xl p-6 max-w-xl w-full">
+    <h1 class="text-3xl font-bold text-petgen tracking-widest mb-4">🚀 PetGen Launcher GTX</h1>
+
+    <form id="walletForm" class="flex space-x-2 mb-4">
+      <input type="text" id="walletInput" placeholder="Nhập ví AZT..."
+             class="flex-grow px-3 py-2 border rounded text-sm focus:outline-none focus:ring-2 focus:ring-petgen" />
+      <button type="submit"
+              class="px-4 py-2 bg-petgen text-white rounded text-sm hover:bg-cipher transition hover:scale-105">
+        Kích hoạt
+      </button>
+    </form>
+
+    <div class="text-sm space-y-2 mb-4">
+      <p>🔐 Ví: <strong id="walletID" class="text-petgen"></strong></p>
+      <p>💰 Số dư: <strong id="balance" class="text-green-600">Đang tải...</strong></p>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-base font-semibold text-cipher mb-2">📑 Giao dịch gần nhất:</h2>
+      <div id="txContainer" class="bg-gray-100 p-4 rounded space-y-2 text-sm"></div>
+    </div>
+
+    <div>
+      <h2 class="text-base font-semibold text-petgen mb-2">🌈 SmartSwap Chain Selector</h2>
+      <p class="text-sm text-cipher mb-2">Chọn chain theo hoạch định Quang Protocol™:</p>
+      <div id="chainContainer" class="flex flex-wrap gap-2 mb-4"></div>
+      <div id="swapResult" class="text-sm text-green-700"></div>
+    </div>
+
+    <form action="autobot.php" method="POST" enctype="multipart/form-data" class="space-y-4 mt-6">
+      <h2 class="text-base font-semibold text-cipher mb-2">🤖 Kích hoạt Bot AutoTrade</h2>
+      <input type="file" name="strategy" class="block w-full px-3 py-2 border rounded text-sm" />
+      <button type="submit"
+              class="px-4 py-2 bg-petgen text-white rounded text-sm hover:bg-cipher transition hover:scale-105">
+        Gửi chiến lược
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const walletForm = document.getElementById("walletForm");
+    const walletInput = document.getElementById("walletInput");
+    const walletID = document.getElementById("walletID");
+    const balance = document.getElementById("balance");
+    const txContainer = document.getElementById("txContainer");
+    const swapResult = document.getElementById("swapResult");
+    const chainContainer = document.getElementById("chainContainer");
+
+    const approvedChains = ["ETH", "BNB", "MATIC", "ARB", "OP", "LINEA", "BASE", "SCROLL", "AVAX"];
+
+    walletForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const wallet = walletInput.value.trim();
+      if (!wallet) return;
+      walletID.textContent = wallet;
+      balance.textContent = "Đang tải...";
+      txContainer.innerHTML = "";
+
+      Promise.all([
+        fetch(`https://api.aztchain.net/v1/wallet/${wallet}/balance`).then(res => res.json()),
+        fetch(`https://api.aztchain.net/v1/wallet/${wallet}/transactions?limit=5`).then(res => res.json())
+      ]).then(([balanceData, txList]) => {
+        balance.textContent = balanceData.balance + " $AZT";
+        txList.forEach(tx => {
+          const entry = document.createElement("div");
+          entry.textContent = `🔄 TX: ${tx.hash} — ${tx.amount} $AZT`;
+          txContainer.appendChild(entry);
+        });
+      });
+
+      chainContainer.innerHTML = "";
+      approvedChains.forEach(chain => {
+        const btn = document.createElement("button");
+        btn.textContent = `Swap qua ${chain}`;
+        btn.className =
+          "px-3 py-1 bg-petgen text-white text-sm rounded hover:bg-cipher transition hover:scale-105";
+        btn.onclick = () => handleSwap(wallet, chain);
+        chainContainer.appendChild(btn);
+      });
+    });
+
+    function handleSwap(wallet, chain) {
+      fetch(`/api/swap/${chain}?wallet=${wallet}`)
+        .then(res => res.json())
+        .then(data => {
+          swapResult.textContent = `✅ Swap ${chain} thành công: ${data.status}`;
+        })
+        .catch(() => {
+          swapResult.textContent = `⚠️ Swap thất bại qua ${chain} — kiểm tra trace hoặc EIN!`;
+        });
+    }
+  </script>
+</body>
+</html>
