@@ -13,7 +13,28 @@
 
 | Nội dung | Link |
 |----------|------|
-| Demo UI | [preview.quangbluekie.io](https://preview.quangbluekie.io)  
+| Demo UI | Here’s a summary of the logic logs implemented PetGen(cipher) repository:
+
+**Frontend Logging (index.html):**
+- There is a `reSession` JavaScript object that handles session logging. It tracks the start, actions (with timestamps, actions, and data), and end of each session, outputting entries using `console.log`.
+- The function `sendMintLog(data)` sends logs (such as mint actions) to an external webhook endpoint (`https://cdn.quangbluekie.io/php/log-mint/index.php?save=1`). It provides feedback in the console on success or failure.
+- User prompts and mint actions are logged to the session and also sent to the webhook.
+
+**Backend Logging (index.php, functions.php):**
+- When a user submits the PetGen Guild registration form, their name, email, and message are sanitized and then logged to a file (`logs/payment.log`) with a timestamp and action label (`signup`).
+- The log entry format: `YYYY-MM-DDTHH:MM:SS+TZ | signup | name | email | message`
+- If the `logs` directory does not exist, it is created automatically.
+
+**Webhook & Backup Logging:**
+- The repo references a webhook and backup log endpoint for mint actions as a fallback to ensure no data loss.
+
+**API Audit (petgen-AutoTrade-V2(+1300%ROI).md):**
+- The status audit table shows that most endpoints, including transaction and swap log endpoints, are tested and logging is active (e.g., `/api/wallet/:id/tx` with “Trace Log Ready”).
+
+**Summary:**  
+Your repo logs key frontend actions via session logs and webhook calls, and backend actions (like user registration) to a local log file. Web & API logs are monitored, with fallback logging provided for reliability.
+
+If you want details on a specific logging function or log file, let me know!
 | UI |[petgen](https://petgen.rf.gd/scan)  
 | Gói ZIP | [cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip](https://cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip)  
 | CDN ảnh | [cdn.quangbluekie.io/images/](https://cdn.quangbluekie.io/images/)  
