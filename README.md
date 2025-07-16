@@ -29,7 +29,7 @@
 **Webhook & Backup Logging:**
 - The repo references a webhook and backup log endpoint for mint actions as a fallback to ensure no data loss.
 
-**API Audit (petgen-AutoTrade-V2(+1300%ROI).md):**
+**API Audit (petgen-AutoTrade-V2(+1300%ROI)[https://github.com/quangdangtranvn/petgen/blob/main/petgen-AutoTrade-V2%28%2B1300%25ROI%29.md]):**
 - The status audit table shows that most endpoints, including transaction and swap log endpoints, are tested and logging is active (e.g., `/api/wallet/:id/tx` with “Trace Log Ready”).
 
 **Summary:**  
