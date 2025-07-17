@@ -1,0 +1,44 @@
+// PetGen Cipher Server-Side Contact Example
+
+// Import necessary modules
+import http from 'http';
+import url from 'url';
+import { parse } from 'querystring';
+
+// Define the server
+const server = http.createServer((req, res) => {
+    // Parse the URL
+    const parsedUrl = url.parse(req.url, true);
+    
+    // Handle POST requests to /contact
+    if (req.method === 'POST' && parsedUrl.pathname === '/contact') {
+        let body = '';
+
+        // Collect data from the request
+        req.on('data', chunk => {
+            body += chunk.toString(); // Convert Buffer to string
+        });
+
+        req.on('end', () => {
+            const data = parse(body); // Parse the query string
+
+            // Here you would typically handle the contact data
+            // For example, save it to a database or send an email
+            console.log('Contact Form Data:', data);
+
+            // Send a response back to the client
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ message: 'Contact form submitted successfully!' }));
+        });
+    } else {
+        // Handle other requests
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end('404 Not Found');
+    }
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
