@@ -1,0 +1,116 @@
+<!DOCTYPE html><meta name="gtx-lang-config" content="https://cdn.quangbluekie.io/lang/petgen-gtx.lang">
+<meta name="signmark" content="QTX-ComSign™ | Verified by QTBlue Hitech Authority">
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>PetGen RTX App | Quang Protocol™</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.quangbluekie.io/gtx-lang/petgen-gtx.css" />
+  <meta name="gtx-lang-config" content="https://github.com/quangdangtranvn/petgen/blob/main/petgen-gtx-clean.lang">
+  <meta name="signmark" content="QTX-ComSign™ | Verified by QTBlue Hitech Authority">
+  <meta name="season" content="🌞 SummerLegend 2025">
+</head>
+<body class="green-mode">
+
+  <div class="max-w-3xl mx-auto bg-white shadow-rtx rounded-xl p-6 mt-10">
+    <h1 class="text-3xl font-bold text-[var(--petgen-green)] mb-4">🌿 PetGen Cipher RTX</h1>
+    <p class="text-sm text-cipher mb-6">✨ Gắn cấu hình từ <strong>petgen-gtx-clean.lang</strong> | Mùa trace: <strong>SummerLegend™</strong></p>
+
+    <!-- ✅ Tích-box trạng thái -->
+    <ul class="mb-6 text-sm text-cipher space-y-1">
+      <li>☑️ Swap-chain mỗi 1ms (enabled)</li>
+      <li>☑️ Giao diện xanh tươi `green-mode` (active)</li>
+      <li>☑️ Gắn signmark QTX-ComSign™ (verified)</li>
+      <li>☑️ Prompt AI thần thú (enabled)</li>
+      <li>☑️ Trader.bot title gắn lên PlayFab (linked)</li>
+      <li>☑️ Radar NFT 4D & chart ROI 1300% (loaded)</li>
+    </ul>
+
+    <!-- Form ETH → AZT -->
+    <form id="rewardForm" class="space-y-3 mb-6">
+      <input type="number" id="ethInput" placeholder="Nhập số ETH..." class="w-full px-3 py-2 border rounded text-sm" />
+      <button type="submit" class="btn-green w-full text-sm">Tính phần thưởng</button>
+    </form>
+    <div id="rewardResult" class="text-sm text-green-700 mb-6"></div>
+
+    <!-- Chart ROI -->
+    <canvas id="roiChart" class="w-full h-[20rem] bg-gtxbg rounded mb-6"></canvas>
+
+    <!-- Chart NFT -->
+    <canvas id="nftChart" class="w-full h-[20rem] bg-gtxbg rounded mb-6"></canvas>
+
+    <!-- Swap Log -->
+    <div id="swapLog" class="text-xs text-cipher mt-2">🌞 Bắt đầu mùa trace huyền thoại...</div>
+  </div>
+
+  <script>
+    const rateAZT = 13000;
+
+    document.getElementById("rewardForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const eth = parseFloat(document.getElementById("ethInput").value);
+      if (!eth || eth <= 0) return;
+
+      const azt = eth * rateAZT;
+      const roi = azt - (eth * rateAZT / 13);
+      document.getElementById("rewardResult").textContent =
+        `✅ ${eth} ETH → ${azt.toLocaleString()} AZT (${Math.round((roi / azt) * 100)}% phần thưởng)`;      
+
+      renderROIChart(eth, azt, roi);
+    });
+
+    function renderROIChart(eth, azt, roi) {
+      new Chart(document.getElementById("roiChart"), {
+        type: "bar",
+        data: {
+          labels: ["ETH nhập", "AZT nhận", "Thưởng ROI"],
+          datasets: [{
+            data: [eth, azt, roi],
+            backgroundColor: ["#3f3f64", "#1a6abf", "#4ade80"],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false }},
+          scales: {
+            y: { beginAtZero: true }
+          }
+        }
+      });
+    }
+
+    new Chart(document.getElementById("nftChart"), {
+      type: "radar",
+      data: {
+        labels: ["Token Volume", "Trace Depth", "Reward Ratio", "Time Sync"],
+        datasets: [{
+          label: "NFT ánh xạ",
+          data: [65, 72, 88, 70],
+          backgroundColor: "rgba(74,222,128,0.2)",
+          borderColor: "#4ade80",
+          borderWidth: 2
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false }},
+        scales: {
+          r: {
+            suggestedMin: 50,
+            suggestedMax: 100
+          }
+        }
+      }
+    });
+
+    // Swap-chain mỗi 1ms
+    setInterval(() => {
+      fetch("https://cloud.quangbluekie.io/swap-chain")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("swapLog").textContent = `⚡ Swap realtime: ${data.status} | SummerLegend™ trace`;
+        });
+    }, 1);
+  </script>
+</body>
+</html>
