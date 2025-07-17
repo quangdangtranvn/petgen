@@ -21,9 +21,9 @@ To make a curl request to your PHP autobot at petgen.rf.gd/apis, you can use the
 bash
 
 》Copy code
-"""
+'''
 curl "https://petgen.rf.gd/apis/autobot.php?username={Your_Username}"
-"""
+'''
 Make sure to replace {Your_Username} with your actual username. If you have any specific parameters or headers you need to include in the request, please let me know, and I can help you format that as well.
 **Frontend Logging (index.html):**
 - There is a `reSession` JavaScript object that handles session logging. It tracks the start, actions (with timestamps, actions, and data), and end of each session, outputting entries using `console.log`.
