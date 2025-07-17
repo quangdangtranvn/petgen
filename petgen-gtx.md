@@ -1,6 +1,6 @@
 # 🌿 PetGen Cipher RTX App
 
-✨ Dựng từ ánh xạ `petgen-gtx.lang` chính chủ Quang Protocol™
+✨ Dựng từ ánh xạ `petgen-gtx.lang` chính chủ QTBlue hitech Protocol™
 
 ## 🚀 Giao diện Green Mode
 
