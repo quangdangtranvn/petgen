@@ -327,6 +327,13 @@
       }
     }
   </script>
+const signPayload = {
+  name: "QuangDang",
+  wallet: "0x947...",
+  timestamp: Date.now()
+};
+// Ký bằng privateKey → tạo chữ ký dạng hex
+const signature = sign(signPayload, privateKey); // dùng eth-sig-util hoặc ethers.js
 <div class="panel mt-5">
   <h4>🌐 Public Links · Cloud CDN</h4>
   <ul class="list-group">
