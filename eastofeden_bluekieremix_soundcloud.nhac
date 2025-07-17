@@ -1,0 +1,23 @@
+track "storm_roi_remix" {
+  input: "roi_base.wav";
+  voice: "yosinaYouth";
+  background: "synthStorm";
+  bpm: 92;
+
+  metadata {
+    composer: "Quang Dang Trần";
+    emotion: "energetic-hype";
+    style: "baby-hype";
+    cipherTheme: "raininghold";
+    langMode: "magical";
+    remixLevel: "max sync";
+    runtimeMs: 16500;
+  }
+
+  timeline {
+    00:000 = echo(pitchUp);
+    05:120 = tts("ROI đang tăng mạnh!", style="shout-soft");
+    12:670 = breakbeat("drop1.wav");
+    16:420 = tts("Đừng đứng ngoài cuộc chơi!", style="baby-hype");
+  }
+}
