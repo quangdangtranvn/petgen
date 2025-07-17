@@ -1,0 +1,27 @@
+[signmark]
+enabled = true
+type = "digital-commercial"
+issuer = "QTBlue Hitech Authority"
+owner = "QuangBluekie Protocol™"
+certificate = "QTX-947-AZT"
+signedAt = "2025-07-17T10:44:00+07:00"
+signature = "0x0427a39c...e7fa"
+hash = "keccak256"
+verified = true
+attachedTo = ["app.html", "petgen-gtx.lang", "swap-chain.js"]
+
+[theme]
+color = "#4ade80"
+shader = "neon-cipher-v2"
+mode = "orbital-green"
+
+[swap-chain]
+interval = "1ms"
+source = "cloud.quangbluekie.io/swap-chain"
+autoTrigger = true
+
+[trace]
+rankMode = "AZT Protocol™"
+cappMode = "enabled"
+titleName = "trader.bot"
+marketType = "Orbital Rent / Smart APR Yield"
