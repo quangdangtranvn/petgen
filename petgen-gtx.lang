@@ -10,6 +10,41 @@ rankMode = "CipherOrbital"
   --gtx-accent: #94e0ff;
   --gtx-bg: #f1f5f9;
 }
+[server]
+protocol = "http"
+port = 3000
+entry = "contact"
+status = "active"
+
+[route:/contact]
+method = "POST"
+purpose = "Submit contact form"
+trace = "enabled"
+responseType = "json"
+message = "Contact form submitted successfully!"
+
+[handler]
+dataParsing = "querystring"
+logTrace = true
+traceFormat = "Contact Form Data: {name}, {email}, {message}"
+
+[metadata]
+ownerType = "QTBlue Hitech Sponsored™"
+mode = "RTX Green"
+rankLevel = "Quang Protocol™"
+c2cMode = "enabled"
+trigger = "ContactSubmit"
+
+[response.table]
+fields = [
+  { key = "name", label = "Họ tên" },
+  { key = "email", label = "Email" },
+  { key = "message", label = "Nội dung" }
+]
+
+[error.404]
+message = "404 Not Found"
+traceAbort = true
 
 body.gtx-cloud {
   background-color: var(--gtx-bg);
