@@ -1,0 +1,38 @@
+@track "roi_intro"
+mode: normal
+input: "welcome.nhac"
+voice: "yosinaYouth"
+emotion: "confident-cute"
+style: "gentle-guide"
+cipherTheme: none
+langMode: "normal"
+remixLevel: "basic"
+runtimeMs: 8200
+tts: "Chào mừng bạn đến với hệ sinh thái đầu tư PetGen."
+
+@track "storm_roi_remix"
+mode: magical
+input: "storm_roi_remix.nhac"
+voice: "yosinaYouth"
+emotion: "energetic-hype"
+style: "baby-hype"
+cipherTheme: "raininghold"
+langMode: "magical"
+remixLevel: "max sync"
+runtimeMs: 16500
+
+timeline {
+  00:000 = echo(pitchUp)
+  05:120 = tts("ROI đang tăng mạnh!", style="shout-soft")
+  08:340 = fx(reverb, intensity=0.5)
+  12:670 = breakbeat("drop1.wav")
+  16:420 = tts("Đừng đứng ngoài cuộc chơi!", style="baby-hype")
+}
+
+@meta {
+  composer: "Trần Đăng Quang"
+  source: "PetGen Repo"
+  format: ".nhac via .lang cipher"
+  category: "AI Voice Streamer"
+  activatedBy: "index.html → app.html → RTX engine"
+}
