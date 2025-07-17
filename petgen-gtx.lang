@@ -1,0 +1,38 @@
+/* petgen-gtx.css */
+
+:root {
+  --gtx-primary: #1a6abf;
+  --gtx-secondary: #3f3f64;
+  --gtx-accent: #94e0ff;
+  --gtx-bg: #f1f5f9;
+}
+
+body.gtx-cloud {
+  background-color: var(--gtx-bg);
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.gtx-launcher {
+  box-shadow: 0 0 16px var(--gtx-accent);
+  border-radius: 1rem;
+  background: #fff;
+}
+
+button.gtx-btn {
+  background: var(--gtx-primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+button.gtx-btn:hover {
+  box-shadow: 0 0 12px var(--gtx-accent);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
