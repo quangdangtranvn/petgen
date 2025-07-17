@@ -17,19 +17,16 @@
 | Demo UI | Here’s a summary of the logic logs implemented PetGen(cipher) repository:
 **Command Line Interface Description(CLI Command):
 To make a curl request to your PHP autobot at petgen.rf.gd/apis, you can use the following command:
-
-bash
-
 》》Copy code
 ```bash
 curl "https://petgen.rf.gd/apis/autobot.php?username={Your_Username}"
-
+```
 Make sure to replace {Your_Username} with your actual username. If you have any specific parameters or headers you need to include in the request, please let me know, and I can help you format that as well.
 **Frontend Logging (index.html):**
 - There is a `reSession` JavaScript object that handles session logging. It tracks the start, actions (with timestamps, actions, and data), and end of each session, outputting entries using `console.log`.
 - The function `sendMintLog(data)` sends logs (such as mint actions) to an external webhook endpoint (`https://cdn.quangbluekie.io/php/log-mint/index.php?save=1`). It provides feedback in the console on success or failure.
 - User prompts and mint actions are logged to the session and also sent to the webhook.
-```
+
 **Backend Logging (index.php, functions.php):**
 - When a user submits the PetGen Guild registration form, their name, email, and message are sanitized and then logged to a file (`logs/payment.log`) with a timestamp and action label (`signup`).
 - The log entry format: `YYYY-MM-DDTHH:MM:SS+TZ | signup | name | email | message`
