@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<!-- 🍪 Cookie Consent Notification Tab -->
+<div id="cookieConsent" class="fixed bottom-6 right-6 bg-white border border-cipher shadow-lg rounded-lg p-4 max-w-sm w-full z-50 animate-fade">
+  <h2 class="text-sm font-semibold text-petgen mb-2">🍪 PetGen cần xác nhận cookies</h2>
+  <p class="text-xs text-cipher mb-3">
+    Trình duyệt cần cho phép cookies để kích hoạt các tính năng trace ví, điều hướng swap chain và AutoBot chính chủ QTBlue Hitech Sponsored™.
+  </p>
+  <button onclick="confirmCookies()" class="px-3 py-1 bg-petgen text-white text-sm rounded glow-btn hover:scale-105">
+    OK, tôi cho phép cookies
+  </button>
+</div>
+  <meta charset="UTF-32">
+  <title>PetGen Cipher RTX Launcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  	function confirmCookies() {
+  localStorage.setItem("petgen_cookie_consent", "true");
+  document.getElementById("cookieConsent").style.display = "none";
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const consent = localStorage.getItem("petgen_cookie_consent");
+  if (consent === "true") {
+    document.getElementById("cookieConsent").style.display = "none";
+  }
+});
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: { fade: "fadeIn 0.5s ease-out" },
+          keyframes: {
+            fadeIn: { "0%": { opacity: 0 }, "100%": { opacity: 1 } }
+          },
+          colors: {
+            petgen: "#1a6abf",
+            cipher: "#3f3f64",
+            gtxbg: "#f1f5f9",
+            glow: "#94e0ff"
+          },
+          boxShadow: {
+            rtx: "0 0 12px #94e0ff"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .glow-btn:hover {
+      box-shadow: 0 0 12px #94e0ff;
+      transform: scale(1.05);
+      transition: all 0.3s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gtxbg min-h-screen flex items-center justify-center font-sans animate-fade">
+  <div class="bg-white shadow-rtx rounded-xl p-6 max-w-xl w-full">
+    <h1 class="text-3xl font-bold text-petgen mb-4 tracking-widest">🚀 PetGen RTX Launcher</h1>
+
+    <!-- Form nhập ví -->
+    <form id="walletForm" class="flex space-x-2 mb-4">
+      <input type="text" id="walletInput" placeholder="Nhập ví AZT..."
+             class="flex-grow px-3 py-2 border rounded text-sm focus:outline-none focus:ring-2 focus:ring-petgen" />
+      <button type="submit" class="px-4 py-2 bg-petgen text-white rounded text-sm glow-btn">Kích hoạt</button>
+    </form>
+
+    <!-- Thông tin ví -->
+    <div class="text-sm space-y-2 mb-4">
+      <p>💰 Số dư ví: <strong id="balanceAZT" class="text-green-600">Đang tải...</strong></p>
+      <p>🧊 Số dư đóng băng: <strong id="frozenAZT" class="text-blue-600">Đang tải...</strong></p>
+      <p>📈 Tỷ lệ AZT/ETH: <strong id="rateAZTETH" class="text-petgen">Đang tải...</strong></p>
+    </div>
+
+    <!-- Giao dịch -->
+    <div id="txContainer" class="text-sm mb-6 bg-gray-100 p-4 rounded space-y-2"></div>
+
+    <!-- Chain Selector -->
+    <h2 class="text-base font-semibold text-petgen mb-2">🌈 SmartSwap Chain Selector</h2>
+    <div id="chainContainer" class="flex flex-wrap gap-2 mb-2"></div>
+    <div id="swapResult" class="text-sm text-green-700"></div>
+
+    <!-- Bot AutoTrade -->
+    <form action="autobot.php" method="POST" enctype="multipart/form-data" class="space-y-4 mt-6">
+      <h2 class="text-base font-semibold text-cipher">🤖 Bot AutoTrade</h2>
+      <input type="file" name="strategy" class="block w-full px-3 py-2 border rounded text-sm" />
+      <button type="submit" class="px-4 py-2 bg-petgen text-white rounded text-sm glow-btn">Gửi chiến lược</button>
+    </form>
+
+    <!-- Bảng trading -->
+    <div id="tradingTable" class="mt-6 bg-gray-100 p-4 rounded text-sm">
+      <h2 class="text-base font-semibold text-cipher mb-2">📊 Mô hình Trading AutoBot</h2>
+      <table class="w-full text-left">
+        <thead><tr><th>Thời gian(time-sync)</th><th>|$AZT</th><th>|$ETH|</th><th>Thưởng(%ROI)</th></tr></thead>
+        <tbody id="modelRows"></tbody>
+        	<!-- 💰 Chart AZT Rental ROI Model -->
+<div class="mt-6 rounded-xl shadow-rtx bg-white p-6">
+  <h2 class="text-base font-semibold text-petgen mb-2">💰 Mô hình thuê Bot PetGen trong 2 giờ — ROI 1300%</h2>
+  <p class="text-sm text-cipher mb-4">
+    Tỷ lệ quy đổi từ 2000 AZT thuê sang lượng 1 ETH nhận được sau 2 tiếng với mô hình AutoBot phát thưởng PetGen Cipher™.
+  </p>
+  <canvas id="chartROI" class="w-full h-64 bg-gtxbg rounded"></canvas>
+</div>
+</table><!-- 🪙 Nhập ETH để nhận thưởng AZT -->
+<div class="mt-6 p-4 bg-white rounded-xl shadow-rtx">  
+ <canvas id="chartROI" class="w-full h-64 bg-gtxbg rounded"></canvas>
+  <h2 class="text-base font-semibold text-petgen mb-2">🪙 Tuyên bố phát thưởng ETH → AZT</h2>
+  <p class="text-sm text-cipher mb-3">Anh Quang Bluekie Dev do hãng QTBLUE Hitech tài trợ chính hãng — nhập số ETH để nhận AZT theo tỷ lệ real.</p>
+  <form id="rewardForm" class="space-y-3">
+    <input type="number" id="inputETH" placeholder="Nhập số ETH..." class="w-full px-3 py-2 border rounded text-sm focus:ring-2 focus:ring-petgen" />
+    <button type="submit" class="px-4 py-2 bg-petgen text-white rounded text-sm glow-btn hover:scale-105">Tính thưởng ngay</button>
+  </form>
+  <div id="rewardResult" class="mt-3 text-sm text-green-700"></div>
+</div>
+<script>
+  const ctxROI1 = document.getElementById("chartROI").getContext("2d");
+  new Chart(ctxROI1, {
+    type: "bar",
+    data: {
+      labels: ["AZT thuê", "AZT nhận", "Thưởng ROI"],
+      datasets: [{
+        label: "PetGen AutoBot ROI",
+        data: [2000, 26000, 24000], // 2000 thuê + 24000 thưởng
+        backgroundColor: ["#3f3f64", "#1a6abf", "#94e0ff"],
+        borderRadius: 8
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => `💸 ${ctx.label}: ${ctx.raw} AZT`
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { stepSize: 5000 },
+          title: {
+            display: true,
+            text: "Số lượng AZT",
+            color: "#3f3f64"
+          }
+        },
+        x: {
+          ticks: { color: "#3f3f64" }
+        }
+      }
+    }
+  });
+</script>
+    </div>
+
+    <!-- Chart -->
+    	<!-- 🌌 Chart 4D PetGen Cipher NFT -->
+<div class="mt-6 rounded-xl shadow-rtx bg-white p-6">
+  <h2 class="text-base font-semibold text-petgen mb-2">🌌 PetGen Cipher NFT — Chart 4D</h2>
+  <p class="text-sm text-cipher mb-4">Hình ảnh ánh xạ tài sản NFT theo 4 chiều: token, trace, ROI, và thời gian phản xạ.</p>
+  <canvas id="chart4D" class="w-full h-64 bg-gtxbg rounded"></canvas>
+</div>
+    <iframe src="https://wallet.kesug.com/go" class="w-full h-96 mt-6 rounded shadow-lg"></iframe>
+  </div>
+
+  <script>
+    const approvedChains = ["ETH", "BNB", "MATIC", "ARB", "OP", "LINEA", "BASE", "SCROLL", "AVAX"];
+
+    document.getElementById("walletForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const wallet = document.getElementById("walletInput").value.trim();
+      if (!wallet) return;
+      document.getElementById("balanceAZT").textContent = "Đang tải...";
+      document.getElementById("txContainer").innerHTML = "";
+      document.getElementById("swapResult").textContent = "";
+
+      fetch(`https://petgen.rf.gd/apis/autobot.php?username=${wallet}`)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("balanceAZT").textContent = data.balance + " AZT";
+          document.getElementById("frozenAZT").textContent = data.frozen + " AZT";
+          document.getElementById("rateAZTETH").textContent = data.rate + " AZT/ETH";
+
+          data.transactions.forEach(tx => {
+            const div = document.createElement("div");
+            div.textContent = `🔄 TX: ${tx.hash} — ${tx.amount} AZT`;
+            document.getElementById("txContainer").appendChild(div);
+          });
+
+          const rows = data.tradingModel.map(row => `
+            <tr><td>${row.time}</td><td>${row.azt}</td><td>${row.eth}</td><td>${row.reward}</td></tr>
+          `).join("");
+          document.getElementById("modelRows").innerHTML = rows;
+
+          const chainContainer = document.getElementById("chainContainer");
+          chainContainer.innerHTML = "";
+          approvedChains.forEach(chain => {
+            const btn = document.createElement("button");
+            btn.textContent = `Swap qua ${chain}`;
+            btn.className = "px-3 py-1 bg-petgen text-white text-sm rounded glow-btn";
+            btn.onclick = () => handleSwap(wallet, chain);
+            chainContainer.appendChild(btn);
+          });
+        });
+    });
+
+    function handleSwap(wallet, chain) {
+      fetch(`/api/swap/${chain}?wallet=${wallet}`)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("swapResult").textContent =
+            `✅ Swap qua ${chain} thành công: ${data.status}`;
+        })
+        .catch(() => {
+          document.getElementById("swapResult").textContent =
+            `⚠️ Swap qua ${chain} thất bại — kiểm tra trace hoặc EIN!`;
+        });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx4D = document.getElementById("chart4D").getContext("2d");
+  new Chart(ctx4D, {
+    type: "radar",
+    data: {
+      labels: ["Token Volume", "Trace Depth", "Reward Ratio", "Time Sync"],
+      datasets: [{
+        label: "PetGen NFT Asset",
+        data: [65, 72, 88, 70],
+        backgroundColor: "rgba(26,106,191,0.2)",
+        borderColor: "#1a6abf",
+        borderWidth: 2,
+        pointBackgroundColor: "#3f3f64"
+      }]
+    },
+    options: {
+      scales: {
+        r: {
+          angleLines: { display: true },
+          suggestedMin: 50,
+          suggestedMax: 100,
+          pointLabels: {
+            color: "#3f3f64",
+            font: { size: 12 }
+          },
+          ticks: {
+            backdropColor: "transparent"
+          }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `🎯 ${ctx.label}: ${ctx.formattedValue} units`
+          }
+        }
+      }
+    }
+  });
+</script>
+<script>
+  const aztThue = 2000;
+  const aztThuong = 26000;
+  const aztLoiNhuan = aztThuong - aztThue;
+  const roiPercent = Math.round((aztLoiNhuan / aztThue) * 100); // ~1300%
+
+  const ctxROI = document.getElementById("chartROI").getContext("2d");
+  new Chart(ctxROI, {
+    type: "bar",
+    data: {
+      labels: ["AZT thuê", "Tổng nhận", `Thưởng ROI (${roiPercent}%)`],
+      datasets: [{
+        label: "AutoBot 2h ROI",
+        data: [aztThue, aztThuong, aztLoiNhuan],
+        backgroundColor: ["#3f3f64", "#1a6abf", "#94e0ff"],
+        borderRadius: 6
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const value = ctx.raw;
+              const percent = Math.round((value / aztThuong) * 100);
+              return `💸 ${ctx.label}: ${value} AZT (${percent}%)`;
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { stepSize: 5000 },
+          title: {
+            display: true,
+            text: "Số lượng AZT",
+            color: "#3f3f64"
+          }
+        },
+        x: {
+          ticks: { color: "#3f3f64" }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>PetGen Cipher App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.quangbluekie.io/gtx-lang/petgen-gtx.css">
+</head>
+<body class="bg-gtxbg min-h-screen flex items-center justify-center font-sans">
+
+  <div class="bg-white shadow-rtx rounded-xl p-6 max-w-3xl w-full">
+
+    <!-- 🪙 Nhập ETH nhận thưởng AZT -->
+    <h1 class="text-2xl font-bold text-petgen mb-4 tracking-wider">🪙 Phát Thưởng ETH → AZT</h1>
+    <form id="rewardForm" class="space-y-3 mb-6">
+      <input type="number" id="ethInput" placeholder="Nhập số ETH..." class="w-full px-3 py-2 border rounded text-sm focus:ring-2 focus:ring-petgen" />
+      <button type="submit" class="px-4 py-2 bg-petgen text-white rounded text-sm glow-btn hover:scale-105">Tính Thưởng</button>
+    </form>
+    <div id="rewardResult" class="text-sm text-green-700 mb-6"></div>
+
+    <!-- 📊 Chart ROI -->
+    <div class="mb-6">
+      <h2 class="text-base font-semibold text-cipher mb-2">📊 Biểu đồ ROI</h2>
+      <canvas id="roiChart" class="w-full h-[20rem] bg-gtxbg rounded"></canvas>
+    </div>
+
+    <!-- 🌌 Chart 4D NFT -->
+    <div class="mb-6">
+      <h2 class="text-base font-semibold text-petgen mb-2">🌌 Chart 4D NFT</h2>
+      <canvas id="nftChart" class="w-full h-[20rem] bg-gtxbg rounded"></canvas>
+    </div>
+
+  </div>
+
+  <script>
+    const rateAZT = 13000; // Tỉ lệ AZT/ETH từ Quang Protocol™
+
+    document.getElementById("rewardForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const eth = parseFloat(document.getElementById("ethInput").value);
+      if (!eth || eth <= 0) return;
+
+      const azt = eth * rateAZT;
+      const roi = azt - (eth * rateAZT / 13); // tính phần thưởng 1300%
+      document.getElementById("rewardResult").textContent =
+        `✅ ${eth} ETH → ${azt.toLocaleString()} AZT (${Math.round((roi / azt) * 100)}% thưởng)`;
+
+      renderROIChart(eth, azt, roi);
+    });
+
+    function renderROIChart(eth, azt, roi) {
+      const ctx = document.getElementById("roiChart").getContext("2d");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["ETH nhập", "AZT nhận", "Thưởng ROI"],
+          datasets: [{
+            data: [eth, azt, roi],
+            backgroundColor: ["#3f3f64", "#1a6abf", "#94e0ff"],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false }},
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: { display: true, text: "Số lượng", color: "#3f3f64" }
+            }
+          }
+        }
+      });
+    }
+
+    const ctxNFT = document.getElementById("nftChart").getContext("2d");
+    new Chart(ctxNFT, {
+      type: "radar",
+      data: {
+        labels: ["Token Volume", "Trace Depth", "Reward Ratio", "Time Sync"],
+        datasets: [{
+          label: "PetGen NFT",
+          data: [65, 72, 88, 70],
+          backgroundColor: "rgba(26,106,191,0.2)",
+          borderColor: "#1a6abf",
+          borderWidth: 2
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false }},
+        scales: {
+          r: {
+            suggestedMin: 50,
+            suggestedMax: 100,
+            pointLabels: { color: "#3f3f64", font: { size: 12 } }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
