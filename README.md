@@ -14,6 +14,50 @@
 
 | Nội dung | Link |
 |----------|------|
+## 📦 Bảng cập nhật — Catalog Signature Table™ với Owner mới
+
+| Tên file              | Mục đích             | Post Server-Side | Owner mặc định               | Ghi chú |
+|-----------------------|----------------------|------------------|------------------------------|--------|
+| `petgen.html`         | Giao diện launcher   | ✅               | QTBlue Hitech Sponsored      | Nhận ví từ input AZT  
+| `middleware.js`       | API routing & verify | ✅               | QTBlue Hitech Sponsored      | Bridge & trace firewall  
+| `playfab_push.sh`     | Gửi ví lên server    | ✅               | QTBlue Hitech Sponsored      | Push payload tới VPS  
+| `autobot.php`         | Bot AutoTrade        | ✅               | QTBlue Hitech Sponsored      | Nhận file chiến lược  
+| `swap-handler.js`     | Quản lý SmartSwap    | ✅               | QTBlue Hitech Sponsored      | Route chain đã được duyệt  
+| `rainbow-roi.js`      | Tính ROI             | ❌               | QTBlue Hitech Sponsored      | Hiển thị realtime trên UI  
+| `trace-glow.css`      | Glow hiệu ứng        | ❌               | N/A                          | Gắn lớp RTX UI  
+| `smart-trace.yaml`    | Cấu hình SmartChain  | ✅               | QTBlue Hitech Sponsored      | Gắn tag AssetClass  
+| `autobot-form.php`    | Form gửi chiến lược  | ✅               | QTBlue Hitech Sponsored      | Gắn ví chính từ session  
+| `cipher_verify.py`    | Xác minh fingerprint | ✅               | QTBlue Hitech Sponsored      | So sánh SHA256 → trace hợp lệ  
+
+---
+| Giao diện người dùng demo | Dưới đây là tóm tắt về các bản ghi logic được triển khai trong kho lưu trữ PetGen(cipher):
+**Mô tả Giao diện Dòng lệnh (Lệnh CLI):
+Để tạo yêu cầu curl đến autobot PHP của bạn tại petgen.rf.gd/apis, bạn có thể sử dụng lệnh sau:
+》》**Sao chép mã**
+```bash
+curl "https://petgen.rf.gd/apis/autobot.php?username={Your_Username}"
+```
+Hãy nhớ thay thế **{Your_Username} bằng tên người dùng thực tế của bạn**. Nếu bạn có bất kỳ tham số hoặc tiêu đề cụ thể nào cần đưa vào yêu cầu, vui lòng cho tôi biết, và ***tôi cũng có thể giúp bạn định dạng chúng***.
+**Ghi nhật ký giao diện người dùng (index.html):**
+- Có một đối tượng JavaScript `reSession` xử lý việc ghi nhật ký phiên. Đối tượng này theo dõi thời điểm bắt đầu, hành động (với dấu thời gian, hành động và dữ liệu) và kết thúc của mỗi phiên, xuất các mục nhập bằng `console.log`.
+ - Hàm `sendMintLog(data)` gửi nhật ký (chẳng hạn như hành động đúc) đến điểm cuối webhook bên ngoài (`https://cdn.quangbluekie.io/php/log-mint/index.php?save=1`). Hàm này cung cấp phản hồi trong bảng điều khiển về việc thành công hay thất bại.
+- Lời nhắc của người dùng và hành động đúc được ghi vào phiên và cũng được gửi đến webhook.
+
+**Nhật ký Backend (index.php, functions.php):**
+- Khi người dùng gửi biểu mẫu đăng ký PetGen Guild, tên, email và tin nhắn của họ sẽ được khử trùng và sau đó được ghi vào một tệp (`logs/payment.log`) với dấu thời gian và nhãn hành động (`signup`).
+- Định dạng mục nhập nhật ký: `YYYY-MM-DDTHH:MM:SS+TZ | signup | name | email | message`
+- Nếu thư mục `logs` không tồn tại, nó sẽ được tự động tạo.
+
+ **Nhật ký Webhook & Sao lưu:**
+- Kho lưu trữ tham chiếu đến điểm cuối nhật ký webhook và sao lưu cho các hành động đúc tiền như một phương án dự phòng để đảm bảo không mất dữ liệu.
+
+ **Kiểm tra API [(petgen-AutoTrade-V2(+1300%ROI)](https://github.com/quangdangtranvn/petgen/blob/main/petgen-AutoTrade-V2%28%2B1300%25ROI%29.md):**
+- Bảng kiểm tra trạng thái cho thấy hầu hết các điểm cuối, bao gồm điểm cuối nhật ký giao dịch và hoán đổi, đều đã được kiểm tra và việc ghi nhật ký đang hoạt động (ví dụ: `/api/wallet/:id/tx` với "Trace Log Ready").
+
+**Tóm tắt:**
+Kho lưu trữ của bạn ghi lại các hành động chính của giao diện người dùng thông qua nhật ký phiên và lệnh gọi webhook, cũng như các hành động của nền tảng (như đăng ký người dùng) vào tệp nhật ký cục bộ. Nhật ký web và API được theo dõi, với tính năng ghi nhật ký dự phòng được cung cấp để đảm bảo độ tin cậy.
+
+Nếu bạn muốn biết chi tiết về một hàm ghi nhật ký hoặc tệp nhật ký cụ thể, hãy cho tôi biết!
 | Demo UI | Here’s a summary of the logic logs implemented PetGen(cipher) repository:
 **Command Line Interface Description(CLI Command):
 To make a curl request to your PHP autobot at petgen.rf.gd/apis, you can use the following command:
