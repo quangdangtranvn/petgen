@@ -1,3 +1,14 @@
+[signature]
+type = "digital-commercial"
+issuer = "QTBlue Hitech Authority"
+certificate = "QTX-947-AZT"
+timestamp = "2025-07-17T09:59:00+07:00"
+validation = "ECDSA-SECP256K1"
+encoded = "0x0427a39c...e7fa" # Dạng base64 / hex từ chữ ký gốc
+publicKey = "0xB7FA...9E28"   # Gắn kèm nếu verify local
+hashMethod = "keccak256"
+verified = true
+signmark = "QTX-ComSign™"
 // PetGen Cipher Server-Side Contact Example
 
 // Import necessary modules
