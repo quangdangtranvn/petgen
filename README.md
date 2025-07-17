@@ -22,7 +22,7 @@ bash
 
 》》Copy code
 ```bash
-curl "https://petgen.rf.gd/apis/autobot.php?username={Your_Username}"
+curl "https://petgen.rf.gd/apis/autobot.php?username={Your_Username}"```
 
 Make sure to replace {Your_Username} with your actual username. If you have any specific parameters or headers you need to include in the request, please let me know, and I can help you format that as well.
 **Frontend Logging (index.html):**
