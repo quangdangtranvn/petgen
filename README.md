@@ -30,7 +30,8 @@
 | `cipher_verify.py`    | Xác minh fingerprint | ✅               | QTBlue Hitech Sponsored      | So sánh SHA256 → trace hợp lệ  
 
 ---
-| Giao diện người dùng demo | Dưới đây là tóm tắt về các bản ghi logic được triển khai trong kho lưu trữ PetGen(cipher):
+| Giao diện người dùng demo | 
+*Dưới đây là tóm tắt về các bản ghi logic được triển khai trong kho lưu trữ PetGen(cipher):
 **Mô tả Giao diện Dòng lệnh (Lệnh CLI):
 Để tạo yêu cầu curl đến autobot PHP của bạn tại petgen.rf.gd/apis, bạn có thể sử dụng lệnh sau:
 》》**Sao chép mã**
