@@ -4,7 +4,7 @@ theme: cyber_dark
 rtx_mode: on
 meta:
   title: "Neutron Brain Cypher RTX"
-  author: "Quang"
+  author: "Quang Bluekie"
   version: "2.1 TED Edition"
 
 modules:
@@ -66,4 +66,4 @@ class:
       endpoint: "/brain/reset"
 
 footer:
-  text: "© 2025 Neutron Brain RTX – Created with ❤️ by Quang"
+  text: "© 2025 Neutron Brain RTX – Created with ❤️ by QuangBluekie"
