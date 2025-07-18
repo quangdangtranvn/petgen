@@ -32,7 +32,7 @@
 
 📎 PetGen Cipher có thể chạy full offline bằng ZIP repo:  
 👉[CloudCDN Package Opened] ([`cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip`])
-[Google Drive *lang USB* PetGen_Cipher Download🎁](https://drive.google.com/file/d/1U4U_w3wyvblfb4Ueb_SqCcZwO_4MZ1sj/view?usp=drivesdk)
+[Google Drive *lang USB* PetGen_Cipher Download🎁](https://drive.google.com/file/d/1U4U_w3wyvblfb4Ueb_SqCcZwO_4MZ1sj/view?usp=drivesdk)(199kb)
 ## 📦 Bảng cập nhật — Catalog Signature Table™ với Owner mới
 
 | Tên file              | Mục đích             | Post Server-Side | Owner mặc định               | Ghi chú |
