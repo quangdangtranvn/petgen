@@ -119,6 +119,50 @@
   </div>
 
   <!-- Scripts -->
+<!-- 🔰 Khởi tạo PetGen Lang GUI -->
+<script>
+  async function loadLangGUI(langPath = "asset/lang_vi.lang") {
+    try {
+      const res = await fetch(langPath);
+      const text = await res.text();
+
+      // 📖 Parse nội dung file lang
+      const lines = text.trim().split("\n");
+      const langMap = {};
+      let currentSection = "";
+
+      lines.forEach(line => {
+        if (line.startsWith("[") && line.endsWith("]")) {
+          currentSection = line.slice(1, -1);
+          langMap[currentSection] = {};
+        } else if (line.includes("=")) {
+          const [key, value] = line.split("=");
+          langMap[currentSection][key.trim()] = value.trim();
+        }
+      });
+
+      // 🖼️ Hiển thị lên GUI
+      const guiContainer = document.createElement("div");
+      guiContainer.className = "petgen-lang-gui";
+      guiContainer.innerHTML = `
+        <h2>🌐 PetGen Lang Interface</h2>
+        <p>${langMap["system.general"]["welcome.message"]}</p>
+        <p>${langMap["emotion.sync"]["emotion.true"]}</p>
+        <p>${langMap["combat.skill"]["battle.open"]}</p>
+        <p>${langMap["fragment.story"]["ownership.badge"]}</p>
+      `;
+      document.body.appendChild(guiContainer);
+
+    } catch (err) {
+      console.error("❌ Không thể tải ngôn ngữ PetGen:", err);
+    }
+  }
+
+  // ⚙️ Gắn khi tải xong giao diện chính
+  window.addEventListener("DOMContentLoaded", () => {
+    loadLangGUI();
+  });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     function launchAI() {
