@@ -1,6 +1,6 @@
 ### PETGEN CIPHER KIT WEB4 V1.0
 ## LINK ZIP DRIVE KIT TO DOWNLOAD:
-[Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/main/HIRING.md)
+[Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/blob/main/HIRING.md)
 
 → Giao diện glowing sẽ hiện tab thần thú · Glowing UI tabs will render immediately.
 
