@@ -32,7 +32,7 @@
 
 📎 PetGen Cipher có thể chạy full offline bằng ZIP repo:  
 👉[CloudCDN Package Opened] ([`cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip`])
-[Google Drive lang USB PetGen_Cipher Download🎁](https://drive.google.com/file/d/1U4U_w3wyvblfb4Ueb_SqCcZwO_4MZ1sj/view?usp=drivesdk)
+[Google Drive *lang USB* PetGen_Cipher Download🎁](https://drive.google.com/file/d/1U4U_w3wyvblfb4Ueb_SqCcZwO_4MZ1sj/view?usp=drivesdk)
 ## 📦 Bảng cập nhật — Catalog Signature Table™ với Owner mới
 
 | Tên file              | Mục đích             | Post Server-Side | Owner mặc định               | Ghi chú |
@@ -55,9 +55,9 @@
 Để tạo yêu cầu curl đến autobot PHP của bạn tại petgen.rf.gd/apis, bạn có thể sử dụng lệnh sau:
 》》**Sao chép mã**
 ```bash
-curl "https://petgen.rf.gd/apis/autobot.php?username={Your_Username}"
+curl "https://petgen.rf.gd/apis/autobot.php?username={Your Username}"
 ```
-Hãy nhớ thay thế **{Your_Username} bằng tên người dùng thực tế của bạn**. Nếu bạn có bất kỳ tham số hoặc tiêu đề cụ thể nào cần đưa vào yêu cầu, vui lòng cho tôi biết, và ***tôi cũng có thể giúp bạn định dạng chúng***.
+Hãy nhớ thay thế **{Your Username} bằng tên người dùng thực tế của bạn**. Nếu bạn có bất kỳ tham số hoặc tiêu đề cụ thể nào cần đưa vào yêu cầu, vui lòng cho tôi biết, và ***tôi cũng có thể giúp bạn định dạng chúng***.
 **Ghi nhật ký giao diện người dùng (index.html):**
 - Có một đối tượng JavaScript `reSession` xử lý việc ghi nhật ký phiên. Đối tượng này theo dõi thời điểm bắt đầu, hành động (với dấu thời gian, hành động và dữ liệu) và kết thúc của mỗi phiên, xuất các mục nhập bằng `console.log`.
  - Hàm `sendMintLog(data)` gửi nhật ký (chẳng hạn như hành động đúc) đến điểm cuối webhook bên ngoài (`https://cdn.quangbluekie.io/php/log-mint/index.php?save=1`). Hàm này cung cấp phản hồi trong bảng điều khiển về việc thành công hay thất bại.
