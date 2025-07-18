@@ -25,7 +25,7 @@
 
 ---
 
-### 🎶 Gắn với Bảng Báo Giá Nhà Anh
+### 🎶 Bảng Báo Giá KPI Cho Các Members nhà QTBlue Hi-tech:
 
 | Hạng mục | Chi phí | Gắn vào hệ thống nào |
 |----------|---------|----------------------|
