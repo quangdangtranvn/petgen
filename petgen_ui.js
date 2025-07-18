@@ -40,6 +40,19 @@ function loadAllLangFiles(langFileUrls) {
         }
     });
 }
+import {
+  initLoraSync,
+  deployLoraPayload,
+  resetLoraState
+} from './lora.module.js';
+
+async function petgenLora() {
+  const signal = await initLoraSync({ emotion: "hopeful", badge: "Web5Sync" });
+  const delivery = await deployLoraPayload(signal);
+  await resetLoraState(delivery.signalID);
+}
+
+petgenLora();
 
 // 🔁 Export dưới dạng module
-export { fetchLangFile, loadAllLangFiles };
+export { petgenLora, fetchLangFile, loadAllLangFiles };
