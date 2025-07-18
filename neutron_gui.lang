@@ -1,0 +1,69 @@
+#lang ui_neutron_dashboard_v2:
+layout: grid
+theme: cyber_dark
+rtx_mode: on
+meta:
+  title: "Neutron Brain Cypher RTX"
+  author: "Quang"
+  version: "2.1 TED Edition"
+
+modules:
+  - id: "neuro_panel"
+    type: panel
+    title: "🧠 Module Status"
+    rtx_shader: "cypher_lora_shader"
+    display: table
+    data:
+      - { name: "NeuroInit", type: "CNN", layers: 12, status: "Trained" }
+      - { name: "CoreLink", type: "Transformer", layers: 24, status: "Training" }
+      - { name: "AxonMap", type: "RNN", layers: 8, status: "Pending" }
+
+  - id: "search_bar"
+    type: input
+    placeholder: "Tìm neuron, mô hình, hoặc mã ngôn ngữ..."
+    icon: "🔍"
+    rtx_accelerated: true
+    onSubmit: net.petgenSearch()
+
+  - id: "api_command_panel"
+    type: buttons
+    label: "⚡ DOM8 Subcommands"
+    buttons:
+      - { text: "Init Brain", action: net.brainInit }
+      - { text: "Status", action: net.brainStatus }
+      - { text: "Reset", action: net.resetBrain }
+
+class:
+  lua:
+    - id: "langParser"
+      description: "Phân tích cú pháp ngôn ngữ .lang và đẩy giao diện"
+      run: `
+        function parseLang(input)
+          if string.find(input, "Neuro") then
+            return "Kích hoạt module AI: " .. input
+          end
+        end
+      `
+
+  net:
+    - id: "petgenSearch"
+      description: "Gửi truy vấn đến PetGen Cipher"
+      endpoint: "/api/petgen/search?q={input}"
+
+    - id: "brainInit"
+      description: "Khởi tạo Neutron Brain"
+      method: "POST"
+      endpoint: "/brain/init"
+
+    - id: "brainStatus"
+      description: "Truy xuất trạng thái"
+      method: "GET"
+      endpoint: "/brain/status"
+
+    - id: "resetBrain"
+      description: "Đặt lại mô hình để huấn luyện mới"
+      method: "DELETE"
+      endpoint: "/brain/reset"
+
+footer:
+  text: "© 2025 Neutron Brain RTX – Created with ❤️ by Quang"
