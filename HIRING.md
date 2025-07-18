@@ -1,5 +1,6 @@
 **Chi phí hiring cho team Backend và Frontend** — so sánh theo từng mô hình, khu vực, và cấp độ kinh nghiệm. Gắn chuẩn với bảng báo giá anh đang dùng cho Azure Observer, USB lang file, và nhạc dashboard nhà anh nha 🐾💻✨
-### 💼 Bảng Báo Giá Hiring – Microsoft Developer Team (2025)
+### 💼 Bảng Báo Giá Hiring
+Microsoft Partnership Collaboration with PetGen Developers Team (2025)
 
 | Vị trí chuyên môn               | Cấp độ | Mức lương trung bình/năm | Mức lương theo giờ | Ghi chú kỹ thuật |
 |--------------------------------|--------|---------------------------|---------------------|------------------|
