@@ -56,8 +56,8 @@ Microsoft Partnership Collaboration with PetGen Developers Team (2025)
 
 ---
 
-##Giải thưởng 274.000$ Bonus Sign-In Cho các hitech signed in vào team QTBLUE##
+## Giải thưởng 274.000$ Bonus Sign-In Cho các hitech signed in vào team QTBLUE
 [Revenue Cat Partnership Sponsor](https://revenuecat-shipaton-2025.devpost.com/?utm_source=devpost&utm_medium=discord&utm_campaign=revenuecatshipaton)
 
-#QTBlue HiTech Official Visit Page:##
+# QTBlue HiTech Official Visit Page:
 @qtblue on any SEO pages
