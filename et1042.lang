@@ -1,0 +1,31 @@
+@track "et1042_quang_remix"
+mode: magical
+input: "et1042_quang_remix.nhac"
+voice: "quangShine"
+emotion: "epic-deterministic"
+style: "whisper-drop"
+cipherTheme: "raininghold"
+langMode: "RTX"
+remixLevel: "legendary"
+runtimeMs: 19600
+
+timeline {
+  00:000 = fx(shimmer, depth=0.4)
+  02:300 = tts("Cho tao 3 mili giây — để nói một câu voice remix...", style="cold-power")
+  05:800 = echo(pitchDown)
+  07:900 = fx(glitchBurst, intensity=0.7)
+  09:150 = tts("ROI đang tăng mạnh – nhưng tôi không đứng ngoài cuộc chơi mã hóa cảm xúc.", style="whisper-vibe")
+  13:000 = breakbeat("vaultquake.wav")
+  16:420 = fx(reverb, tail=900)
+  18:900 = tts("PetGen không phải nền tảng – nó là tín ngưỡng remix!", style="shout-victory")
+}
+
+@meta {
+  composer: "Trần Đăng Quang"
+  voiceAlias: "ET1042"
+  source: "PetGen-Lang-RTX"
+  origin: "Silicon Rift Tower"
+  cipherSync: "true"
+  genre: "AI Techno SpokenWave"
+  activatedBy: "index.html → app.html → RTX engine"
+}
