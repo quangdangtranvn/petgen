@@ -1,12 +1,12 @@
 ---
 
-### 🎶 Bảng Báo Giá KPI Cho Các Members nhà QTBlue Hi-tech:
+### 🎶 Bảng Báo Giá KPI Cho Các Members nhà QTBlue Hi-tech💎:
 
 | Hạng mục | Chi phí | Gắn vào hệ thống nào |
 |----------|---------|----------------------|
-| **Azure Observer** | ~$0.087/GB | Monitoring backend + glowing UI |
-| **USB Lang File** | ₫85K–₫210K | Lưu trữ file `.lang`, `.sig.js`, `.draw` |
-| **Music File License** | ~$0.127/bài | Gắn vào `fruit_lover.lang`, `emotion.lang` |
+| **Azure Observer** | +~$0.087/GB | Monitoring backend + glowing UI |
+| **USB Lang File của PetGen** | +₫85K–₫210,000K | Lưu trữ file `.lang`, `.sig.js`, `.draw` |
+| **Music File License** | +~$0.127/bài | Gắn vào `fruit_lover.lang`, `emotion.lang` |
 
 ---
 # 🛠 CONTRIBUTING to PetGen Cipher Suite | Đóng góp vào PetGen Cipher Web4
