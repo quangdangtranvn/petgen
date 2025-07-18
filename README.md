@@ -14,6 +14,24 @@
 
 | Nội dung | Link |
 |----------|------|
+## 📊 Bảng so sánh PetGen Cipher vs. BigTech Stack & GitLab DevOps
+
+| ⚙️ Tiêu chí / Stack             | 🐾 PetGen Cipher | 🧠 Microsoft Copilot | 🧬 Google Vertex AI | 🧪 GitLab DevOps |
+|-------------------------------|------------------|----------------------|---------------------|------------------|
+| Mint NFT bằng AI prompt       | ✅ Có Fusion-AI   | ⚠️ Không hỗ trợ NFT  | ❌ Chưa có module NFT| ❌ Không tích hợp  
+| UI glowing Web4               | ✅ GTX native     | ❌ Không có UI riêng | ❌ Dùng Material     | ❌ CLI / YAML  
+| Session replay tracker        | ✅ `re-session.js`| ❌ Không có          | ❌ Không có          | ⚠️ Manual logs  
+| Webhook log + fallback        | ✅ Có PHP + cloud | ❌ Không hỗ trợ      | ⚠️ Gọi API ngoài     | ✅ Có CI/CD logs  
+| Modular config JSON           | ✅ `config.json`  | ❌ Không expose      | ✅ Có cấu hình YAML  | ✅ `.gitlab-ci.yml`  
+| Docs markdown song ngữ        | ✅ Có đầy đủ      | ✅ Có Copilot Docs   | ✅ Có Vertex Docs    | ✅ Có GitLab Docs  
+| Tích hợp blockchain           | ✅ Polygon / ETH  | ❌ Không hỗ trợ      | ❌ Không hỗ trợ      | ❌ Không hỗ trợ  
+| Tỷ lệ dùng offline / local    | ✅ 100% zip suite | ⚠️ Cloud only        | ❌ Cloud only        | ✅ Có local runner  
+| Tỷ lệ Dev Labs fork / clone   | ✅ 1:1 repo ready | ⚠️ Không mở source   | ⚠️ API only          | ✅ Git clone  
+
+---
+
+📎 PetGen Cipher có thể chạy full offline bằng ZIP repo:  
+👉[CloudCDN Package Opened] ([`cdn.quangbluekie.io/petgen-kit/v1.0.0-final-launch.zip`])
 ## 📦 Bảng cập nhật — Catalog Signature Table™ với Owner mới
 
 | Tên file              | Mục đích             | Post Server-Side | Owner mặc định               | Ghi chú |
