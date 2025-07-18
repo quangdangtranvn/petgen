@@ -4,9 +4,9 @@
 
 | Hạng mục | Chi phí | Gắn vào hệ thống nào |
 |----------|---------|----------------------|
-| **Azure Observer** | +~$0.087/GB | Monitoring backend + glowing UI |
-| **USB Lang File của PetGen** | +₫85K–₫210,000K | Lưu trữ file `.lang`, `.sig.js`, `.draw` |
-| **Music File License** | +~$0.127/bài | Gắn vào `fruit_lover.lang`, `emotion.lang` |
+| **Azure Observer**(.ip) | +~$0.087/GB | Monitoring backend + glowing UI |
+| **USB Lang File của PetGen**(.lang) | +₫85K–₫210,000K | Lưu trữ file `.lang`, `.sig.js`, `.draw` |
+| **Music File License**(.nhac) | +~$0.127/bài | Gắn vào `fruit_lover.lang`, `emotion.lang` |
 
 ---
 ### PETGEN CIPHER KIT WEB4 V1.0
