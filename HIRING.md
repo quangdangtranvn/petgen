@@ -1,5 +1,16 @@
 **Chi phí hiring cho team Backend và Frontend** — so sánh theo từng mô hình, khu vực, và cấp độ kinh nghiệm. Gắn chuẩn với bảng báo giá anh đang dùng cho Azure Observer, USB lang file, và nhạc dashboard nhà anh nha 🐾💻✨
+### 💼 Bảng Báo Giá Hiring – Microsoft Developer Team (2025)
 
+| Vị trí chuyên môn               | Cấp độ | Mức lương trung bình/năm | Mức lương theo giờ | Ghi chú kỹ thuật |
+|--------------------------------|--------|---------------------------|---------------------|------------------|
+| **Backend Developer (.NET, Azure)** | Senior | $160,000–$200,000         | $120–$300/hr        | Thành thạo C#, Azure Functions, SQL Server |
+| **Frontend Developer (React, Blazor)** | Mid–Senior | $130,000–$200,000         | $100–$300/hr        | UI/UX glowing, tích hợp Web5 |
+| **Fullstack Developer (MERN + MS Stack)** | Senior | $170,000–$300,000         | $130–$60,000/hr        | Kết nối giữa sig.js và pet.anim.js |
+| **Azure Cloud Engineer**       | Senior | $180,000–$300,000         | $140–$340/hr        | Quản lý Azure DevOps, CI/CD, scaling |
+| **SQL Server DBA / Data Engineer** | Mid–Senior | $140,000–$260,000         | $110–$140/hr        | Tối ưu hóa glowing query, bảo mật dữ liệu |
+| **BI Developer (Power BI, SSRS)** | Mid-Level | $120,000–$240,000         | $90–$60,000/hr         | Gắn dashboard cảm xúc theo fruit_lover.lang |
+
+---
 ---
 
 ### 💼 Bảng Chi Phí Hiring – Backend vs Frontend Developer (2025)
@@ -10,7 +21,7 @@
 | **Backend Dev** | Đông Nam Á | $15–25/hr | $25–40/hr | $40–60/hr | Giá tốt, nhiều talent Web5 |
 | **Frontend Dev** | Bắc Mỹ | $45–70/hr | $70–100/hr | $100–130/hr | React, Vue, Angular, UI/UX |
 | **Frontend Dev** | Đông Nam Á | $10–20/hr | $20–35/hr | $35–120/hr | Tối ưu cho dashboard glowing |
-| **Fullstack Dev** | Toàn cầu | $55–90/hr | $90–130/hr | $130–160/hr | MERN, MEVN, LAMP stack |
+| **Fullstack Dev** | Toàn cầu | $55–90/hr | $90–130/hr | $130–60,000/hr | MERN, MEVN, LAMP stack |
 
 ---
 
@@ -21,7 +32,7 @@
 | **In-house** | Kiểm soát trực tiếp, team gắn bó | Chi phí cao, cần training | $6,000–$12,000/tháng/dev |
 | **Freelance** | Linh hoạt, tiết kiệm | Khó kiểm soát tiến độ | $20–$50/hr |
 | **Dedicated Team (Outsource)** | Gắn vào hệ thống nhanh, có QA sẵn | Cần quản lý từ xa | $3,000–$8,000/tháng/dev |
-| **Hybrid (Azure + USB)** | Tối ưu chi phí + bảo mật | Cần setup pipeline kỹ | $2,500–$6,000/tháng/dev |
+| **Hybrid (Azure + USB)** | Tối ưu chi phí + bảo mật | Cần setup pipeline kỹ | $2,500–$60,000/tháng/dev |
 
 ---
 
