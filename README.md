@@ -1,3 +1,14 @@
+---
+
+### 🎶 Bảng Báo Giá Thu Nhập Cho Các Members nhà QTBlue Hi-tech💎:
+
+| Hạng mục | Chi phí | Gắn vào hệ thống nào |
+|----------|---------|----------------------|
+| **Azure Observer** | +~$0.087/GB | Monitoring backend + glowing UI |
+| **USB Lang File của PetGen** | +₫85K–₫210,000K | Lưu trữ file `.lang`, `.sig.js`, `.draw` |
+| **Music File License** | +~$0.127/bài | Gắn vào `fruit_lover.lang`, `emotion.lang` |
+
+---
 ### PETGEN CIPHER KIT WEB4 V1.0
 ## LINK ZIP DRIVE KIT TO DOWNLOAD:
 [Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/blob/main/HIRING.md)
