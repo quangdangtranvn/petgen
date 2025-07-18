@@ -45,7 +45,7 @@
 ---
 
 ##Giải thưởng 274.000$ Bonus Sign-In Cho các hitech signed in vào team QTBLUE
-https://revenuecat-shipaton-2025.devpost.com/?utm_source=devpost&utm_medium=discord&utm_campaign=revenuecatshipaton
+[Revenue Cat Partnership Sponsor](https://revenuecat-shipaton-2025.devpost.com/?utm_source=devpost&utm_medium=discord&utm_campaign=revenuecatshipaton)
 
 #QTBlue HiTech Official Visit Page:
 @qtblue on any SEO pages
