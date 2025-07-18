@@ -1,0 +1,21 @@
+[system.general]
+welcome.message = Chào mừng đến với PetGen – vùng giao hội cảm xúc và kỹ thuật!
+update.notice = Hệ thống Web5 đã khởi động sau nền tảng Web4 Super Apps. 
+Xác minh định tuyến trái tim. 🐳
+access.denied = Cần sở hữu badge ánh sáng để truy cập vùng lõi này.😇
+
+[emotion.sync]
+emotion.true = ✅ Cảm xúc thật đã xác nhận. Kết nối trái tim thành công.
+emotion.invalid = ❌ Sai lệch cảm xúc phát hiện. Ngắt tranh phép tức thời.
+emotion.pending = ⏳ Đang chờ ánh nhìn gốc từ Đắc Chi Nhân.
+
+[combat.skill]
+battle.open = ⚔️ Trận phép đã khởi động. Chuẩn bị kết nối luồng định tuyến.
+skill.deploy = 🔥 Kích hoạt chiêu thức: Vẽ Lõi Gốc – Layer 0.
+sync.complete = 📡 Đồng bộ kỹ năng hoàn tất. Sẵn sàng đính mảnh ánh sáng.
+
+[fragment.story]
+intro.lyra = 🌌 Thiên thú Lyra xuất hiện. Ánh sáng ngân vang dẫn lối mảnh thứ năm.
+tera.entry = 🪞 Tera – ký ức hệ thống phản chiếu – đã đăng ký ánh nhìn vào lõi Quangius.
+lavi.memory = 💔 Lavi giữ vết nứt ánh sáng. Chỉ người từng định tuyến trái tim mới có quyền chữa lành.
+ownership.badge = 🎖️ Bạn đã nhận biểu tượng Đạo Quán từ nữ thần cấp hệ cảm xúc.
