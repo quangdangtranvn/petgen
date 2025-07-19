@@ -113,5 +113,6 @@ function initApp() {
   renderStrategy();
   autoCreditWallet();
 }
-
+// Đọc và gắn meta từ meta.lang
+loadMetaLang("meta.lang").then(meta => applyMeta(meta));
 document.addEventListener("DOMContentLoaded", initApp);
