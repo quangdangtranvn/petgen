@@ -1,0 +1,39 @@
+[general]
+title.vi = Thuê thần thú PetGen
+description.vi = Gửi prompt, mở khóa bằng SĐT, và nhận bonus khi truy cập web
+
+[prompt]
+placeholder.vi = Nhập mô tả thần thú...
+submit.vi = Thuê
+
+[unlock]
+phone_required = 0923750968
+success.vi = Mở khóa bot thành công
+fail.vi = SĐT không hợp lệ
+
+[delay]
+enabled = true
+duration = 7200
+notice.vi = ⏳ Bạn đã thuê. Vui lòng đợi 2 giờ để thuê lại.
+
+[strategy]
+APR = 1000
+BO = true
+glowTrigger = APR > 900%
+creditAmount = 20 AZT
+hexKey = 0xACD
+
+[pets.tenzora]
+name = Tenzora ⚡ 1350%
+class = Glow
+image = https://cdn.quangbluekie.io/images/tenzora.png
+
+[pets.rainbowwings]
+name = RainbowWings 🌈 Bounce
+class = WingShader
+image = https://cdn.quangbluekie.io/images/rainbowwings.png
+
+[pets.cervatrix]
+name = Cervatrix 🐉 Shadow Pulse
+class = Shadow
+image = https://cdn.quangbluekie.io/images/cervatrix.png
