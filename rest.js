@@ -1,3 +1,30 @@
+const payload = {
+  wallet: "0x6143908CA80f618B1C41a764C1409a276B59CAe5",
+  contractType: "trader-glowing",
+  filter: "highest_value"
+};
+
+Apax.post("https://wallet.kesug.com/go/bot", payload)
+  .then((res) => {
+    console.log("Gửi dữ liệu xong cho boss autobot PetGen Trader", res.status);
+  })
+  .catch((err) => {
+    console.error("Bot hiện quá tải cần kiểm tra đúng message", err);
+  });
+  function loadLang(fileName) {
+  fetch(`/gtx-lang/${fileName}`)
+    .then(res => res.text())
+    .then(content => {
+      // Parse nội dung lang
+      const lines = content.split('\n');
+      lines.forEach(line => {
+        if (line.startsWith('🧿')) {
+          document.getElementById('lang-output').innerHTML += `<p>${line}</p>`;
+        }
+      });
+    });
+}
+  loadLang("sibs-only.lang");
  const express = require('express');
 const multer = require('multer');
 const path = require('path');
