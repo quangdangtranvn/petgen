@@ -1,0 +1,59 @@
+[meta.charset]
+type = tag
+value = UTF-8
+
+[meta.viewport]
+type = tag
+value = width=device-width, initial-scale=1.0
+
+[meta.title]
+vi = ⚡ PetGen Charm Bot RTX | Thuê thần thú glowing
+en = ⚡ PetGen Charm Bot RTX | Rent glowing creatures
+
+[meta.description]
+vi = Thuê thần thú Tenzora ⚡ RainbowWings 🌈 Cervatrix 🐉. Mở khóa bot bằng SĐT 🔐 0923750968. Delay thuê 2h. Bonus Charm theo % pin. Trigger Autobot Overwatch3 🌪️ – Powered by Quang Bluekie.
+en = Rent glowing creatures Tenzora, RainbowWings, Cervatrix. Unlock bot with phone, trigger APR, bonus charm by battery percent. Powered by Quang Bluekie.
+
+[meta.keywords]
+vi = PetGen, thuê thần thú, Tenzora, RainbowWings, Cervatrix, Wings shader, glow APR, unlock bot, Overwatch3, Stars Panel, mã HEX, Quang Bluekie, delay thuê 2h
+en = PetGen, creature rental, Tenzora, RainbowWings, Cervatrix, wings shader, glow APR, unlock bot, Overwatch3, bonus charm, HEX code, Quang Bluekie, delay 2h
+
+[meta.author]
+name = Quang Bluekie Master
+
+[meta.copyright]
+value = © 2025 PetGen RTX Cipher Suite
+
+[meta.theme-color]
+value = #00f7ff
+
+[meta.favicon]
+href = https://cdn.quangbluekie.io/icons/favicon.png
+type = image/png
+
+[meta.opengraph.title]
+value = ⚡ PetGen Bot – Rainbow Wings
+
+[meta.opengraph.description]
+value = Kích hoạt bot thần thú glowing, thuê nhanh Tenzora, RainbowWings, Cervatrix. Mở khóa SĐT. Bonus theo pin.
+
+[meta.opengraph.image]
+href = https://cdn.quangbluekie.io/images/charmbot.png
+
+[meta.opengraph.url]
+value = https://wallet.kesug.com/go/bot
+
+[meta.opengraph.type]
+value = website
+
+[meta.twitter.card]
+value = summary_large_image
+
+[meta.twitter.title]
+value = PetGen Bot App – Powered by RTX Charm Suite
+
+[meta.twitter.description]
+value = Autobot Overwatch3, delay thuê 2h, Wings Shader Tenzora & RainbowWings – by Quang Bluekie
+
+[meta.twitter.image]
+href = https://cdn.quangbluekie.io/images/charmbot.png
