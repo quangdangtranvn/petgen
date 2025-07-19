@@ -25,6 +25,24 @@
 
 | Nội dung | Link |
 |----------|------|
+- 🧠 Tính năng nổi bật:
+  - Mint NFT thần thú bằng GenAI prompt
+  - Cài đặt tool Web3 mining trên mọi nền tảng
+  - Nhận AZT bonus từ event mining / airdrop
+  - Gói Trợ Lý Ảo PetGen: Single · Family · Patron · Premium
+  - Giao diện glowing UI · hỗ trợ mobile / desktop
+
+---
+
+## 📦 Gói hỗ trợ & Trợ Lý Ảo PetGen
+
+| 🎁 Gói | 🎟️ Vé đặc biệt | 💸 Giá |
+|-------|----------------|--------|
+| Single Pack | 1 vé triển lãm · 2 guest pass | $110 / năm  
+| Family Pack | 4 vé · 4 guest pass | $200 / năm  
+| Patron Pack | 5 vé · 6 guest pass | $4,000 / năm  
+| Premium Pack | 5 vé · 6 guest pass · quyền riêng | $40,000 / năm  
+
 ## 📊 Bảng so sánh PetGen Cipher vs. BigTech Stack & GitLab DevOps
 
 | ⚙️ Tiêu chí / Stack             | 🐾 PetGen Cipher | 🧠 Microsoft Copilot | 🧬 Google Vertex AI | 🧪 GitLab DevOps |
