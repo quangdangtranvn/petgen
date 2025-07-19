@@ -82,6 +82,8 @@
     <button class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition" id="feedBtn">
      Feed Petlling
     </button>
+    <button onclick="loadLang('sibs-only.lang')">Xem NFTs</button>
+<div id="lang-output" class="glowing-panel"></div>
    </section>
   </main>
   <script>
@@ -111,6 +113,20 @@
     });
 
     updateBars();
+    function loadLang(fileName) {
+  fetch(`/gtx-lang/${fileName}`)
+    .then(res => res.text())
+    .then(content => {
+      // Parse nội dung lang
+      const lines = content.split('\n');
+      lines.forEach(line => {
+        if (line.startsWith('🧿')) {
+          document.getElementById('lang-output').innerHTML += `<p>${line}</p>`;
+        }
+      });
+    });
+}
+loadLang("sibs-only.lang");
   </script>
  </body>
 </html>
