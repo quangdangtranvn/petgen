@@ -15,7 +15,7 @@
 
 → Giao diện glowing sẽ hiện tab thần thú · Glowing UI tabs will render immediately.
 
-| [UI](https://wallet.kesug.com/go/) |
+| [UI](https://wallet.kesug.com/go/) |  [Autobot Trading](https://wallet.kesug.com/go/bot) | 
 [>Inspect Code Only](https://github.com/quangdangtranvn/petgen/blob/main/launcher.html) |
 [Petgen Cipher](https://petgen.rf.gd/) | [Hướng dẫn triển khai copilot WEB4 trên điện thoại thông minh hay xbox 🇻🇳 || Video Guild Moblie 🎮](https://youtu.be/dKkyz1-yRa4?si=ziWzkDYYuqsjKdF9)《
 
