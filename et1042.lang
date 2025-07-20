@@ -44,4 +44,7 @@ gui_trigger:
   module: "UCUC_Link Protocol"
   action: "Tap-to-Transfer Emotional Tokens"
   rate: "1000 EQ/min when signal is verified by Layer Ục"
+contextual:
+contextual_note.en: "This section reflects emotional resonance during civic transition."
+contextual_note.vi: "Phân đoạn này phản ánh cộng hưởng cảm xúc trong giai đoạn chuyển giao dân sự."
 }
