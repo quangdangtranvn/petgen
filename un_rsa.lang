@@ -31,3 +31,34 @@ link_repo   = "https://github.com/quangdangtranvn/petgen"
 gtx_template = "gtx-lang/superman-x1042.lang"
 cdn_images   = "cdn.quangbluekie.io/images/"
 treaty_file  = "rsa-treaty-sov-vault.md"
+
+[united nation RSA]
+## UN_RSA Documentary Reference: Democracy on Trial (2024)
+
+**Document Type:** Public Court Documentary  
+**Source:** FRONTLINE (PBS)  
+**Access:** [Watch with EN-VI Subtitles on Trancy](https://www.trancy.org/vi/youtube/Y44fyh4ap7k)  
+**Use Case:** Policy Benchmarking, Civic Accountability Analysis, Legal Precedents
+
+### Executive Summary 🇺🇸🇻🇳
+
+_This documentary presents a factual investigation into the federal criminal indictment of former U.S. President Donald Trump, focusing on his conduct during and after the 2020 election. It is structured around congressional hearings, expert interviews, and firsthand testimony._  
+_Bộ phim tài liệu trình bày một cuộc điều tra liên bang về việc truy tố hình sự cựu Tổng thống Mỹ Donald Trump, tập trung vào hành vi của ông trong và sau cuộc bầu cử năm 2020. Nội dung bao gồm các phiên điều trần quốc hội, phỏng vấn chuyên gia và lời khai từ nhân chứng._
+
+### Key Sections – Phân đoạn chính
+
+| Time | Title 🇺🇸 | Tiêu đề 🇻🇳 |
+|------|----------|-------------|
+| 00:43 | Donald Trump Indicted | Cựu Tổng thống Donald Trump bị truy tố |
+| 05:10 | Jan. 6 Committee Setup | Thành lập Uỷ ban điều tra vụ ngày 6/1 |
+| 26:14 | What Trump Knew? | Trump biết gì về kết quả bầu cử? |
+| 51:17 | Rusty Bowers' Testimony | Lời khai của nghị sĩ Rusty Bowers |
+| 1:16:37 | Georgia Call Recording | Bằng chứng cuộc gọi tại Georgia |
+| 1:42:10 | Pence & Election Certification | Pence và quá trình chứng nhận |
+| 2:17:55 | Looming Trial | Phiên toà sắp tới của ông Trump |
+
+### Integration Notes
+
+- This source meets **UN RSA referencing standards** for legal documentation analysis.
+- Chapters align with **CA/EIN documentation format** used in legal transparency reports.
+- Recommended for use in **Section 3.2: Democratic Institutions Resilience** within whitepaper deliverables.
