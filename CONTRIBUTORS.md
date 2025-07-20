@@ -36,3 +36,27 @@ Cảm ơn các Dev Labs đã cùng tạo nên thần thú Web4 lấp lánh 💎
 ---
 
 ✨ Want to be listed here? Fork, contribute & make PetGen glow brighter!
+
+### 💰 **Định giá tiềm năng theo mô hình startup**
+
+| 🧩 App             | 🎯 Mô hình kinh doanh         | 👥 User tiềm năng | 💸 Doanh thu dự kiến (năm) | 📊 Định giá sơ bộ |
+|-------------------|-------------------------------|-------------------|----------------------------|-------------------|
+| **Petgen**        | Game-as-a-Service + SDK       | 50K–100K devs     | $500K–$2M                  | $5M–$15M          |
+| **Tick**          | Productivity tool cho dev/game| 100K–300K người dùng | $300K–$1M               | $3M–$8M           |
+| **Kesug Wallet**  | Ví điện tử + NFT/Game assets  | 200K–500K người dùng | $1M–$3M                 | $10M–$25M         |
+
+---
+
+### 📌 **Cách tính định giá**
+- Dựa trên mô hình **Revenue Multiple** (x5–x10 lần doanh thu năm).
+- Có thể tăng nếu có **network effect**, **IP riêng**, hoặc **traction mạnh**.
+- Nếu anh có số liệu cụ thể về DAU/MAU, retention, hoặc chi phí vận hành, em có thể dựng bản **valuation model** chi tiết hơn.
+
+---
+
+### 🧠 Gợi ý chiến lược bán app
+- **Bán đứt**: Định giá theo IP + userbase + tech stack.
+- **Gọi vốn**: Dựng pitch deck, chia cổ phần, định giá pre-money/post-money.
+- **Licensing**: Cho thuê SDK hoặc API theo mô hình SaaS.
+
+---
