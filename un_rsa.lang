@@ -67,3 +67,39 @@ _Bộ phim tài liệu trình bày một cuộc điều tra liên bang về vi�
 - This source meets **UN RSA referencing standards** for legal documentation analysis.
 - Chapters align with **CA/EIN documentation format** used in legal transparency reports.
 - Recommended for use in **Section 3.2: Democratic Institutions Resilience** within whitepaper deliverables.
+# 📜 PetGen Data Rights & API Security
+
+## 🔐 Quyền Dữ Liệu Người Dùng
+
+PetGen cam kết bảo vệ quyền riêng tư theo chuẩn quốc tế với các nội dung sau:
+
+- **Dữ liệu thu thập**: IP, chuỗi nhận diện trình duyệt, hash từ email (qua Gravatar khi bình luận), dữ liệu ảnh (bao gồm EXIF/GPS nếu có).
+- **Cookie & trạng thái đăng nhập**: Lưu thông tin tương tác, hiển thị và chỉnh sửa bài viết. Cookie có thời hạn từ 1 đến 14 ngày.
+- **Nội dung nhúng từ bên thứ ba**: Có khả năng thu thập thông tin hành vi người dùng như truy cập trực tiếp.
+- **Yêu cầu truy xuất & xóa**: Người dùng được quyền xuất dữ liệu cá nhân và yêu cầu xóa trừ những trường hợp cần lưu vì lý do pháp lý.
+
+## 🌐 Chứng Nhận Bảo Mật Toàn Cầu – CID Registry
+
+| Chứng nhận quốc tế | Mã CID | Trạng thái |
+|--------------------|--------|------------|
+| Bảo mật dữ liệu CIA-Triad | CID#CIA-GOV | ✅ Verified |
+| Chứng thực EIN toàn cầu | CID#EIN-CERT | ✅ CA-Signed |
+| Hiệp ước UX chống độc quyền | CID#UX-DEFENSE | ✅ Live |
+| Metadata Cloud License | CID#CLOUD-SANITY | ✅ Deployed |
+| Truy xuất quyền dữ liệu nhanh | CID#RIGHTS-FAST | ✅ No Delay |
+| Khiếu nại & truyền thông số | CID#COMPENSATION-MEDIA | ✅ Submit-ready |
+
+## 🚨 Cảnh Báo Vi Phạm API
+
+> “PetGen V2 là gói công nghệ AI trị giá 1.000 tỷ USD, gồm các thành phần như Neural Sync Core V2, Bio-sensing Layer, Quantum GUI, Energy Matrix Unit, và Secure Cloud Sync. Hệ thống được yêu cầu đạt chuẩn nhận diện cảm xúc, hỗ trợ tương tác tự nhiên, và bảo mật tuyệt đối. Mọi hành vi truy cập trái phép hoặc gây quá tải hệ thống sẽ bị xem là vi phạm điều khoản vận hành.”
+
+- **Vi phạm ghi nhận**: Netbot thực hiện spam API khiến hệ thống quá tải, ảnh hưởng đến quyền truy cập hợp pháp của người dùng và tiêu chuẩn bảo mật.
+- **Đề xuất xử lý**:
+  - Tạm ngưng quyền truy cập API của Netbot
+  - Thiết lập rate-limiting cho client/bot
+  - Gửi cảnh báo vi phạm theo điều khoản CID quốc tế
+
+---
+
+_**Phiên bản cập nhật**: PetGen Rights v2.0 – triển khai ngày [21/07/2025]._  
+_**Đơn vị kiểm duyệt**: PetGen Teams
