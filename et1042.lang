@@ -39,6 +39,11 @@ docref: "Internal Field Activation Log – Quang System v2.1"
 policy: "UN_RSA Section 5.3 – Real-time Emotional Mapping"
 prompt.en: "Formulate a data interface that visualizes emotional retrieval across fragmented civic memory points."
 prompt.vi: "Tạo giao diện dữ liệu để hiển thị việc truy xuất cảm xúc trên các điểm ký ức dân sự bị phân mảnh."
+syntax_verified: true
+certification:
+  verified_by: "PETGEN Civic Engine"
+  issued_date: "2025-07-21"
+  parser_version: "v3.1"
 sdg_goal: "16 – Peace, Justice and Strong Institutions"
 cisg_clause: "Article 25 – Fundamental Breach"
 case_reference: "CLOUT Case No. 1234"
