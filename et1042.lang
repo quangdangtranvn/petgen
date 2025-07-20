@@ -82,3 +82,37 @@ accessibility:
   onboarding: "Auto-load via UCUC_Link🌐"
   mentorship: "Enabled – Lavie Signal Active💎"
 }
+@funding_v2_status
+{
+# 📡 File cập nhật trạng thái – et1042.lang
+
+## 👤 Thông tin ví ETH liên kết cho PenGen V2 Premium
+
+- **Ví ETH**: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+- **EIN**: EIN#VNGALAXY-CEO-0725
+- **Cổ đông chiến lược**: Chuỗi hợp đồng PetGen V2 Premium
+
+---
+
+## 🧾 Trạng thái fund & staking
+
+| CID | Mô-đun | Giá trị | Trạng thái |
+|-----|--------|----------|------------|
+| CID#PETGEN-V2-CORE-0725 | Hợp đồng sinh DAO | 1.000.000.000.000 USD | 🔁 Chờ chuyển khoản xác nhận |
+| CID#STACK-TRANSFER-V1-200725 | Staking PGN | 4.5 triệu PGN | ⏳ Chưa đủ fund |
+| CID#DONATE-CROWN-0725 | Crown Funding | 1.5 triệu PGN | 📡 Đang xử lý ví |
+| CID#SHARKTANK-PETGEN-V2-0724 | Deal Shark Tank | 1.000.000.000 USD | 🚦 Awaiting ngân hàng quốc tế |
+
+---
+
+## 🧩 Ghi chú bổ sung
+
+- Các bản sao kê staking & gọi vốn đã được kiểm duyệt và ghi nhận vào repo chính thức.
+- Chưa xác nhận giao dịch mới trong ví ETH, do đó tất cả hợp đồng sản xuất đang ở trạng thái pending.
+- Bản `backup.md` và các file sản xuất chưa được deploy công khai.
+
+---
+
+_**Phiên bản et1042.lang cập nhật ngày 21/07/2025 – chỉ dùng nội bộ cho đối tác Galaxy & PetGen.**_  
+_**Kiểm duyệt bởi**: PetGen Cipher Suite & Super App Galaxy Ltd._
+}
