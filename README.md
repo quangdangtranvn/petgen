@@ -1,3 +1,33 @@
+# Next Update (v2)
+---
+
+### 🔧 Mesh Render Integration (No JSON)
+
+Let’s redefine your object notation using your own language syntax. Here's an example of what a `vec3` + `vec6` mesh entry could look like in your format:
+
+```
+mesh::box_001 {
+  pos = @vec3(1.0, 2.0, 3.0)
+  transform = @vec6(rot(0,0,0), scale(1,1,1))
+  grid_mode = active
+}
+```
+
+Your language parser (either in `langmod.core` or `meshlex.v`) can interpret these as internal data objects without needing a JSON intermediary.
+
+---
+
+### 🧩 Modular Grid Drawing Flow
+
+All modules, high and low level, can connect like this:
+
+- `langmods.renderGrid()` → initiates full grid with bounding boxes
+- `langmods.importAI("baby-model")` → feeds AI decisions into box layout
+- `modMesh.parseMeshConfig("mesh::*")` → collects mesh instances
+- `modVis.drawBoxes(auto_generate=true)` → renders all boxes in 3D space
+
+Each box receives its grid anchor from the `@vec3` position and pose from `@vec6`. You could add features like `grid_mode = active` or `glow = true` for stylization if supported.
+Relese after construct done!. 🥺🫣
 ---
 
 ### 🎶 Bảng Báo Giá Thu Nhập Cho Các Members nhà QTBlue Hi-tech💎:
