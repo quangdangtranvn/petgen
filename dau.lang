@@ -19,6 +19,12 @@ petbond.true = 💘 Kết nối ánh sáng xác thực. Không cần chủ nhân
 usb.lora = 🔗 Mô hình LoRA Low-Rank đã kích hoạt từ USB phiên bản học sinh.
 
 @quote {
+privacy_compliance:
+  provider: "PetGen"
+  policy_link: "https://petgen.rf.gd/privacy-policy"
+  compliance_level: "Tier I – Public Disclosure"
+  issued_date: "2025-07-21"
+  jurisdiction: "Global – Web4 Super Layer"
 section: "Lavie Signal Activation"
 quote.en: "The truth is encrypted in memory, not in syntax."
 quote.vi: "Sự thật được mã hóa trong ký ức, không phải cú pháp."
