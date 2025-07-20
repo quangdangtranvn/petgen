@@ -40,6 +40,8 @@ policy: "UN_RSA Section 5.3 – Real-time Emotional Mapping"
 prompt.en: "Formulate a data interface that visualizes emotional retrieval across fragmented civic memory points."
 prompt.vi: "Tạo giao diện dữ liệu để hiển thị việc truy xuất cảm xúc trên các điểm ký ức dân sự bị phân mảnh."
 sdg_goal: "16 – Peace, Justice and Strong Institutions"
+cisg_clause: "Article 25 – Fundamental Breach"
+case_reference: "CLOUT Case No. 1234"
 gui_trigger:
   module: "UCUC_Link Protocol"
   action: "Tap-to-Transfer Emotional Tokens"
