@@ -1,3 +1,14 @@
+### ⚙️ So sánh PetGen với các Game Engine hiện tại
+
+| Engine / Stack        | Ưu điểm (Pros)                                                                 | Nhược điểm (Cons)                                                              | Độ phù hợp với Dev Solo (%) |
+|-----------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------|
+| **PetGen Cipher Suite** | - UI glowing native không cần framework<br>- Mint NFT bằng AI prompt<br>- Triển khai nhanh qua CDN<br>- Session replay & webhook log | - Không có editor đồ họa<br>- Cần hiểu cấu trúc Web4<br>- Chủ yếu cho web/NFT | **90%** |
+| **Unity**             | - Editor mạnh mẽ<br>- Hỗ trợ 2D/3D<br>- Asset Store phong phú<br>- Cộng đồng lớn | - Cần cài đặt nặng<br>- Học C# bắt buộc<br>- Không tối ưu cho Web3/NFT         | **70%** |
+| **Unreal Engine**     | - Đồ họa đỉnh cao<br>- Blueprint dễ học<br>- Hỗ trợ VR/AR tốt                  | - Quá nặng với dev solo<br>- Cần máy mạnh<br>- Web3 hỗ trợ hạn chế             | **60%** |
+| **Godot**             | - Nhẹ, open-source<br>- GDScript dễ học<br>- Tùy biến cao                      | - Web3 chưa tích hợp tốt<br>- Asset ít hơn Unity                               | **75%** |
+| **Three.js**          | - Native WebGL<br>- Tối ưu cho web<br>- Dễ tích hợp blockchain                 | - Không có editor<br>- Cần code tay nhiều<br>- Không phù hợp cho mobile game   | **80%** |
+| **PlayCanvas**        | - Web-based editor<br>- Tích hợp dễ với Web3<br>- Dễ chia sẻ demo              | - Giới hạn tính năng nâng cao<br>- Cộng đồng nhỏ hơn                            | **85%** |
+
 # Next Update (v2)
 ---
 
