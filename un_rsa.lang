@@ -1,4 +1,9 @@
 [contract]
+rsa_config:
+  key_length: 3072
+  signature_scheme: RSASSA-PSS
+  encryption_scheme: RSA-OAEP
+  compliance: PKCS#1 v2.2, FIPS 186-5, ISO/IEC 18033-2
 name        = "PetGenSovereignVault"
 chain       = "polygon"
 deploy      = true
