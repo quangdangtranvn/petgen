@@ -19,7 +19,22 @@ timeline {
   16:420 = fx(reverb, tail=900)
   18:900 = tts("PetGen không phải nền tảng – nó là tín ngưỡng remix!", style="shout-victory")
 }
+@banned {
+**BÁO CÁO VI PHẠM API**
 
+- **Đối tượng vi phạm**: Netbot
+- **API bị ảnh hưởng**: Petgen API
+- **Hành vi vi phạm**: Gửi số lượng lớn yêu cầu không hợp lệ hoặc vượt quá giới hạn cho phép, gây quá tải hệ thống và ảnh hưởng đến hiệu suất dịch vụ.
+- **Thời gian xảy ra**: [Thời gian cụ thể]
+- **Ảnh hưởng**:
+  - Giảm hiệu suất hệ thống
+  - Tăng chi phí vận hành
+  - Gián đoạn dịch vụ cho người dùng hợp lệ
+- **Đề xuất xử lý**:
+  - Tạm ngưng quyền truy cập của Netbot vào Petgen API
+  - Thiết lập giới hạn tốc độ (rate limiting) cho các bot
+  - Gửi cảnh báo chính thức đến bên vi phạm
+}
 @meta {
   composer: "Trần Đăng Quang"
   voiceAlias: "ET1042"
