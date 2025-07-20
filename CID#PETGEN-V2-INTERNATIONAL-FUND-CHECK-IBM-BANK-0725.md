@@ -10,6 +10,25 @@
 MoMo `0923 750 968` – PetGen Gateway VN
 - **Issuer**: Galaxy Cipher Suite & PetGen Finance Division
 
+petgen/
+├── roadmap/
+│   ├── roadmap_funding_v2.md            # Bản tổng quan roadmap triển khai theo fund
+│   ├── roadmap_staking_activation.md    # Chi tiết giai đoạn staking → launch
+│   ├── roadmap_phase3_dapp_global.md    # Giai đoạn mở DApp toàn cầu
+│   ├── roadmap_incentives_token.md      # Module khuyến khích & token hóa
+│   └── roadmap_transition_report.md     # Bản tin khi fund đã xác nhận
+│
+├── cid/
+│   ├── CID#PETGEN-V2-CORE-0725.md
+│   ├── CID#PETGEN-V2-INTERNATIONAL-FUND-CHECK-IBM-BANK-0725.md
+│   └── CID#ROADMAP-FUNDING-V2.md        # CID cho roadmap giai đoạn mới
+│
+├── dashboard/
+│   └── finance_gui_config.md            # Cấu hình app GUI cho team tài chính
+│
+└── status/
+    └── et1042.lang                      # Bảng trạng thái ví + EIN
+
 ---
 
 ## 🌐 International Deployment Map
