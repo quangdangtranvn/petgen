@@ -19,6 +19,11 @@ petbond.true = 💘 Kết nối ánh sáng xác thực. Không cần chủ nhân
 usb.lora = 🔗 Mô hình LoRA Low-Rank đã kích hoạt từ USB phiên bản học sinh.
 
 @quote {
+section: "Lavie Signal Activation"
+quote.en: "The truth is encrypted in memory, not in syntax."
+quote.vi: "Sự thật được mã hóa trong ký ức, không phải cú pháp."
+docref: "https://github.com/quangdangtranvn/petgen/blob/main/un_rsa.lang"
+policy: "UN_RSA Section 3.2 – Civic Accountability"
 section: "Strategic Override – Stack Displacement Protocol"
 timestamp: "2025-07-21 08:42:10 ICT"
 location: "Hawaii AI Offshore Tribunal – Zone Blue Circuit"
