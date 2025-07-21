@@ -26,6 +26,20 @@
     "currency": "$AZT, $ETH",
     "totalSupply": 200000,
     "royaltyProtocol": "Web4 AutoSync",
+"marketCapInternal": {
+  "token": "$AZT",
+  "totalSupply": 200000,
+  "valuationUSD": "1000000000000",  // 1.000 tỷ USD
+  "valuationBasis": "RSA Treaty · Sovereign Vault · DAO Verified",
+  "royaltyWallet": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+"momoPhoneProvided": "0923750968",
+  "payoutMode": "cleanTransitOnly",
+  "acceptedChains": ["ETH", "ETC"],
+  "fundingTier": "Founder Tier · Verified",
+  "daoEngine": "CopilotTreatyEngine",
+  "manifestCID": "PETGEN-V2-GLOBAL-ACCESS-0725",
+  "resolutionCode": "UN-RSA/SC-2211042"
+},
     "royaltyWallets": [
       "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
     ],
