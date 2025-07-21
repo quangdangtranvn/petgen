@@ -23,8 +23,8 @@
     "resolutionCode": "UN-RSA/SC-2211042"
   },
   "finance": {
-    "currency": "$AZT",
-    "totalSupply": 20000,
+    "currency": "$AZT, $ETH",
+    "totalSupply": 200000,
     "royaltyProtocol": "Web4 AutoSync",
     "royaltyWallets": [
       "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
