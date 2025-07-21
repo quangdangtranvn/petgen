@@ -2,7 +2,20 @@
 const express = require('express');
 const app = express();
 const config = require('./config');
+const baby = require('./baby');
+await baby.rpcStatus();            // Kiểm tra RPC
+export async function route(){
+baby.dexRouter('0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984');        // Điều hướng từ ví DEX
+baby.meta.BAE.logoURI;            // Truy xuất logo token BAE
+baby.rpcAuth('token', 'ip');      
+// Xác thực truy cập RPC
+baby.rpcAuth('KESUG_SECRET', '123.456.789.000'); // kiểm tra truy cập RPC
 
+  return {
+    transit,
+    logo,
+    auth
+}
 // Giả lập render từ ein.lang (metadata Web4)
 const einLangRender = {
   protocol: "Web4",
