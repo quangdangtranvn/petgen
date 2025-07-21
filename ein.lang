@@ -83,6 +83,7 @@
     "webhookLog": "https://cdn.quangbluekie.io/php/log-mint/index.php",
     "passportVerified": true,
     "activationVia": "Web4 Launcher"
+   "lastUpdatedFromVersion": "2025-07-21T14:52:00+07:00"
   }
 }
 }
