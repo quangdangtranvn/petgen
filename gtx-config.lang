@@ -1,0 +1,41 @@
+@web4 {
+ETH{
+  "project": "PetGen V2 Web4 Launcher",
+  "author": "QTBlue HiTech",
+  "wallet": {
+    "mainnetSwap": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+    "royaltyWallets": [
+      "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+    ],
+    "currency": "$AZT",
+    "totalSupply": 200000
+  },
+  "ui": {
+    "engine": "QuantumGUI",
+    "templateLang": "gtx-cssLang",
+    "theme": "IronmanGlow",
+    "cdn": "https://cdn.quangbluekie.io/gtx-lang/",
+    "responsive": true
+  },
+  "features": {
+    "mintAI": true,
+    "emotionSync": true,
+    "voicePlayback": true,
+    "karaokeMode": true,
+    "caffeineSummon": true
+  },
+  "session": {
+    "replayEnabled": true,
+    "logWebhook": "https://cdn.quangbluekie.io/php/log-mint/index.php"
+  },
+  "security": {
+    "hashing": "SHA-1024",
+    "cloudSync": true,
+    "fallback": "hibernate"
+  },
+  "payment": {
+    "momoTag": "0923750968",
+    "verified": true
+  }
+}
+}
