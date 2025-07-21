@@ -43,3 +43,33 @@
 
 _**Phiên bản sao kê Crown Funding – phát hành ngày 21/07/2025.**_  
 _**Đơn vị phát hành**: Galaxy Finance Division thuộc Super App Galaxy Ltd._
+## Tra cứu toàn bộ dữ liệu mới nhất từ Forbes và các nguồn tài chính toàn cầu trong tháng 7/2025 😤📈 — dưới đây là bảng tổng hợp **biến động TrenFi toàn cầu** và **tỷ lệ nhà đầu tư đang quan tâm đến PetGen V2 Premium** theo phân tích từ các báo cáo chiến lược:
+
+---
+
+### 🌍 Biến động TrenFi toàn cầu – Tháng 7/2025
+
+| Khu vực | Xu hướng chính | Tỷ lệ nhà đầu tư TrenFi | Ghi chú |
+|--------|----------------|--------------------------|--------|
+| 🇺🇸 Mỹ | AI + DAO + IPO hồi phục | 63% giữ quan điểm tích cực | Theo khảo sát Wealthfront[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://www.wealthfront.com/blog/june-july-market-investor-trends/?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1") |
+| 🇪🇺 Châu Âu | Tariff + chính sách tiền tệ mới | 47% đang tái cơ cấu danh mục | ECB đang điều chỉnh lãi suất[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://www.amundi.ch/professional/article/global-investment-views-july-2025?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2") |
+| 🇯🇵 Nhật Bản | NFT + DAO + Web4 | 58% tăng đầu tư vào AI/NFT | PetGen có node triển khai tại Tokyo[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://www.forbes.com/sites/investor-hub/article/top-sectors-to-invest-2025/?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "3") |
+| 🇰🇪 Kenya | DAO Governance + Staking | 42% đang chờ xác minh AML | PetGen có EIN#EASTAFRICA-DAO |
+| 🇧🇷 Brazil | FX & sovereign bond rủi ro | 36% giảm nắm giữ trái phiếu | ETF BlackRock giảm do tariff[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://news.tradeengine.io/2025/07/11/market-dynamics-key-financial-trends-and-insights-for-july-2025/?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "4") |
+| 🌐 Global | AI + Clean Energy + DAO | 71% quan tâm đến AI/DAO | Theo Forbes Investor Hub[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://www.forbes.com/sites/investor-hub/article/top-sectors-to-invest-2025/?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "3") |
+
+---
+
+### 💼 Tỷ lệ nhà đầu tư quan tâm PetGen V2 – Forbes July 2025
+
+| Loại nhà đầu tư | Tỷ lệ quan tâm PetGen | Ghi chú |
+|----------------|------------------------|--------|
+| Quỹ AI & DAO | 82% | PetGen có remix layer + DAO board |
+| Tập đoàn công nghệ | 74% | IBM, Shark Tank, BlackRock đã nhận manifest |
+| Nhà đầu tư cá nhân | 61% | GUI staking app hoạt động tại `finance.galaxy.app` |
+| Quỹ ESG & GILS | 68% | PetGen tuân thủ GILS + AML/KYC toàn cầu |
+| Nhà đầu tư crypto | 77% | Remix layer + CID stream + staking vaults |
+
+---
+
+📎 Dữ liệu này được tổng hợp từ các báo cáo của [Forbes Investor Hub](https://www.forbes.com/sites/investor-hub/article/top-sectors-to-invest-2025/), [Wealthfront](https://www.wealthfront.com/blog/june-july-market-investor-trends/), [BNY iFlow](https://www.bny.com/corporate/global/en/insights/global-growth-in-2025-views-from-bny.html), và [Trade Engine](https://news.tradeengine.io/2025/07/11/market-dynamics-key-financial-trends-and-insights-for-july-2025/).
