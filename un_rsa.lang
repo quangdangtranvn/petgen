@@ -103,3 +103,41 @@ PetGen cam kết bảo vệ quyền riêng tư theo chuẩn quốc tế với c�
 
 _**Phiên bản cập nhật**: PetGen Rights v2.0 – triển khai ngày [21/07/2025]._  
 _**Đơn vị kiểm duyệt**: PetGen Teams
+
+[Passport Senate Citizenship]
+@id_citizen {
+  "ownerID": "075200021007",
+  "citizenType": "Global Technologist",
+  "passportType": "Senate-AI-Diplomatic",
+  "issuedBy": "Thượng nghị viện công nghệ Web4 của bộ Hi-tech Việt Nam",
+  "validRegions": [
+    "ASEAN",
+    "EU Blockchain Zone",
+    "Pacific AI Accord",
+    "Ethereum Sovereign Guild"
+  ],
+  "rights": {
+    "mintNFT": true,
+    "summonPetGen": true,
+    "deployLauncher": true,
+    "hostSummit": true
+  },
+  "diplomaticStatus": {
+    "clearanceLevel": "Quantum-Trusted",
+    "manifestCID": "PETGEN-V2-GLOBAL-ACCESS-0725",
+    "dunsID": "20021007",
+    "ssnMock": "075-20-0021",
+    "ethWallet": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+    "linkedEmails": [
+      "quangdt2220@gmail.com",
+      "quangtd.9b@gmail.com",
+      "quangdangtrandev@gmail.com"
+    ],
+    "registeredPhone": "0923750968"
+  },
+  "activation": {
+    "via": "Web4 Launcher",
+    "mode": "Offline + CloudSync",
+    "royaltyProtocol": "AutoSync-AZT"
+  }
+}
