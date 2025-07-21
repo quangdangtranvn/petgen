@@ -50,6 +50,53 @@ ETH {
     "cloudSync": true,
     "fallbackMode": "hibernate"
   }
+},
+{
+  "project": "PetGen V2 Cipher Suite",
+  "author": "QTBlue HiTech",
+  "mainWallet": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+  "currency": {
+    "token": "$AZT",
+    "totalSupply": 20000,
+    "network": "ETH-compatible"
+  },
+  "royalty": {
+    "enabled": true,
+    "protocol": "Web4-AutoSync",
+    "distribution": "per mint",
+    "wallets": ["0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"]
+  },
+  "payment": {
+    "momo": "0923750968",
+    "verified": true,
+    "mode": "offline + onchain sync"
+  },
+  "features": {
+    "AI_Mint": true,
+    "EmotionReader": true,
+    "VoicePlayback": true,
+    "KaraokeMode": true,
+    "SummonCaffeine": true
+  },
+  "interface": {
+    "engine": "QuantumGUI",
+    "templateLang": "gtx-cssLang",
+    "hologram": "Ironman3D",
+    "responsive": true,
+    "sourceCDN": "https://cdn.quangbluekie.io/gtx-lang/"
+  },
+  "security": {
+    "hashing": "SHA-1024",
+    "cloudSync": true,
+    "backupMode": "hibernate"
+  },
+  "launcher": {
+    "type": "portable",
+    "USBReady": true,
+    "sessionReplay": true,
+    "nftTemplate": "nft-template.json",
+    "webhookLog": "https://cdn.quangbluekie.io/php/log-mint/index.php"
+  }
 }
 }
 [https]
