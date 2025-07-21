@@ -4,6 +4,12 @@ const app = express();
 const config = require('./config');
 const baby = require('./baby');
 await baby.rpcStatus();            // Kiểm tra RPC
+const Web4Rate = 0.0022; // phải đúng rate như trong launcher config
+
+module.exports = function convertAZTtoBAE(aztAmount, rate = Web4Rate) {
+  if (rate !== Web4Rate) {
+    throw new Error("🚫 Sai rate! Không khớp hợp đồng Web4.");
+  }
 export async function route(){
 baby.dexRouter('0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984');        // Điều hướng từ ví DEX
 baby.meta.BAE.logoURI;            // Truy xuất logo token BAE
@@ -222,6 +228,8 @@ function setupForm() {
 }
 
 function initApp() {
+convertAZTtoBAE(PetGenApp.strategy.creditAmount,rate = Web4Rate);
+//logical ups
   unlockBot();
   setupForm();
   renderPets();
