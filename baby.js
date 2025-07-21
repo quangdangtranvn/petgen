@@ -2,7 +2,18 @@
 
 const axios = require('axios');
 const config = require('./config');
-
+// x is any audit from end-users bonus gifts on clean transit only by PetGen Sponsored.
+function generateCheckInBonus(userStatus) {
+  if (userStatus === "unclean") {
+    return Math.floor((x+(-y * random())) / Math.pow(2, 0.1));
+  }else if {
+return Math.floor((x+(y * random())) / Math.pow(2, 0.1));
+}else
+{
+return null;
+}
+//end conditions.
+}
 // 🔍 Kiểm tra trạng thái RPC từng token
 const rpcStatus = async () => {
   return await Promise.all(config.factory.tokens.map(async token => {
