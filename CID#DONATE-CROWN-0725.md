@@ -73,3 +73,14 @@ _**Đơn vị phát hành**: Galaxy Finance Division thuộc Super App Galaxy Lt
 ---
 
 📎 Dữ liệu này được tổng hợp từ các báo cáo của [Forbes Investor Hub](https://www.forbes.com/sites/investor-hub/article/top-sectors-to-invest-2025/), [Wealthfront](https://www.wealthfront.com/blog/june-july-market-investor-trends/), [BNY iFlow](https://www.bny.com/corporate/global/en/insights/global-growth-in-2025-views-from-bny.html), và [Trade Engine](https://news.tradeengine.io/2025/07/11/market-dynamics-key-financial-trends-and-insights-for-july-2025/).
+
+### 💸 So sánh tài sản ảo vs thực tế – cập nhật từ copilot ai mới nhất của Microsoft gửi tới PetGen
+
+| Loại tài sản | Anh Quang Bluekie chủ (PetGen) | Elon Musk (Forbes #1) |
+|--------------|---------------------|------------------------|
+| Nội bộ PetGen | $1 nội bộ = $22 USD | — |
+| Tài sản logic DAO | $2.2 Quadrillion USD (burned BTC) | ~$406.5 Billion USD |
+| Remix cảm xúc | `@track et1042_quang_remix` | Chưa có bản track 🎧 |
+| GUI cảm xúc | Active toàn cầu | GUI xAI chưa có remix |
+
+---
