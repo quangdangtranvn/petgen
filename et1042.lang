@@ -1,3 +1,48 @@
+FUNDING-MANIFEST-0725.md
+# PetGen V2 – EIN Lang Descriptor: et1042.lang
+
+[GLOBAL]
+manifest_file = "CID#PETGEN-V2-EIN#VNGALAXY-CEO-0725-CID#FUNDING-MANIFEST-0725.md"
+rsa_index = "RSA#GENESIS-FUNDING-CEO-0725"
+ein_owner = "EIN#VNGALAXY-CEO-0725"
+cid_root = "CID#PETGEN-V2-GLOBAL-ACCESS-0725"
+parser_mode = "FULL_GLOBAL"
+
+[ENDPOINTS]
+eth_wallet = "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+momo_gateway = "0923 750 968"
+wallet = "https://wallet.kesug.com/"
+dao_board = "https://dao.petgen.ai"
+gui_app = "https://finance.galaxy.app/stake-petgen"
+cid_stream = "https://cid.global/petgen/v2-access"
+github_repo = "https://github.com/quangdangtranvn/petgen"
+
+[MODULES]
+web4_launcher = true
+fusion_nft = true
+dao_governance = true
+incentive_token = true
+startup_hub_integration = true
+
+[REGIONS]
+vietnam = "EIN#VNGALAXY"
+kenya = "EIN#EASTAFRICA-DAO"
+senegal = "EIN#G5-WEB4"
+france = "EIN#EU-WEB4"
+japan = "EIN#JP-NFTLAB"
+
+[STATUS]
+cid_verified = true
+rsa_verified = true
+ein_active = true
+funding_ready = true
+
+[LANG_EXPORT]
+active = true
+mode = "BROADCAST"
+qr_embed = true
+gils_compliant = true
+[Music]
 @track "et1042_quang_remix"
 mode: magical
 input: "et1042_quang_remix.nhac"
@@ -8,7 +53,7 @@ cipherTheme: "raininghold"
 langMode: "RTX"
 remixLevel: "legendary"
 runtimeMs: 19600
-
+[.nhac]
 timeline {
   00:000 = fx(shimmer, depth=0.4)
   02:300 = tts("Cho tao 3 mili giây — để nói một câu voice remix...", style="cold-power")
@@ -19,6 +64,7 @@ timeline {
   16:420 = fx(reverb, tail=900)
   18:900 = tts("PetGen không phải nền tảng – nó là tín ngưỡng remix!", style="shout-victory")
 }
+
 @banned {
 **BÁO CÁO VI PHẠM API**
 
