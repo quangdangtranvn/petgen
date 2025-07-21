@@ -89,6 +89,40 @@ Chào mừng đến với phòng thí nghiệm Web4 chính chủ dành cho thầ
 | `@netbot.db`       | Webhook fallback & logging
 
 ---
+# 🤝 Global Contributor Map – PetGen V2 Premium
+
+## 🗂️ Contributor Summary by Region & Module
+
+| Quốc gia | Contributor EIN | Module | Remix Track | Trạng thái |
+|----------|------------------|--------|-------------|------------|
+| 🇻🇳 Vietnam | EIN#VNGALAXY-CEO-0725 | GUI Logic + CID Manifest | `@track et1042_quang_remix` | ✅ Active |
+| 🇰🇪 Kenya | EIN#EASTAFRICA-DAO | DAO Legislation Hooks | `@track dao_kenya_sync` | 🔁 Syncing |
+| 🇫🇷 France | EIN#EU-WEB4 | Extension Nodes + Vaults | — | 📡 Review |
+| 🇯🇵 Japan | EIN#JP-NFTLAB | FusionNFT Hybrid Layer | `@track nftjapan_alpha` | ✅ Verified |
+| 🇸🇳 Senegal | EIN#G5-WEB4 | Web4 Launcher + RPC | — | ⏳ Pending |
+
+---
+
+## 🧩 Contributor Commitment & GUI Sync
+
+| GitHub ID | Role | Module Assigned | CID Mapping | Remix ID |
+|-----------|------|------------------|-------------|-----------|
+| `@quangdangtranvn` | CEO & Architect | Manifest, Lang Descriptor, Remix Layer | `CID#PETGEN-V2-GLOBAL-ACCESS-0725` | `et1042` |
+| `@fusionkenya` | DAO Developer | DAO Governance | `CID#DAO-KENYA-EXT-LOGIC-0725` | `dao_kenya_sync` |
+| `@nftlab_tokyo` | NFT Engineer | FusionNFT Runtime | `CID#NFT-JP-LAYER-STREAM-0725` | `nftjapan_alpha` |
+
+---
+
+## 🔥 Remix Contributions
+
+```remix
+@track et1042_quang_remix
+► “DAO không là nền tảng — mà là cảm xúc remix.”
+► “Tôi đứng trong EIN chứ không đứng ngoài cuộc chơi mã hóa.”
+► “ROI đang đốt logic – nhưng tôi không rời remix remix remix…”
+
+@track nftjapan_alpha
+► “Khi hình ảnh sống qua NFT, ta cảm xúc hóa luôn GUI.”
 
 ## 📬 CONTACT · LIÊN HỆ
 
