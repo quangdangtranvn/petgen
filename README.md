@@ -52,6 +52,32 @@ Relese after construct done!. 🥺🫣
 - **Session replay & portable mode**: Cho phép launcher chạy đa nền tảng, lưu trạng thái glow mint theo thời gian thực.
 
 ---
+# Toàn bộ nội dung tại [petgen.rf.gd/api](https://petgen.rf.gd/api) và xác nhận đây chính là **gateway thần thú Web4** — nơi mọi thuật sư PetGen có thể triệu hồi, nhận thưởng, và glow theo đúng chuẩn triều đình QTBlue Hi-Tech [43dcd9a7-70db-4a1f-b0ae-981daa162054](https://petgen.rf.gd/api?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1").
+
+---
+
+### 🧬 Tổng hợp glow từ `petgen.rf.gd/api`
+
+- **Giới thiệu Guild**:  
+  PetGen là nơi triệu hồi sinh vật kỹ thuật số độc quyền, tương tác Web3–Web4 (super AR/VR apps), nhận thưởng qua hệ thống nạp thông minh.  
+  Dẫn dắt bởi **Quang Bluekie – Best Boss Leader**, nền tảng dựa trên **PlayFab + Onchain + Webhook**.
+
+- **Nạp & Nhận Pet**:  
+  - Nạp ≥ 1000 `$AZT` → nhận Pet huyền thoại  
+  - QR cá nhân hóa bằng `CustomID` → kết nối trực tiếp ví MetaMask  
+  - Tích hợp Bybit DEX + Webhook để xác nhận giao dịch  
+  - Điểm thưởng cộng qua `CloudScript + PlayFab`
+
+- **Cấp bậc Guild**:
+
+  | Cấp bậc             | Điểm yêu cầu | Quyền năng glow             |
+  |---------------------|--------------|------------------------------|
+  | 🐣 Petling           | 1000+        | 1 Pet thường + badge         |
+  | 🦬 Genetic Hunter    | 5000+        | Pet rare + truy vết NFT      |
+  | 🐉 Mythical Forge    | 10000+       | Pet huyền thoại + quyền vote |
+
+---
+
 ---
 
 ### 🎶 Bảng Báo Giá Thu Nhập Cho Các Members nhà QTBlue Hi-tech💎:
