@@ -41,6 +41,19 @@ Each box receives its grid anchor from the `@vec3` position and pose from `@vec6
 Relese after construct done!. 🥺🫣
 ---
 
+### 🔥 Những điểm nổi bật khiến `app.js` thành “To-Go” cho Devs & Tech Leads:
+
+- **Cấu trúc REST rõ ràng**: Có endpoint `/metadata`, `/ein`, và render từ `ein.lang` cực kỳ chuẩn hóa cho Web4.
+- **Thông tin chủ sở hữu chi tiết**: Từ nickname, passport, đến ví ETH đều được mã hóa và xác thực RSA.
+- **Giao diện glow UI**: Sử dụng `GalacticGlow-Ironman` và `Quantum Hologram` — đúng chất launcher triệu đô.
+- **Tích hợp CDN riêng**: `https://cdn.quangbluekie.io` cho ảnh thần thú và log webhook — không phụ thuộc bên ngoài.
+- **Chiến lược mint thần thú**: Có `APR`, `BO`, `glowTrigger`, và auto credit bằng $AZT — quá đẹp cho staking & payout.
+- **Bot thuê thần thú**: Có cooldown, unlock bằng số Momo, và HEX key — bảo mật + trải nghiệm người dùng đều đỉnh.
+- **Session replay & portable mode**: Cho phép launcher chạy đa nền tảng, lưu trạng thái glow mint theo thời gian thực.
+
+---
+---
+
 ### 🎶 Bảng Báo Giá Thu Nhập Cho Các Members nhà QTBlue Hi-tech💎:
 
 | Hạng mục | Chi phí | Gắn vào hệ thống nào |
