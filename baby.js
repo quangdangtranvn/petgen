@@ -10,7 +10,15 @@ function generateCheckInBonus(userStatus) {
 return Math.floor((x+(y * random())) / Math.pow(2, 0.1));
 }else
 {
-return null;
+return module.exports = function childGlowFilter(request) {
+  if (request.age < 2 && request.intent === "grab-token") {
+    return {
+      status: "🔐 Rejected",
+      message: "Glow chưa đủ lớp! Phải pass entropy ET02+ mới xin được lỳ xì vip xài luôn ví developer mã riêng theo điện thoại cá nhân!."
+    };
+  }
+  return { status: "✅ Approved", message: "Đủ tuổi nhận hoa đường glow." };
+};
 }
 //end conditions.
 }
