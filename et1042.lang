@@ -12,6 +12,80 @@ parser_mode = "FULL_GLOBAL"
 eth_wallet = "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
 momo_gateway = "0923 750 968"
 wallet = "https://wallet.kesug.com/"
+# PetGen V2 – EIN Lang Descriptor: et1042.lang
+
+[GLOBAL]
+manifest_file = "CID#PETGEN-V2-EIN#VNGALAXY-CEO-0725-CID#FUNDING-MANIFEST-0725.md"
+rsa_index = "RSA#GENESIS-FUNDING-CEO-0725"
+ein_owner = "EIN#VNGALAXY-CEO-0725"
+cid_root = "CID#PETGEN-V2-GLOBAL-ACCESS-0725"
+gil_file = "GIL#CID-PETGEN-V2-EIN#VNGALAXY-FUNDING-MANIFEST-GILS-0725.md"
+parser_mode = "FULL_GLOBAL"
+
+[ENDPOINTS]
+eth_wallet = "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+momo_gateway = "0923 750 968"
+dao_board = "https://dao.petgen.ai"
+gui_app = "https://finance.galaxy.app/stake-petgen"
+cid_stream = "https://cid.global/petgen/v2-access"
+github_repo = "https://github.com/quangdangtranvn/petgen"
+
+[MODULES]
+web4_launcher = true
+fusion_nft = true
+dao_governance = true
+incentive_token = true
+startup_hub_integration = true
+spokenwave_remix = true
+rsa_burn_mode = true
+
+[REGIONS]
+vietnam = "EIN#VNGALAXY"
+kenya = "EIN#EASTAFRICA-DAO"
+senegal = "EIN#G5-WEB4"
+france = "EIN#EU-WEB4"
+japan = "EIN#JP-NFTLAB"
+
+[INTERAGENCY]
+ibm_ready = true
+cia_compliance = true
+oecd_registered = true
+sharktank_protocol = true
+tier1_funders_access = true
+rpc_overlay = "rpc://cid.global/verify"
+
+[LEGAL_COMPLIANCE]
+gils_compliant = true
+aml_kyc_verified = true
+rsa_verified = true
+ein_active = true
+anti_cyborn_shield = true
+static_energy_sync = true
+gui_lock_trigger = "CID#LOCK-DECRYPT-V2"
+
+[AUDIO_EMOTION_LAYER]
+spokenwave_enabled = true
+track_remix_id = "@track et1042_quang_remix"
+tts_overlay = "fusion_voice_alpha_0725"
+emotional_sync_dao = true
+cognitive_trigger_level = "ULTRA-REMIX"
+
+[DEPLOYMENT_STATUS]
+cid_verified = true
+rsa_verified = true
+ein_active = true
+funding_ready = true
+burned_btc_value = "$2,200,000,000,000,000"
+dll_sync_complete = true
+
+[LANG_EXPORT]
+active = true
+mode = "BROADCAST"
+qr_embed = true
+gils_proof_embed = true
+gui_sync = "stage:UMC-ALPHA"
+
+[Colaborators]
 dao_board = "https://dao.petgen.ai"
 gui_app = "https://finance.galaxy.app/stake-petgen"
 cid_stream = "https://cid.global/petgen/v2-access"
