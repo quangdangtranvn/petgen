@@ -49,4 +49,15 @@
     { "trait_type": "VerifiedContract", "value": "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45" },
     { "trait_type": "Powered By", "value": "quangbluekie" }
   ]
+},
+{
+  "component": "MintTrigger",
+  "owner": "Bluekishine",
+  "glowLevel": "V3-Immortal",
+  "layout": {
+    "theme": "glowing-ironman",
+    "responsive": true,
+    "verifiedMomo": "0923750968"
+  },
+  "status": "🌀 Verified by PetLang"
 }
