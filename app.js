@@ -1,3 +1,105 @@
+// app.js
+const express = require('express');
+const app = express();
+const config = require('./config');
+
+// Giả lập render từ ein.lang (metadata Web4)
+const einLangRender = {
+  protocol: "Web4",
+  project: config.projectName,
+  owner: config.owner,
+  chain: config.chain,
+  wallet: config.mainWallet,
+  paymentTag: config.paymentTag,
+  tokens: config.tokenSymbols,
+  baseValueUSD: config.baseValueUSD,
+  verifyTier: config.verifyTier,
+  fusionAI: config.fusionAI,
+  glowingUI: config.glowingUI,
+  einRules: config.einRules,
+  roiExpected: config.indexListing.roiExpected,
+  cap: config.cap,
+  physicsCost: config.physicsCost,
+  einLangVersion: "v1.0.0",
+  renderMode: "fusion.mint.launcher@v1"
+};
+
+// Endpoint chính
+app.get('/metadata', (req, res) => {
+  res.json(config);
+});
+
+// Endpoint render từ ein.lang
+app.get('/ein', (req, res) => {
+  res.json(einLangRender);
+});
+
+const einMetadata = {
+  protocol: "Web4",
+  owner: {
+    nickName: "Quang Bluekie",
+    fullName: "Quang Tran Dang",
+    dateOfBirth: "02-02-2000",
+    ownerID: "075200021007",
+    citizenType: "Global Technologist",
+    passportType: "Senate-AI-Diplomatic",
+    emails: [
+      "quangdt2220@gmail.com",
+      "quangtd.9b@gmail.com",
+      "quangdangtrandev@gmail.com"
+    ],
+    phone: "0923750968",
+    walletETH: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+  },
+  identifiers: {
+    ssnMock: "075-20-0021",
+    dunsMock: "20021007",
+    manifestCID: "PETGEN-V2-GLOBAL-ACCESS-0725",
+    resolutionCode: "UN-RSA/SC-2211042"
+  },
+  finance: {
+    currency: "$AZT, $ETH",
+    totalSupply: 200000,
+    royaltyProtocol: "Web4 AutoSync",
+    royaltyWallets: [
+      "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+    ],
+    paymentTag: "0923750968",
+    status: "Founder Tier · Verified"
+  },
+  interface: {
+    guiType: "Quantum Hologram",
+    templateLang: "gtx-cssLang",
+    theme: "GalacticGlow-Ironman",
+    responsiveUI: true,
+    cdnAssets: "https://cdn.quangbluekie.io/gtx-lang/"
+  },
+  security: {
+    rsaVerified: true,
+    rsaKeyLength: "3072-bit",
+    hashing: "SHA-1024",
+    cloudSync: true,
+    hibernateFallback: true
+  },
+  launchConfig: {
+    portableMode: true,
+    sessionReplay: true,
+    nftTemplate: "nft-template.json",
+    webhookLog: "https://cdn.quangbluekie.io/php/log-mint/index.php",
+    passportVerified: true,
+    activationVia: "Web4 Launcher"
+  }
+};
+
+// Endpoint render metadata từ ein.lang
+app.get('/ein', (req, res) => {
+  res.json(einMetadata);
+});
+
+app.listen(3000, () => {
+  console.log("🚀 PetGen Web4 server running at http://localhost:3000");
+});
+
 const PetGenApp = {
   unlockPhone: "0923750968",
   rentHexKey: "0xACD",
