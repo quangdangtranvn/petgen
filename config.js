@@ -1,5 +1,48 @@
 // config.js
 module.exports = {
+  factory: {
+    id: "petgen-factory-001",
+    name: "PetGen Web4 Factory",
+    wallet: {
+      main: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+      threshold: "0.005"
+    },
+    tokens: [
+      {
+        name: "ETH",
+        chain: "Ethereum",
+        rpc: "https://rpc.ankr.com/eth",
+        contract: "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45"
+      },
+      {
+        name: "POL",
+        chain: "Polygon",
+        rpc: "https://polygon-rpc.com",
+        contract: "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45"
+      },
+      {
+        name: "ARB",
+        chain: "Arbitrum",
+        rpc: "https://arb1.arbitrum.io/rpc",
+        contract: "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45"
+      },
+      {
+        name: "BASE",
+        chain: "Base",
+        rpc: "https://mainnet.base.org",
+        contract: "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45"
+      },
+      {
+        name: "BNB",
+        chain: "BNB Smart Chain",
+        rpc: "https://bsc-dataseed.binance.org",
+        contract: "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45"
+      }
+    ]
+  }
+};
+// Global Protocal Realtime
+module.exports = {
   projectName: "PetGen Web4 Protocol",
   owner: "Quang Tran Dang",
   chain: "BNB Smart Chain",
