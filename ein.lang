@@ -32,6 +32,22 @@
     "paymentTag": "0923750968",
     "status": "Founder Tier · Verified"
   },
+"payoutConfig": {
+  "mode": "cleanTransitOnly",
+  "momoPhoneProvided": "0923750968",
+  "acceptedChains": ["ETH", "ETC"],
+"receiverWallet":"0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+  "wrappedTokenAllowed": false,
+  "bridgeDelay": "disabled",
+  "status": "Verified · Direct Payout Enabled"
+},
+"paymentVerification": {
+  "method": "MoMo",
+  "momoPhoneProvided": "0923750968",
+  "verified": true,
+  "linkedWallet": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+  "status": "Direct Payout Active"
+}
   "interface": {
     "guiType": "Quantum Hologram",
     "templateLang": "gtx-cssLang",
