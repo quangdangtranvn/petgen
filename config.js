@@ -1,3 +1,11 @@
+const owner = {
+  name: "Bluekishine",
+  trictionMode: "quad-split",
+  status: "verified entropy architect",
+  cleanTransit: true,
+  glowSlot: "Immortal 200plus (bonus check-in 200% ROI min payout per hour!.)",
+  momo: "0923750968"
+};
 // config.js
 module.exports = {
   factory: {
