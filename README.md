@@ -1,6 +1,6 @@
 ### PETGEN CIPHER KIT WEB4 V1.0
 ## LINK ZIP DRIVE KIT TO DOWNLOAD:
-[Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/blob/main/HIRING.md) | [Miniapp](https://github.com/quangdangtranvn/petgen/blob/main/mini.md)
+[Inspect Miniapp Code](https://github.com/quangdangtranvn/petgen/blob/main/mini.html)[Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/blob/main/HIRING.md) | [Miniapp](https://github.com/quangdangtranvn/petgen/blob/main/mini.md)
 # Dưới đây là bảng so sánh tiềm năng thị trường giữa **PetGen Cipher Suite Web4** và các **game AAA bán chạy nhất hiện tại**, dựa trên các yếu tố như quy mô cộng đồng, doanh thu, tốc độ tăng trưởng và khả năng mở rộng:
 
 ### 📊 Bảng so sánh tiềm năng thị trường PetGen vs Game AAA
