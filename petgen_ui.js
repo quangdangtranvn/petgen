@@ -56,3 +56,47 @@ petgenLora();
 
 // 🔁 Export dưới dạng module
 export { petgenLora, fetchLangFile, loadAllLangFiles };
+//gameplay mods:
+// petgen_ui.js — GUI Update 2025 for QuangBluekie's Divine Bundle
+
+// 🐳 Load Baby Bundle Chooser
+loadSkinBundles([
+  'Fearless Mercy',
+  'Blue Flame Echo',
+  'Diamond On Sojourn',
+  'Bae Cosmic D.Va',
+  'Yujiro Void Genji'
+]);
+
+// 💬 Glow Prompt Panel
+initGlowPrompt({
+  placeholder: "Nhập lời thần bảo hộ để buff toàn server...",
+  onSubmit: sendBlessingToMMORPG
+});
+
+// 🛡️ Divine Cover Tracker
+trackDivineStatus({
+  player: "Quang Bluekie",
+  blessingLevel: "Tier S++",
+  coverageScope: "AAA + MMORPG | Bluekieshine Domain"
+});
+
+// 🌌 MVP Notification System
+showAchievementBanner({
+  title: "Boss Clear bằng class LVL 01!",
+  subtitle: "Quang đã unlock glow passive cho toàn bộ baby",
+  effect: "Cosmic Ripple | Baby Laugh"
+});
+
+// 🎨 UI Theme Integration: Bae Main Visual
+applyTheme({
+  accentColor: "#00d4ff",
+  backgroundGlow: true,
+  heroFont: "Bluekieshine Sans"
+});
+
+// 🧠 Audit Tab Activation
+initAuditPanel({
+  title: "PetAudit: Skin Sâm Hóa Vibe",
+  sections: ["Vibe Glow", "Mức baby boy", "Chỉ số thần bảo hộ"]
+});
