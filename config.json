@@ -17,6 +17,22 @@
     "0xDevWallet3"
   ],
 "logging": {
+{
+  "skins": [
+    {
+      "name": "Dreamcore Violet",
+      "theme": "dream_violet",
+      "effect": "tail_swirl_glow",
+      "rarity": "epic"
+    },
+    {
+      "name": "Sunburst Pulse",
+      "theme": "sun_orange",
+      "effect": "pulse_bloom_flash",
+      "rarity": "legendary"
+    }
+  ]
+}
   "webhook": "https://cdn.quangbluekie.io/php/log-mint/index.php?save=1",
   "fallbackWebhook": "https://cloud.quangbluekie.io/mint-log-fallback",
   "saveLog": true
