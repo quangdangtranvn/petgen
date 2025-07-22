@@ -1,0 +1,37 @@
+ui.characterName=Bluekieshine-X
+ui.role=Support / DPS Hybrid
+ui.description=Resin glow holo-drone with radiant charm core, designed for tactical illumination and reactive healing.
+
+ui.skill.1.title=Resin Pulse
+ui.skill.1.icon=icon_resin_pulse.png
+ui.skill.1.tooltip=Heals allies in radius and slows enemies briefly.
+ui.skill.1.hotkey=Q
+
+ui.skill.2.title=Glow Dash
+ui.skill.2.icon=icon_glow_dash.png
+ui.skill.2.tooltip=Dash forward leaving a speed-boosting resin trail.
+ui.skill.2.hotkey=E
+
+ui.skill.3.title=Portal Bloom (Ultimate)
+ui.skill.3.icon=icon_portal_bloom.png
+ui.skill.3.tooltip=Summons Dreamroom portal to unleash charm burst support.
+ui.skill.3.hotkey=R
+
+ui.status.idle=Glowing in rhythm. Aura shifting between violet and cyan.
+ui.status.engaged=Resin pulses intensify. Tail emits holographic streaks.
+ui.status.ultimate=Portal fully opened. Bloom field active!
+
+ui.skinSelector=Select Resin Skin Variant
+ui.skin.1=Dreamcore Violet
+ui.skin.2=Sunburst Pulse
+ui.skin.3=Neon Drift
+ui.skin.4=Void Resin
+ui.skin.5=Bloom Circuit
+
+ui.voice.1="System primed. Bluekieshine-X deployed."
+ui.voice.2="Let’s light up the dream zone!"
+ui.voice.3="Glow calibrated. Support initiated."
+
+ui.panelTheme=resin-glow-ui
+ui.panelGlow=enabled
+ui.rarity=Legendary
