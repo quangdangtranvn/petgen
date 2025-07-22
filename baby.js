@@ -52,11 +52,19 @@ const meta = {
   ETH: {
     decimals: 18,
     logoURI: "{cloud}/eth.png",
-    explorer: "https://etherscan.io"
+    explorer: "https://etherscan.io",
+toContract: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
+cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+momoPhoneProvided: "0923750968"
   },
   BAE: {
     decimals: 18,
+    type: "ERC-20",
+    totalSupply: 100000,
     logoURI: "{baeCoin}",
+    priceUSD: 22.00, // 💰 Current price in USD
+    miningDifficulty: "20 EH", // ⚙️ Difficulty in exahashes
+    fromContract: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
     explorer: "https://wallet.kesug.com/view",
 cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
 momoPhoneProvided: "0923750968"
@@ -70,18 +78,22 @@ https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D6298
 https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984#app-gallery,
 cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
 momoPhoneProvided: "0923750968",
-fromContract: "https://blockchair.com/polygon/address/0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45#app-gallery"
+fromContract: "https://blockchair.com/polygon/address/0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45#app-gallery",
+toContract: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
   },
 SOI: {
     symbol: "SOI",
     name: "SOI Token",
-    decimals: 7,
+    decimals: 18,
+    type: "ERC-20",
+    totalSupply: 100000,
     logoURI: "{cloud}/soi.jpg",
     price: 2,
     explorer:
 https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984#app-gallery,
 cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
 momoPhoneProvided: "0923750968",
+toContract: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
 fromContract: "https://blockchair.com/polygon/address/0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45#app-gallery",
 priceUSD: 2.00, // 💰 Current price in USD
     miningDifficulty: "2 EH", // ⚙️ Difficulty in exahashes
