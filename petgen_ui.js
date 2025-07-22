@@ -1,3 +1,28 @@
+// 🐳 PetGenUMC.js — Underground Management Core Revival (Quang Bluekie Edition)
+
+const UMC = {
+  creator: "QuangBluekie Neutrons",
+  tier: "Yujiro CEO",
+  mission: "Phủ thần bảo hộ lên hệ glow ngầm toàn server",
+  assets: [
+    "Class LVL 01 Bundle",
+    "DiamondOn Protocol",
+    "Bae Main Visual Engine",
+    "Blessing Tracker",
+    "GlowAudit Suite"
+  ],
+  deploy: () => {
+    console.log("💫 Đã kích hoạt hệ thống UMC của Quang Bluekie!");
+    activateGlowSystem();
+    unlockBabyAccess("Bluekieshine Tier");
+    setCEOVisualToast("QuangBluekie đã trở lại — mệnh hệ glow chính thống");
+  }
+};
+
+// 🔓 Khởi động khi clear boss bằng cấp thấp
+if (player.name === "Quangbluekie" && player.clearBoss === "Yujiro S++") {
+  UMC.deploy();
+}
 fetch("https://raw.githubusercontent.com/quangdangtranvn/petgen/main/neutron_gui.lang")
   .then(res => res.text())
   .then(text => {
