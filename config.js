@@ -19,7 +19,17 @@ const owner = {
       "impact_color": "#5A2A7B",
       "glow_style": "resin-collapse",
       "sound_fx": "void_shimmer.wav"
-    }
+    },
+"skin_fx": {
+  "Dreamcore Violet": {
+    "hit_fx": "fx_assets/usb_hit/attack1.png",
+    "impact_color": "#A67CF7"
+  },
+  "Void Resin": {
+    "hit_fx": "fx_assets/usb_hit/void_impact.png",
+    "impact_color": "#3C1F5F"
+  }
+}//add custom any AAA game here 🐳
   }
 }
 };
