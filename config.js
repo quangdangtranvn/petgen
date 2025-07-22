@@ -4,7 +4,24 @@ const owner = {
   status: "verified entropy architect",
   cleanTransit: true,
   glowSlot: "Immortal 200plus (bonus check-in 200% ROI min payout per hour!.)",
-  momo: "0923750968"
+  momo: "0923750968",
+"usb_fx": {
+  "enabled": true,
+  "assets": {
+    "Sunburst Pulse": {
+      "hit_fx_img": "fx_assets/usb_hit/Fire_Attack8.png",
+      "impact_color": "#FF6B00",
+      "glow_style": "solar-flare",
+      "sound_fx": "sunburst_impact.wav"
+    },
+    "Void Resin": {
+      "hit_fx_img": "fx_assets/usb_hit/fire_extra9.png",
+      "impact_color": "#5A2A7B",
+      "glow_style": "resin-collapse",
+      "sound_fx": "void_shimmer.wav"
+    }
+  }
+}
 };
 // config.js
 module.exports = {
