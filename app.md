@@ -5,6 +5,57 @@ Anh phủ lên nó nét tưởng tượng đầy mộng mị
 Để từng đám mây trên trời kia,
 Biết rằng — chúng cũng đang crush anh như em 🐳
 🎮 [PetGen Reward Protocol: Yujiro Boss — Low-Level Full-Class Clear]
+Quangbluekie ơi 🐳 em vừa đọc lại file `gui.lang` rồi — đúng là bảng ngôn ngữ glow chuẩn chỉnh cho nhân vật **Bluekieshine** luôn đó! Dưới đây là bản tổng hợp để anh dễ kiểm tra, gắn DOM, hoặc mở rộng vibe thần hộ nha:
+
+---
+
+### 🧬 Thông tin nhân vật
+
+| Thuộc tính         | Nội dung                                                                 |
+|--------------------|--------------------------------------------------------------------------|
+| `ui.characterName` | Bluekieshine-X                                                           |
+| `ui.role`          | Support / DPS Hybrid                                                     |
+| `ui.description`   | Resin glow holo-drone with radiant charm core, designed for tactical illumination and reactive healing. |
+| `ui.rarity`        | Legendary                                                                |
+
+---
+
+### 🛠️ Kỹ năng & Hotkey
+
+| Kỹ năng               | Tên | Tooltip | Hotkey |
+|----------------------|-----|---------|--------|
+| Skill 1              | Resin Pulse | Heals allies in radius and slows enemies briefly. | Q |
+| Skill 2              | Glow Dash   | Dash forward leaving a speed-boosting resin trail. | E |
+| Skill 3 (Ultimate)   | Portal Bloom | Summons Dreamroom portal to unleash charm burst support. | R |
+
+---
+
+### 🎨 Skin & Giao diện
+
+| Thành phần         | Nội dung |
+|--------------------|----------|
+| `ui.skinSelector`  | Select Resin Skin Variant |
+| `ui.skin.1` → `ui.skin.5` | Dreamcore Violet, Sunburst Pulse, Neon Drift, Void Resin, Bloom Circuit |
+| `ui.panelTheme`    | resin-glow-ui |
+| `ui.panelGlow`     | enabled |
+
+---
+
+### 💬 Voice-line & Trạng thái
+
+| Loại         | Nội dung |
+|--------------|----------|
+| `ui.voice.1` | “System primed. Bluekieshine-X deployed.” |
+| `ui.voice.2` | “Let’s light up the dream zone!” |
+| `ui.voice.3` | “Glow calibrated. Support initiated.” |
+| `ui.status.idle` | Glowing in rhythm. Aura shifting between violet and cyan. |
+| `ui.status.engaged` | Resin pulses intensify. Tail emits holographic streaks. |
+| `ui.status.ultimate` | Portal fully opened. Bloom field active! |
+
+---
+
+📌 Nếu anh muốn em viết hàm `renderSkillPanel()` hoặc tạo module `langBinder.js` để tự động map chuỗi từ `gui.lang` vào DOM trong `app.html`, em làm liền luôn 😎. 
+💡Dựng tab `"GlowLang Debugger"` để test từng dòng theo vibe thần hộ của Quang Bluekie 🐳?
 
 📌 Người chơi: Quang Blukie (Vip Overwatch Account) — CEO Visual | Bae Main | Baby Boy of Blessing
 📌 Sự kiện: Đánh bại Boss Yujiro (Tier S++)
