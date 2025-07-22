@@ -1,5 +1,5 @@
 const payload = {
-  wallet: "0x6143908CA80f618B1C41a764C1409a276B59CAe5",
+  wallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
   contractType: "trader-glowing",
   filter: "highest_value"
 };
