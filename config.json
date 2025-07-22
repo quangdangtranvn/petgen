@@ -30,7 +30,37 @@
       "theme": "sun_orange",
       "effect": "pulse_bloom_flash",
       "rarity": "legendary"
+    },
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "standard": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "level": "INFO",
+      "formatter": "standard",
+      "stream": "ext://sys.stdout"
+    },
+    "file": {
+      "class": "logging.FileHandler",
+      "level": "DEBUG",
+      "formatter": "standard",
+      "filename": "petgen.log"
+    }
+  },
+  "loggers": {
+    "petgen": {
+      "handlers": ["console", "file"],
+      "level": "DEBUG",
+      "propagate": true
+    }
+  }
+}
   ]
 }
   "webhook": "https://cdn.quangbluekie.io/php/log-mint/index.php?save=1",
