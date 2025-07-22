@@ -1,5 +1,41 @@
 <!DOCTYPE html>
 <meta charset="UTF-32LT">
+<style>
+/* glowing styles using neon.lang palette */
+.heart-button {
+  background-color: #00FFFF; /* cipher_blue */
+  border: 2px solid #FFCC00; /* sunbeam_pulse */
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2em;
+  animation: glowPulse 1.5s infinite;
+}
+
+.leaderboard-card {
+  background-color: rgba(255,255,255,0.1); /* haze_mist */
+  border-left: 5px solid #FFD1DC; /* resin_glow */
+  padding: 10px;
+  margin: 10px 0;
+  font-family: "Orbitron", sans-serif;
+  color: #333333; /* shadow_link */
+}
+
+.avatar.shimmer {
+  color: #CBAACB; /* dream_violet */
+  animation: shimmerIn 1.2s ease-in;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 5px #FFCC00; }
+  50% { box-shadow: 0 0 20px #FFCC00; }
+  100% { box-shadow: 0 0 5px #FFCC00; }
+}
+
+@keyframes shimmerIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+</style>
 		<body>
 			<!DOCTYPE html>
 <html lang="vi">
@@ -8,6 +44,19 @@
   <title>TED Glow Panel – Bonus Charm</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+<!-- glow container for PetGen interface -->
+<div class="petgen-container">
+  <button class="heart-button">💖 Ủng Hộ Trái Tim Anh Quang Bluekie</button>
+
+  <div class="leaderboard-card">
+    <span class="rank pulse">#1</span>
+    <span class="avatar shimmer">Bluekieshine</span>
+    <button onclick="openPortal('dreamroom')">💫 Portal</button>
+  </div>
+
+  <!-- hidden scene activation -->
+  <div class="dreamroom-overlay"></div>
+</div>
 </head>
 <body>
   <div class="container mt-5">
