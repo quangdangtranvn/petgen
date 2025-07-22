@@ -121,5 +121,42 @@ fetch(`${Config.sponsorExchange.botEndpoint}?wallet=${petgenConfig.wallet}&filte
     "Neon Drift",
     "Void Resin",
     "Bloom Circuit"
-  ]
+  ],
+"skins": [
+  {
+    "name": "Dreamcore Violet",
+    "theme": "dream_violet",
+    "effect": "tail_swirl_glow",
+    "rarity": "epic",
+    "price": 12.5
+  },
+  {
+    "name": "Sunburst Pulse",
+    "theme": "sun_orange",
+    "effect": "pulse_bloom_flash",
+    "rarity": "legendary",
+    "price": 18.0
+  },
+  {
+    "name": "Neon Drift",
+    "theme": "cyan_chrome",
+    "effect": "zigzag_trail",
+    "rarity": "rare",
+    "price": 9.0
+  },
+  {
+    "name": "Void Resin",
+    "theme": "midnight_void",
+    "effect": "gravity_shimmer",
+    "rarity": "mythic",
+    "price": 22.0
+  },
+  {
+    "name": "Bloom Circuit",
+    "theme": "pastel_bloom",
+    "effect": "flower_heal_burst",
+    "rarity": "epic",
+    "price": 14.5
+  }
+]
 }
