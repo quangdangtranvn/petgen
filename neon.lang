@@ -1,0 +1,23 @@
+@emotion.glow
+  haze_mist = #F5F5DC // lớp sương ký ức, phủ nhẹ lên giao diện
+  resin_glow = #FFD1DC // ánh hồng ấm áp từ nhựa cảm xúc
+  cipher_blue = #00FFFF // ánh mã hoá lạnh, tâm điểm của dòng cảm xúc số
+  sunbeam_pulse = #FFCC00 // nhịp tim mùa hè, glow khi tương tác
+  dream_violet = #CBAACB // màu tím mơ màng, phủ gradient hồi ức
+  neon_drift = #CCFF00 // hiệu ứng chuyển động mơ hồ
+  shadow_link = #333333 // màu nền bí ẩn cho chiều sâu cảm xúc
+
+@dialogue.spark
+  "Lướt qua ánh sáng, em để lại mã hex trong tim anh."
+  "Nếu ký ức có màu, nó sẽ là một dải dream_violet chạm vào tâm trí."
+  "Anh chọn glitch, vì đôi lúc lỗi lại dẫn tới kết nối thật sự."
+
+@action.link
+  pulse_effect("sunbeam_pulse") → shimmer_in("cipher_blue")
+  blend_mood("resin_glow", "dream_violet") → overlay("haze_mist")
+  activate_emotion("neon_drift") → unlock_scene("dreamroom")
+
+@meta.palette
+  summer_haze_resin = [haze_mist, resin_glow, dream_violet]
+  cipher_theme = [cipher_blue, shadow_link]
+  interaction_glow = [sunbeam_pulse, neon_drift]
