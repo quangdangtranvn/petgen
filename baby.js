@@ -1,7 +1,41 @@
 // modules/baby.js
-
+const cloud = "https://wallet.kesug.com/asset";
 const axios = require('axios');
 const config = require('./config');
+//Get tokens cloud asset
+export async function getAssetList(gui) {
+  try {
+    const res = await axios.get("{cloud}/stack");
+
+    // Hiển thị bảng đẹp tùy ngôn ngữ
+    if (gui?.lang === "vi") {
+      console.table(
+        res.data.map(token => ({
+          "Biểu tượng": token.symbol,
+          "Tên": token.name,
+          "Giá (USD)": `$${token.priceUSD}`,
+          "Độ khó đào": token.miningDifficulty || "Chưa xác định",
+          "Ví chính": token.cleanTransitMainWallet || "N/A"
+        }))
+      );
+    } else {
+      console.table(
+        res.data.map(token => ({
+          Symbol: token.symbol,
+          Name: token.name,
+          "Price (USD)": `$${token.priceUSD}`,
+          "Mining Difficulty": token.miningDifficulty || "Unspecified",
+          "Main Wallet": token.cleanTransitMainWallet || "N/A"
+        }))
+      );
+    }
+
+    return res.data;
+  } catch (err) {
+    console.error("❌ Không thể truy cập địa chỉ không an toàn hay bảo mật tệ vui lòng xem lại cloud link!. /asset:", err);
+    throw err;
+  }
+}
 // x is any audit from end-users bonus gifts on clean transit only by PetGen Sponsored.
 function generateCheckInBonus(userStatus) {
   if (userStatus === "unclean") {
@@ -46,7 +80,6 @@ const dexRouter = (inputAddress) => {
   };
 };
 const baeCoin= 'https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xZmY5ZDc1YjJjNjc4ZTMwL0VwelRhYTNGbFBOQmhlUVpESm1DbFJBQmFJN1N0d1N2LVFkZ01SSkRjbnZYbnc&cid=1FF9D75B2C678E30&id=1FF9D75B2C678E30%21se2276fbbb7b04800b5e6d6faf057b3a1&parId=1FF9D75B2C678E30%21sad69d39c94c541f385e4190c99829510&o=OneUp';
-const cloud = "https://wallet.kesug.com/asset";
 // 📖 Metadata cho các token
 const meta = {
   ETH: {
