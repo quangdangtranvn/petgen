@@ -184,6 +184,14 @@ fetch(`${Config.sponsorExchange.botEndpoint}?wallet=${petgenConfig.wallet}&filte
     "effect": "flower_heal_burst",
     "rarity": "epic",
     "price": 14.5
-  }
+  },
+"usd_rates": {
+  "VND": 26138,
+  "EUR": 0.86,
+  "INR": 86.26,
+  "JPY": 147.90,
+  "CNY": 7.17,
+  "updated": "2025-07-22"
+}
 ]
 }
