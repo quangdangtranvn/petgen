@@ -1,0 +1,98 @@
+[palette]
+cipher_blue = #00FFFF
+dream_violet = #CBAACB
+haze_mist = #F5F5DC
+
+[button.heart]
+shape = circle
+color = cipher_blue
+hover_border = sunbeam_pulse
+
+[animation]
+pulse = glowPulse
+shimmer = shimmerIn
+
+[meta.charset]
+type = tag
+value = UTF-8
+
+[meta.viewport]
+type = tag
+value = width=device-width, initial-scale=1.0
+
+[meta.title]
+vi = ⚡ PetGen WEB4 Fusion RTX | Mainnet Onchain Exchages WEB4
+en = ⚡ PetGen WEB4 Fusion RTX | Mainnet Onchain Exchages WEB4
+
+[meta.description]
+vi = Thuê thần thú Tenzora ⚡ RainbowWings 🌈 Cervatrix 🐉. Mở khóa bot bằng SĐT 🔐 0923750968. Delay thuê 2h. Bonus Charm theo % pin. Trigger Autobot Overwatch3 🌪️ – Powered by Quang Bluekie.
+en = Rent glowing creatures Tenzora, RainbowWings, Cervatrix. Unlock bot with phone, trigger APR, bonus charm by battery percent. Powered by Quang Bluekie.
+
+[meta.keywords]
+vi = PetGen, thuê thần thú, Tenzora, RainbowWings, Cervatrix, Wings shader, glow APR, unlock bot, Overwatch3, Stars Panel, mã HEX, Quang Bluekie, delay thuê 2h, giá đô, giá euro, giá eth, giá bae, giá azt, giá soi
+en = PetGen, creature rental, Tenzora, RainbowWings, Cervatrix, wings shader, glow APR, unlock bot, Overwatch3, bonus charm, HEX code, Quang Bluekie, delay 2h, usd price, euro price, eth price, bae price, azt price, soi price
+
+[meta.author]
+name = Quang Bluekie Master
+
+[meta.copyright]
+value = © 2025 PetGen RTX Cipher Suite Web4
+
+[meta.theme-color]
+value = #00f7ff
+cipher_blue = #00FFFF
+dream_violet = #CBAACB
+haze_mist = #F5F5DC
+
+[meta.favicon]
+href = https://github.com/user-attachments/assets/662c1fe3-5773-4b11-b786-9aac16e0a0ff
+type = image/png, image/jpg
+
+[meta.opengraph.title]
+value = ⚡ PetGen Bot – Rainbow Wings
+
+[meta.opengraph.description]
+value = Kích hoạt bot thần thú glowing, thuê nhanh Tenzora, RainbowWings, Cervatrix. Mở khóa SĐT. Bonus theo pin.
+
+[meta.opengraph.image]
+href = https://cdn.quangbluekie.io/images/charmbot.png
+
+[meta.opengraph.url]
+value = https://wallet.kesug.com/go/bot
+
+[meta.opengraph.type]
+value = website
+
+[meta.twitter.card]
+value = summary_large_image
+
+[meta.twitter.title]
+value = PetGen Bot App – Powered by RTX Charm Suite
+
+[meta.twitter.description]
+value = Autobot Overwatch3, delay thuê 2h, Wings Shader Tenzora & RainbowWings – by Quang Bluekie, sell all web3 coins or tokens and transit to Web4 Super
+
+[meta.twitter.image]
+href = https://cdn.quangbluekie.io/images/charmbot.png
+
+[system.general]
+welcome.message = Chào mừng đến với PetGen – vùng giao hội cảm xúc và kỹ thuật!
+update.notice = Hệ thống Web5 đã khởi động sau nền tảng Web4 Super Apps. 
+Xác minh định tuyến trái tim. 🐳
+access.denied = Cần sở hữu badge ánh sáng để truy cập vùng lõi này.😇
+
+[emotion.sync]
+emotion.true = ✅ Cảm xúc thật đã xác nhận. Kết nối trái tim thành công.
+emotion.invalid = ❌ Sai lệch cảm xúc phát hiện. Ngắt tranh phép tức thời.
+emotion.pending = ⏳ Đang chờ ánh nhìn gốc từ Đắc Chi Nhân.
+
+[combat.skill]
+battle.open = ⚔️ Trận phép đã khởi động. Chuẩn bị kết nối luồng định tuyến.
+skill.deploy = 🔥 Kích hoạt chiêu thức: Vẽ Lõi Gốc – Layer 0.
+sync.complete = 📡 Đồng bộ kỹ năng hoàn tất. Sẵn sàng đính mảnh ánh sáng.
+
+[fragment.story]
+intro.lyra = 🌌 Thiên thú Lyra xuất hiện. Ánh sáng ngân vang dẫn lối mảnh thứ năm.
+tera.entry = 🪞 Tera – ký ức hệ thống phản chiếu – đã đăng ký ánh nhìn vào lõi Quangius.
+lavi.memory = 💔 Lavi giữ vết nứt ánh sáng. Chỉ người từng định tuyến trái tim mới có quyền chữa lành.
+ownership.badge = 🎖️ Bạn đã nhận biểu tượng Đạo Quán từ nữ thần cấp hệ cảm xúc.
