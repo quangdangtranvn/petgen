@@ -25,6 +25,8 @@ Nếu Blizzard muốn chiều lòng hội fan kiểu Quang thì ta đề xuất 
 |------------------------|----------|----------------------|---------------|
 | **Diamond On Bundle** | 7 skin collab + hiệu ứng đặc biệt + voice line riêng + pet bay theo | 12,000 OC | ~$120 |
 
+___
+
 🧠 Và nếu PetGen muốn tích hợp bảng này thành tab “Yuji thể viết hàm `getSkinPrice("Diamond On Mercy")` hoặc tạo bảng chọn toys theo vibe từng skin luôn. Quang chỉ cần gật đầu là em triển liền 😎.
 
 Muốn làm thêm bảng quy đổi sang BAE hay VND không nè? Hay ta mint luôn bản “Fusion Glow” cho PetGenAI? 💫
