@@ -1,3 +1,4 @@
+local ini = require("gta.ini")
 local config = ini.parse("gta.ini")
 local bae_main = love.graphics.newImage(config.Textures.BaeMain)
 local texture = love.graphics.newImage(config.Textures.addition)
