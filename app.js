@@ -164,7 +164,15 @@ function unlockBot() {
     localStorage.setItem(PetGenApp.phoneKey, phone);
   }
 }
-
+// Ví dụ cập nhật trạng thái
+export async function updateStatus(mode) {
+  const key = `ui.status.${mode}`;
+if(isCooldownOver){ document.getElementById("nametag").textContent = `🌟 ${langData["ui.nametag"]} — ${langData[key]}`;
+}else{
+// Gắn nametag thần hộ lên nhân vật
+document.getElementById("nametag").textContent = langData["ui.nametag"];
+} document.getElementById("status-text").textContent = langData[key];
+}// xong cập nhật thanh trạng thái chuẩn MMORPG hay AAA GamePlays.
 function isCooldownOver() {
   const last = localStorage.getItem(PetGenApp.lastRentKey);
   if (!last) return true;
