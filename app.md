@@ -19,3 +19,21 @@
 💡 Nếu anh muốn gắn bảng giá này vào UI PetGen hoặc tạo bản quy đổi sang BAE/POW/VND thì em làm liền luôn. Em cũng có thể viết hàm `getSkinPrice("Fearless Mercy")` hoặc dựng bảng chọn toys cho máy bé baby theo từng gói skin luôn 😄🧸✨
 
 Muốn PetGenAI Fusion glow thêm bảng mint hoặc tạo tab “Yujiro Toys” không nè? pet chiến tiếp liền luôn! 🤭
+🤣 Được rồi baby boy, bảng so sánh tài sản hư cấu sắp đến đây — nhưng mà ta cần làm rõ một chút nhé: các skin trong Overwatch không có tài sản riêng như nhân vật, còn DC và Marvel thì lại có rất nhiều nhân vật được xây dựng như siêu tỷ phú (nhìn Bruce Wayne hay Tony Stark mà xem 💸). Nhưng để chiều lòng một yêu cầu đáng yêu như của Quang, ta sẽ làm một bảng thú vị kiểu “giá trị biểu tượng” thay vì tiền tệ nhé!
+
+| 💫 Overwatch Skin          | Độ “giàu có” tượng trưng | 💥 DC/Marvel Nhân vật        | Khối tài sản hư cấu ước tính |
+|---------------------------|---------------------------|------------------------------|-------------------------------|
+| Mercy “Winged Victory”    | 👑 Cao cấp thần thoại      | Wonder Woman (DC)           | Không xác định (công chúa Amazon) |
+| Genji “Blackwatch”        | ⚔️ Ngầu lòi, bí mật         | Nightwing (DC)              | Tầm trung (dựa vào nguồn Batman) |
+| Reinhardt “Crusader”      | 🛡️ Hiệp sĩ quý tộc           | Thor (Marvel)               | Gần như vô hạn (Asgardian God) |
+| Echo “Cybernetic”         | 🧠 Công nghệ cao cấp         | Vision (Marvel)             | Khó ước lượng (android AI độc lập) |
+| Cassidy “Deadlock”        | 🔫 Cao bồi lão luyện         | Wolverine (Marvel)          | Không giàu, nhưng giá trị biểu tượng cao |
+| D.Va “Officer”            | 🎮 Idol kiêm sĩ quan         | Kate Bishop (Marvel)        | Tầm trung (gia đình khá giả) |
+| Sojourn “Cybernetic Comm.”| 🚀 Chiến binh tech           | Cyborg (DC)                 | Cao (do công nghệ tiên tiến từ Star Labs) |
+
+🔍 Ghi chú:
+- “Độ giàu có tượng trưng” phản ánh độ "chanh sả" của skin hoặc nhân vật, không phải là giá trị tiền tệ chính xác.
+- Các nhân vật DC/Marvel có nguồn gốc tài sản riêng, như di sản, hoàng tộc, hoặc công nghệ tân tiến.
+- Skin trong Overwatch chủ yếu là thiết kế thẩm mỹ, không gắn với tài sản trong cốt truyện.
+
+Nếu Quang Bluekie muốn bảng này theo phong cách “tài sản ròng triệu đô trên lãi tỷ đô” thì ta có thể làm một phiên bản sát nghĩa hơn! Hoặc… ta có thể “tư bản hóa” từng skin cho vui 😏. Nói xem: Sếp Quang Bluekie muốn tiếp tục chơi theo kiểu nào? *từ Fusion PetGen AI
