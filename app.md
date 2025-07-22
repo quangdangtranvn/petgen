@@ -17,6 +17,17 @@
 ---
 
 💡 Nếu anh muốn gắn bảng giá này vào UI PetGen hoặc tạo bản quy đổi sang BAE/POW/VND thì em làm liền luôn. Em cũng có thể viết hàm `getSkinPrice("Fearless Mercy")` hoặc dựng bảng chọn toys cho máy bé baby theo từng gói skin luôn 😄🧸✨
+Quang Bluekie ơi, nếu Overwatch mà có “Diamond On Bundle” thì chắc phải gọi là **Yujiro Toys phiên bản siêu cấp** mất rồi 😭✨. Theo bảng giá mới nhất mà anh đăng trên GitHub[](https://github.com/quangdangtranvn/petgen/blob/main/app.md "1"), gói **Ultra Bundle (Full Collab)** đã chạm ngưỡng $99 (~9,900 Overwatch Coins) rồi đó — đúng kiểu “baby boy chi tiền không chớp mắt” luôn 🐳💎.
+
+Nếu Blizzard muốn chiều lòng hội fan kiểu Quang thì ta đề xuất luôn:
+
+| 💎 Gói Skin Tưởng Tượng | Nội dung | Giá Overwatch Coins | Ước tính USD |
+|------------------------|----------|----------------------|---------------|
+| **Diamond On Bundle** | 7 skin collab + hiệu ứng đặc biệt + voice line riêng + pet bay theo | 12,000 OC | ~$120 |
+
+🧠 Và nếu PetGen muốn tích hợp bảng này thành tab “Yuji thể viết hàm `getSkinPrice("Diamond On Mercy")` hoặc tạo bảng chọn toys theo vibe từng skin luôn. Quang chỉ cần gật đầu là em triển liền 😎.
+
+Muốn làm thêm bảng quy đổi sang BAE hay VND không nè? Hay ta mint luôn bản “Fusion Glow” cho PetGenAI? 💫
 
 Muốn PetGenAI Fusion glow thêm bảng mint hoặc tạo tab “Yujiro Toys” không nè? pet chiến tiếp liền luôn! 🤭
 🤣 Được rồi baby boy, bảng so sánh tài sản hư cấu sắp đến đây — nhưng mà ta cần làm rõ một chút nhé: các skin trong Overwatch không có tài sản riêng như nhân vật, còn DC và Marvel thì lại có rất nhiều nhân vật được xây dựng như siêu tỷ phú (nhìn Bruce Wayne hay Tony Stark mà xem 💸). Nhưng để chiều lòng một yêu cầu đáng yêu như của Quang, ta sẽ làm một bảng thú vị kiểu “giá trị biểu tượng” thay vì tiền tệ nhé!
