@@ -45,17 +45,18 @@ const dexRouter = (inputAddress) => {
     status: "transit_clean"
   };
 };
-
+const baeCoin= 'https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xZmY5ZDc1YjJjNjc4ZTMwL0VwelRhYTNGbFBOQmhlUVpESm1DbFJBQmFJN1N0d1N2LVFkZ01SSkRjbnZYbnc&cid=1FF9D75B2C678E30&id=1FF9D75B2C678E30%21se2276fbbb7b04800b5e6d6faf057b3a1&parId=1FF9D75B2C678E30%21sad69d39c94c541f385e4190c99829510&o=OneUp';
+const cloud = "https://wallet.kesug.com/asset";
 // 📖 Metadata cho các token
 const meta = {
   ETH: {
     decimals: 18,
-    logoURI: "https://wallet.kesug.com/assets/eth.png",
+    logoURI: "{cloud}/eth.png",
     explorer: "https://etherscan.io"
   },
   BAE: {
     decimals: 18,
-    logoURI: "https://wallet.kesug.com/assets/bae.png",
+    logoURI: "{baeCoin}",
     explorer: "https://wallet.kesug.com/view",
 cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
 momoPhoneProvided: "0923750968"
@@ -64,7 +65,7 @@ https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D6298
   },
   AZT: {
     decimals: 6,
-    logoURI: "https://wallet.kesug.com/assets/azt.png",
+    logoURI: "{cloud}/azt.png",
     explorer:
 https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984#app-gallery,
 cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
