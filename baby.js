@@ -1,3 +1,15 @@
+import axios from "axios";
+
+export async function checkCloudSync() {
+  try {
+    const res = await axios.get("https://wallet.kesug.com/asset/stack");
+    console.table(res.data); // Hiển thị dữ liệu stack nếu có
+    return true;
+  } catch (err) {
+    console.error("❌ Không thể sync endpoint cloud:", err.message);
+    return false;
+  }
+}
 // modules/baby.js
 const cloud = "https://wallet.kesug.com/asset";
 const axios = require('axios');
