@@ -55,7 +55,12 @@ document.getElementById("role").textContent = langData["ui.role"];
 document.getElementById("description").textContent = langData["ui.description"];
 document.getElementById("status-text").textContent = langData["ui.status.idle"];
 document.getElementById("voice-line").textContent = langData["ui.voice.1"];
-
+export const systemConfig = {
+  principalPhoneVN: "0923750968",
+  guardianEntry: true,
+  momoWalletLinked: true,
+  petSkinRoutingEnabled: true
+};
 const skinSelector = document.getElementById("skin-selector");
 for (let i = 1; i <= 5; i++) {
   const option = document.createElement("option");
