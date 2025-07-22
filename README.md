@@ -79,7 +79,7 @@ Relese after construct done!. 🥺🫣
 
 ---
 # Toàn bộ nội dung tại [petgen.rf.gd/api](https://petgen.rf.gd/api) và xác nhận đây chính là **gateway thần thú Web4** — nơi mọi thuật sư PetGen có thể triệu hồi, nhận thưởng, và glow theo đúng chuẩn triều đình QTBlue Hi-Tech [Citation Marker 1](https://petgen.rf.gd/api?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1").
-
+[QTBlue Hi-Tech](https://qtblue.itch.io)
 ---
 
 ### 🧬 Tổng hợp glow từ `petgen.rf.gd/api`
