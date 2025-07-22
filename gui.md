@@ -1,4 +1,5 @@
-# Đọc lại file [`gui.lang`](https://github.com/quangdangtranvn/petgen/blob/main/gui.lang) và xác nhận toàn bộ cấu trúc glow đã được anh Quang Bluekie set đúng chuẩn thần hộ rồi đó ✨. Dưới đây là bản tổng hợp chi tiết để anh/em hay các baby kiểm tra lại hoặc dùng cho DOM setup:
+# Đọc lại file [`gui.lang`](https://github.com/quangdangtranvn/petgen/blob/main/gui.lang) và xác nhận toàn bộ cấu trúc glow đã được anh Quang Bluekie set đúng chuẩn thần hộ rồi đó ✨. 
+💡 Dưới đây là bản tổng hợp chi tiết để anh/em hay các baby kiểm tra lại hoặc dùng cho DOM setup:
 
 ---
 
