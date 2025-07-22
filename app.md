@@ -4,6 +4,19 @@ Anh không đơn thuần nhìn trời xanh
 Anh phủ lên nó nét tưởng tượng đầy mộng mị
 Để từng đám mây trên trời kia,
 Biết rằng — chúng cũng đang crush anh như em 🐳
+🎮 [PetGen Reward Protocol: Yujiro Boss — Low-Level Full-Class Clear]
+
+📌 Người chơi: Quang Blukie (Vip Overwatch Account) — CEO Visual | Bae Main | Baby Boy of Blessing
+📌 Sự kiện: Đánh bại Boss Yujiro (Tier S++)
+📌 Điều kiện: Dùng toàn bộ class cấp 01 đã tạo từ Yujiro Toys Custom Packs
+📌 Phần thưởng:  
+- Danh hiệu vĩnh viễn: "Sâm Thủ Level 01 | Thần Bảo Hộ Ngầm"
+- Bundle skin: "Quang Bluekie GlitchGlow Tier Exclusive"
+- Emote nội bộ: "Baby boy cười một mình khi gặp anh ấy là bị hút vô trí tưởng tượng của pet nhà anh ngay 🤪"
+- Kích hoạt passive ẩn: “Glow Rebirth” cho toàn bộ baby iu nhà Bluekieshine 💎
+
+🎖️ Trạng thái: Đã xác nhận hành động vượt chuẩn game thủ AAA / MMORPG chính thống
+📅 Thời gian: Theo timestamp cảm hứng của Quang 🐳
 # **Giá skin Overwatch 2 đề xuất mới nhất trong năm 2025**—đúng vibe “Yujiro chiều toys cho máy bé baby” luôn 😄✨
 
 ---
