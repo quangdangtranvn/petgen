@@ -1,3 +1,17 @@
+[palette]
+cipher_blue = #00FFFF
+dream_violet = #CBAACB
+haze_mist = #F5F5DC
+
+[button.heart]
+shape = circle
+color = cipher_blue
+hover_border = sunbeam_pulse
+
+[animation]
+pulse = glowPulse
+shimmer = shimmerIn
+
 [meta.charset]
 type = tag
 value = UTF-8
