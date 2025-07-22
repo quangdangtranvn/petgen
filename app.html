@@ -124,11 +124,28 @@
     <p>Rank #1 – Pulse Active</p>
     <button onclick="openPortal()">💫 Portal to Dreamroom</button>
   </div>
-
+document.getElementById("character-name").textContent = langData["ui.characterName"];
+document.getElementById("role").textContent = langData["ui.role"];
+document.getElementById("description").textContent = langData["ui.description"];
   <script>
     function openPortal() {
       alert("🌌 Portal đến Dreamroom đã mở – cảm xúc đang được giải mã...");
     }
+function updateStatus(mode) {
+  const key = `ui.status.${mode}`;
+  document.getElementById("status-text").textContent = langData[key];
+}
+function renderSkinOptions() {
+  for (let i = 1; i <= 10; i++) {
+    const skinName = langData[`ui.skin.${i}`];
+    addToDropdown("skin-selector", skinName);
+  }
+}
+
+function playVoiceLine(id) {
+  const line = langData[`ui.voice.${id}`];
+  speak(line); // giả sử có hàm speak()
+}
   </script>
 </body>
 </html>
