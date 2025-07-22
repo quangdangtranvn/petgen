@@ -3,6 +3,16 @@ const cloud = "https://wallet.kesug.com/asset";
 const axios = require('axios');
 const config = require('./config');
 //Get tokens cloud asset
+export async function checkStackRoute() {
+  try {
+    const res = await axios.get("{cloud}/stack");
+    console.table(res.data); // hiển thị token stack hoặc cấu trúc dữ liệu
+    return true;
+  } catch (err) {
+    console.error("❌ Đường dẫn không phản hồi:", err);
+    return false;
+  }
+}
 export async function getAssetList(gui) {
   try {
     const res = await axios.get("{cloud}/stack");
