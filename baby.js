@@ -97,6 +97,9 @@ toContract: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
 fromContract: "https://blockchair.com/polygon/address/0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45#app-gallery",
 priceUSD: 2.00, // 💰 Current price in USD
     miningDifficulty: "2 EH", // ⚙️ Difficulty in exahashes
+powStackingEnabled: true, // ✅ Flag for miners
+  powEntryPoint: "{cloud}/stack", // 🔗 Endpoint for PoW stacking
+  powRewardWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638" // 💰 Where rewards are sent
   }
 //and minted token coin here for donate PetGen clean transit main wallet(blockchains): 0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638 or 0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984 
 };
