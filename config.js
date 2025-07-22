@@ -33,6 +33,35 @@ const owner = {
   }
 }
 };
+const langData = {
+  "ui.characterName": "Bluekieshine-X",
+  "ui.role": "Support / DPS Hybrid",
+  "ui.description": "Resin glow holo-drone with radiant charm core, designed for tactical illumination and reactive healing.",
+  "ui.status.idle": "Glowing in rhythm. Aura shifting between violet and cyan.",
+  "ui.status.engaged": "Resin pulses intensify. Tail emits holographic streaks.",
+  "ui.status.ultimate": "Portal fully opened. Bloom field active!",
+  "ui.skin.1": "Dreamcore Violet",
+  "ui.skin.2": "Sunburst Pulse",
+  "ui.skin.3": "Neon Drift",
+  "ui.skin.4": "Void Resin",
+  "ui.skin.5": "Bloom Circuit",
+  "ui.voice.1": "System primed. Bluekieshine-X deployed.",
+  "ui.voice.2": "Let’s light up the dream zone!",
+  "ui.voice.3": "Glow calibrated. Support initiated."
+};
+
+document.getElementById("character-name").textContent = langData["ui.characterName"];
+document.getElementById("role").textContent = langData["ui.role"];
+document.getElementById("description").textContent = langData["ui.description"];
+document.getElementById("status-text").textContent = langData["ui.status.idle"];
+document.getElementById("voice-line").textContent = langData["ui.voice.1"];
+
+const skinSelector = document.getElementById("skin-selector");
+for (let i = 1; i <= 5; i++) {
+  const option = document.createElement("option");
+  option.textContent = langData[`ui.skin.${i}`];
+  skinSelector.appendChild(option);
+}
 // config.js
 module.exports = {
   factory: {
