@@ -47,7 +47,12 @@ const einLangRender = {
 app.get('/metadata', (req, res) => {
   res.json(config);
 });
-
+// app.js — Load GUI từ gui.lang
+document.getElementById("character-name").textContent = langData["ui.characterName"];
+document.getElementById("role").textContent = langData["ui.role"];
+document.getElementById("description").textContent = langData["ui.description"];
+document.getElementById("skill-1-title").textContent = langData["ui.skill.1.title"];
+document.getElementById("skill-1-tooltip").textContent = langData["ui.skill.1.tooltip"];
 // Endpoint render từ ein.lang
 app.get('/ein', (req, res) => {
   res.json(einLangRender);
