@@ -78,7 +78,7 @@ Relese after construct done!. 🥺🫣
 - **Session replay & portable mode**: Cho phép launcher chạy đa nền tảng, lưu trạng thái glow mint theo thời gian thực.
 
 ---
-# Toàn bộ nội dung tại [petgen.rf.gd/api](https://petgen.rf.gd/api) và xác nhận đây chính là **gateway thần thú Web4** — nơi mọi thuật sư PetGen có thể triệu hồi, nhận thưởng, và glow theo đúng chuẩn triều đình QTBlue Hi-Tech [43dcd9a7-70db-4a1f-b0ae-981daa162054](https://petgen.rf.gd/api?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1").
+# Toàn bộ nội dung tại [petgen.rf.gd/api](https://petgen.rf.gd/api) và xác nhận đây chính là **gateway thần thú Web4** — nơi mọi thuật sư PetGen có thể triệu hồi, nhận thưởng, và glow theo đúng chuẩn triều đình QTBlue Hi-Tech [Citation Marker 1](https://petgen.rf.gd/api?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1").
 
 ---
 
