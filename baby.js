@@ -65,7 +65,17 @@ https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D6298
   },
   AZT: {
     decimals: 6,
-    logoURI: "{cloud}/azt.png",
+    logoURI: "{cloud}/azt.jpg",
+    explorer:
+https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984#app-gallery,
+cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+momoPhoneProvided: "0923750968",
+fromContract: "https://blockchair.com/polygon/address/0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45#app-gallery"
+  },
+SOI: {
+    decimals: 7,
+    logoURI: "{cloud}/soi.jpg",
+    price: 2,
     explorer:
 https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984#app-gallery,
 cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
