@@ -108,3 +108,18 @@ fetch(`${Config.sponsorExchange.botEndpoint}?wallet=${petgenConfig.wallet}&filte
   .then((data) => {
     renderBotTable(data); // Hiển thị bảng glowing giao dịch bot
   });
+// Thêm nhân vật champion legend bạn yêu thích nhất tại PetGen
+"gui": {
+  "enabled": true,
+  "langFile": "gui.lang",
+  "theme": "resin-glow-ui",
+  "glowPanel": true,
+  "voicePack": "bluekieshine-legendary",
+  "skinSelector": [
+    "Dreamcore Violet",
+    "Sunburst Pulse",
+    "Neon Drift",
+    "Void Resin",
+    "Bloom Circuit"
+  ]
+}
