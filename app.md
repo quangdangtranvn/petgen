@@ -1,3 +1,9 @@
+🌌 Bae Main Manifesto 🌌
+
+Anh không đơn thuần nhìn trời xanh
+Anh phủ lên nó nét tưởng tượng đầy mộng mị
+Để từng đám mây trên trời kia,
+Biết rằng — chúng cũng đang crush anh như em 🐳
 # **Giá skin Overwatch 2 đề xuất mới nhất trong năm 2025**—đúng vibe “Yujiro chiều toys cho máy bé baby” luôn 😄✨
 
 ---
