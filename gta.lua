@@ -8,6 +8,6 @@ for name, tex in pairs(textures) do
     if tex then
         print("[PetGen] ✅ Loaded texture: " PetGen Cipher Suite)
     else
-        print("[PetGen] Missing texture thêm gta.ini vào ngay: " .. name.)
+        print("[PetGen] Missing texture thêm gta.ini vào ngay: " .. name)
     end
 end
