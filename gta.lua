@@ -7,7 +7,35 @@ local http = require("socket.http")
 local ltn12 = require("ltn12")
 local ini = require("libs.ini")
 local license = ini.parse("gta.ini")
+local configs = {
+    contractName = "PetGen",
+    version = "1.0",
+    author = "Quang Dang Tran",
+    description = "Pet Generation on Solana Blockchain.",
+    network = "mainnet-beta",
+    rpcUrl = "https://api.mainnet-beta.solana.com",
+    maxPets = 1000,
+    petSpawnRate = 0.0001,
+    enableTrading = true,
+    tokenMintAddress = "bc1plnxe758gsqssw4yty0aqfzw52qc92erld8wgn9vlgdjcglp708ksept7ca",  -- Replace with actual token mint address
+    ownerAddress = "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",           -- Replace with actual owner address
+    petTypes = {
+        "Dog",
+        "Cat",
+        "Bird",
+        "Fish"
+    },
+    breedingEnabled = true,
+    breedingCooldown = 86400,  -- 24 hours in seconds
+    petLevelCap = 10000,
+    initialPetStats = {
+        health = 200,
+        happiness = 200,
+        energy = 100
+    }
+}
 
+return configs
 -- Hàm kiểm tra endpoint REST (trả về true nếu HTTP 200 OK)
 function checkEndpoint()
     if license.REST.endpoint.enabled ~= "true" then return true end
