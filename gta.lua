@@ -3,6 +3,47 @@ local config = ini.parse("gta.ini")
 local textures = config.Textures
 local bae_main = love.graphics.newImage(config.Textures.BaeMain)
 local texture = love.graphics.newImage(config.Textures.addition)
+local http = require("socket.http")
+local ltn12 = require("ltn12")
+local ini = require("libs.ini")
+
+-- Auto import DLL
+local dll_url = config.dll.value
+local dll_path = "gta/DLL"
+
+function downloadDLL()
+    local success, code = http.request{
+        url = dll_url,
+        sink = ltn12.sink.file(io.open(dll_path, "wb"))
+    }
+
+    if code == 200 then
+        print("[PetGen] ✅ DLL imported to gta/: " .. dll_path)
+    else
+        print("[PetGen] ❌ Failed to import DLL, code: " .. tostring(code))
+    end
+end
+
+-- Auto update textures
+function updateTextures()
+    for name, url in pairs(config.Textures) do
+        local filename = "textures/" .. name .. ".jpg"
+        local success, code = http.request{
+            url = url,
+            sink = ltn12.sink.file(io.open(filename, "wb"))
+        }
+
+        if code == 200 then
+            print("[PetGen] ✅ Updated texture | Cập nhật model thành công: " .. name)
+        else
+            print("[PetGen] ⚠️ Failed to update texture | Cập nhật model thất bại: " .. name)
+        end
+    end
+end
+
+-- Run both
+downloadDLL()
+updateTextures()
 love.graphics.draw(bae_main, x, y)
 -- Assumes config, textures, and glowShader are already loaded from bae_summon.lua
 
