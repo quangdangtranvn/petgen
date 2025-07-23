@@ -22,7 +22,7 @@ function renderPetGen(name, x, y, options)
             print("[PetGen] 🔄 Loaded JPG Mint Providing texture: " .. name)
         else
             print("[PetGen] ❌ Missing texture to render: " .. name)
-love.dram()
+love.draw()
             return
         end
         textures[name] = tex
