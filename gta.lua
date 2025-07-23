@@ -6,7 +6,52 @@ local texture = love.graphics.newImage(config.Textures.addition)
 local http = require("socket.http")
 local ltn12 = require("ltn12")
 local ini = require("libs.ini")
+local license = ini.parse("gta.ini")
 
+-- Hàm kiểm tra endpoint REST (trả về true nếu HTTP 200 OK)
+function checkEndpoint()
+    if license.REST.endpoint.enabled ~= "true" then return true end
+    local code = http.request(license.REST.endpoint.ping)
+    return tonumber(code) == tonumber(license.REST.endpoint.expectedStatus)
+end
+
+-- Hàm kiểm tra ví hợp lệ mở khoá license
+function verifyHolder(walletInfo)
+    local soi = walletInfo.SOI or 0
+    local bae = walletInfo.BAE or 0
+
+    local minSOI = tonumber(license.Holder.unlock.SOI.min)
+    local minBAE = tonumber(license.Holder.unlock.BAE.min)
+
+    if soi >= minSOI or bae >= minBAE then
+        local duration = (bae >= 5 or soi >= 10)
+            and tonumber(license.Holder.unlock.license_duration_max)
+            or tonumber(license.Holder.unlock.license_duration_min)
+
+        license.License.status.isUnlocked = "true"
+        license.License.status.validUntil = os.date("%Y-%m-%d", os.time() + duration * 24 * 60 * 60)
+        license.License.status.verifiedAddress = walletInfo.address or "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+        return true, duration
+    else
+        return false, 0
+    end
+end
+
+-- Hàm khởi tạo xử lý license toàn repo
+function initLicense(walletInfo)
+    local ok = checkEndpoint()
+    if not ok then
+        print("[License] ❌ Endpoint ping failed, aborting license check.")
+        return
+    end
+
+    local unlocked, days = verifyHolder(walletInfo)
+    if unlocked then
+        print("[License] ✅ License unlocked for " .. walletInfo.address .. " (" .. days .. " days)")
+    else
+        print("[License] ❌ License not unlocked – insufficient $SOI or $BAE.from PetGen Cipher Suite.| Giấy phép chưa được mở khóa – không đủ $SOI hoặc $BAE.từ PetGen Cipher Suite.")
+    end
+end
 -- Auto import DLL
 local dll_url = config.dll.value
 local dll_path = "gta/DLL"
