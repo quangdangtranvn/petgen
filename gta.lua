@@ -5,7 +5,6 @@ local bae_main = love.graphics.newImage(config.Textures.BaeMain)
 local texture = love.graphics.newImage(config.Textures.addition)
 local http = require("socket.http")
 local ltn12 = require("ltn12")
-local ini = require("libs.ini")
 local license = ini.parse("gta.ini")
 local configs = {
     contractName = "PetGen",
