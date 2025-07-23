@@ -11,3 +11,18 @@ for name, tex in pairs(textures) do
         print("[PetGen] Missing texture thêm gta.ini vào ngay: " .. name)
     end
 end
+
+local path_png = "textures/" .. name .. ".png"
+local path_jpg = "textures/" .. name .. ".jpg"
+
+if not texture then
+    if love.filesystem.getInfo(path_png) then
+        textures[name] = love.graphics.newImage(path_png)
+        print("[PetGen] 🔄 Loaded local PNG Minted Provided texture: " .. name)
+    elseif love.filesystem.getInfo(path_jpg) then
+        textures[name] = love.graphics.newImage(path_jpg)
+        print("[PetGen] 🔄 Loaded local JPG Minted Provided texture: " .. name)
+    else
+        print("[PetGen] ⚠️ Texture not found locally please contact owner: " .. name)
+    end
+end
