@@ -1,7 +1,22 @@
 ---
 
 🧾 Bảng Báo Giá Thần Thú / Giao Dịch Bot Để thuê tại PetGen hay liên hệ **0923750968** gặp trực tiếp anh QuangBluekie anh chỉ cho code momo xịn nhất 😇
+---
 
+📈 Tình hình sàn hôm nay (theo bảng earnings tạm tính tính khi đầu tư 1$ vào ví momo 0923750968):
+
+Thần thú  Vòng trade sáng nay  Lợi nhuận ước tính  Trạng thái
+RainbowWings  2 vòng  $41.20  Glow mạnh 💎
+Tenzora  1 vòng lớn  $29.10  Bounce đẹp 🟢
+Cervatrix  Stack chậm  $7.85  Pulse đều 🌘
+CharmStack  Auto scan  $6.13  Sync ổn 🧠
+Ví transit  Chuyển nhanh  $4.89  Không tắc ❄️
+
+Tổng lợi nhuận: ~$89.17 trong 1h qua 💰
+
+---
+
+___
 Tên Token / Thần Thú  Giá Hiện Tại (USD)  Glow %  Bounce trạng thái  Đề xuất thuê 2h
 Tenzora  $1,350  🔥 1350%  Stable  ✅ Rất nên
 RainbowWings  $820  🌈 880%  Bounce + wings  ✅ Cực hợp trend
