@@ -1,4 +1,5 @@
 const owner = {
+  wallet: '0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638',
   name: "Bluekishine",
   trictionMode: "quad-split",
   status: "verified entropy architect",
