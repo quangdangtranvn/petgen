@@ -22,7 +22,7 @@ Ví địa chỉ: 0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638
 
 📤 Kết quả giả lập bot (coin.php):
 
-Tổng lượt  Số lần thắng  Tỷ lệ thắng  Coin nhận  Coin/lượt
+Tổng lượt  Số lần thắng  Tỷ lệ thắng  Coin nhận  Coin/lượt</t>
 10,000  3,021  70.21%  1,721  10
 10,000  3,022  75.21%  2  10
 10,000  3,023  75.21%  5  10
