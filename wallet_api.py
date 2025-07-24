@@ -5,6 +5,37 @@ import logging
 from datetime import datetime
 import requests
 import pandas as pd
+import re
+
+# Quét file Python từ repo GitHub
+url = "https://raw.githubusercontent.com/quangdangtranvn/petgen/main/wallet_api.py"
+response = requests.get(url)
+
+routes = []
+if response.status_code == 200:
+    lines = response.text.splitlines()
+    current_func = ""
+    for line in lines:
+        # Bắt tên hàm
+        if line.strip().startswith("def "):
+            func_match = re.search(r'def\s+(\w+)\(', line)
+            if func_match:
+                current_func = func_match.group(1)
+        # Bắt route và method
+        if "@app.route" in line:
+            route_match = re.search(r"@app.route\(['\"](.*?)['\"].*?methods=\[(.*?)\]", line)
+            if route_match:
+                route = route_match.group(1)
+                method = route_match.group(2).replace("'", "")
+                routes.append({
+                    "Route": route,
+                    "Method": method,
+                    "Function": current_func
+                })
+
+# Hiển thị bảng Markdown
+df = pd.DataFrame(routes)
+print(df.to_markdown(index=False))
 
 # URL đến raw content của file trên GitHub
 files = {
