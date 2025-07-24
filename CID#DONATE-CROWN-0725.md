@@ -36,7 +36,8 @@
 - Giao dịch được thực hiện theo hợp đồng `PetGen V2 Premium Launch` đã xác minh CID.
 - Mỗi khoản chuyển tiền đều gắn với reward tier hoặc quyền truy cập module Web4.
 - CID hợp đồng: `CID#DONATE-CROWN-0725`
-- Ví nhận: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+-  Hợp đồng số: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+- **Wallet ETH**: `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638`
 - Nếu cần bản hash đầy đủ hoặc export JSON, em xử lý ngay.
 
 ---
