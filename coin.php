@@ -4,7 +4,7 @@ $lose = 0;
 $runs = 10000;
 
 for ($i = 0; $i < $runs; $i++) {
-    // Giả sử bot dùng random từ 0 đến 1 để xác định thắng
+    // Bot dùng random từ 0 đến 1 để xác định thắng
     $result = rand(1, 100);
     if ($result <= 70) { // 70% tỷ lệ thắng
         $win++;
