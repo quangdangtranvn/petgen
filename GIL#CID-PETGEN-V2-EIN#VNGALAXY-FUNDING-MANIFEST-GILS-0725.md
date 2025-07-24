@@ -24,3 +24,4 @@ GIL#CID-PETGEN-V2-EIN#VNGALAXY-FUNDING-MANIFEST-GILS-0725.md
 - ✅ Phần bổ sung GILS: mô tả cách các CID được sử dụng để tuân thủ luật quốc tế (AML/KYC, DAO, pháp nhân thương mại,...)
 
 ---
+[CID V1 to V2](https://github.com/quangdangtranvn/petgen/blob/main/CID%23DONATE-CROWN-0725.md)
