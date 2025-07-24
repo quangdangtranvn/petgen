@@ -61,3 +61,25 @@ if (!$mintFound) {
     echo "❌ Không tìm thấy giao dịch mint từ ví này tới hợp đồng PetGen.\n";
 }
 ?>
+<?php
+function getUserCurrency($playFabId) {
+    $url = "https://1E8FD9.playfabapi.com/Client/GetUserInventory";
+    $headers = [
+        'Content-Type: application/json',
+        'X-SecretKey: WF98EQDHTZ18RYYK46OY9RQW8X4FS5I5KHPH55ABRQY7TNF9SA'
+    ];
+    $data = [
+        "PlayFabId" => $playFabId
+    ];
+
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+    curl_close($curl);
+
+    return json_decode($response, true);
+}
+?>
