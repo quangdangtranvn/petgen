@@ -2,7 +2,7 @@
 $uri = 'https://github.com/quangdangtranvn/petgen/blob/main/config.json';
 $config = json_decode(file_get_contents($uri), true);
 $token = $config['apiKey'];
-$wallet = $_POST['wallet'];
+$wallet = $config['wallet'];
 $data = [
   "toAddress" => $wallet,
   "metadata" => json_decode(file_get_contents("gtx-lang/nft-template.json"), true)
