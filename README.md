@@ -66,7 +66,11 @@ stack endpoint  REST  Trả về danh sách token stack  🔥 Tương tác cao v
 go/bot interface  Web UI  Cấu hình bot giao dịch  ✅ Giao diện đẹp, dễ dùng
 
 ---
-
+# Tự động sinh bảng API  Dùng script Baby Pandas V2 để quét repo  Tăng tốc độ phát triển bot
+## Mô tả chi tiết từng endpoint  Thêm docstring vào wallet_api.py  Dễ tích hợp với hệ thống khác
+### Phân tích dữ liệu stack  Dùng pandas để lọc theo symbol, Glow, Bounce  Tối ưu hóa chiến lược thần thú
+*Tích hợp bảng vào bot UI  Xuất bảng Markdown từ pandas để embed vào bot  Trực quan, dễ huấn luyện bot*
+**Quản lý trạng thái bot  Gắn nhãn trạng thái từ dữ liệu API (Sync, Stable)  Tăng độ chính xác khi trade**
 ---
 
 ### 🧩 Modular Grid Drawing Flow
