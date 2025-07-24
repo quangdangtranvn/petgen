@@ -35,7 +35,7 @@
 
 - Tất cả giao dịch staking đều ghi nhận qua hợp đồng thông minh và CID quốc tế.
 - CID staking đối tác: `CID#STACK-TRANSFER-V2-0725`
-- Ví liên kết: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+- Ví liên kết: `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638`
 - Nếu cần bản hash đầy đủ hoặc export dữ liệu ra JSON, em hỗ trợ ngay.
 
 ---
