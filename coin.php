@@ -1,3 +1,24 @@
+<?php
+$win = 0;
+$lose = 0;
+$runs = 10000;
+
+for ($i = 0; $i < $runs; $i++) {
+    // Giả sử bot dùng random từ 0 đến 1 để xác định thắng
+    $result = rand(1, 100);
+    if ($result <= 70) { // 70% tỷ lệ thắng
+        $win++;
+    } else {
+        $lose++;
+    }
+if ($win = 5)
+ $runs = 0;
+}
+
+echo "Tổng lượt chơi: $runs\n";
+echo "Số lần thắng: $win (" . round($win / $runs * 100, 2) . "%)\n";
+echo "Số lần thua: $lose (" . round($lose / $runs * 100, 2) . "%)\n";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
