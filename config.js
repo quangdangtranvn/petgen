@@ -120,6 +120,22 @@ momoPhoneProvided: "0923750968",
       powStackingEnabled: true,
       powEntryPoint: "{cloud}/stack",
       powRewardWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
+    },
+symbol: "ON",
+      type: "BTC/ETH",
+      decimals: 18,
+      totalSupply: "10000000000",
+      logoURI: "{cloud}/rabit.png",
+contract: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
+      explorer: "https://etherscan.io/token/0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
+      cleanTransitMainWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
+momoPhoneProvided: "0923750968",
+      fromContract: {wallet},
+      priceUSD: 90.00,
+      miningDifficulty: "20000 EH",
+      powStackingEnabled: true,
+      powEntryPoint: "{cloud}/stack",
+      powRewardWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
     }
   ]
 };
