@@ -33,6 +33,9 @@ python wallet_api.py
 
 The server will start on \`http://0.0.0.0:5000\`
 
+```docker
+docker exec nginx:alpine sh | python -m ip.py | pip install -r requirements.txt |  python -m wallet_api.py
+```
 ## API Endpoints
 
 ### 1. Home - API Information
