@@ -46,6 +46,36 @@ Bot Bounce Earnings  +$23.10  Giao dịch sóng và phản lực
 
 ---
 
+
+---
+
+# 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)
+
+Quốc gia/Khu vực  Mã Tiền  Tên Tiền Tệ  Tỷ Giá (1 USD = ?)  90 USD = ? VND
+🇺🇸 Hoa Kỳ  USD  Đô la Mỹ  1.0000  2,358,000 VND
+🇻🇳 Việt Nam  VND  Đồng Việt Nam  ~26,200  —
+🇪🇺 Châu Âu  EUR  Euro  0.8677  ~2,047,141 VND
+🇬🇧 Anh  GBP  Bảng Anh  0.7431  ~2,175,108 VND
+🇯🇵 Nhật Bản  JPY  Yên Nhật  145.92  ~2,344,632 VND
+🇨🇦 Canada  CAD  Đô la Canada  1.3730  ~2,233,380 VND
+🇦🇺 Úc  AUD  Đô la Úc  1.5450  ~2,222,130 VND
+🇨🇭 Thụy Sĩ  CHF  Franc Thụy Sĩ  0.8181  ~2,144,274 VND
+🇨🇳 Trung Quốc  CNY  Nhân dân tệ  7.1885  ~2,324,622 VND
+🇮🇳 Ấn Độ  INR  Rupee Ấn Độ  86.5830  ~2,268,840 VND
+🇭🇰 Hồng Kông  HKD  Đô la Hồng Kông  7.8499  ~2,349,168 VND
+🇸🇬 Singapore  SGD  Đô la Singapore  0.7771  ~2,353,491 VND
+🇹🇭 Thái Lan  THB  Baht Thái  0.0305  ~2,347,170 VND
+🇹🇼 Đài Loan  TWD  Đô la Đài Loan  0.0338  ~2,348,670 VND
+
+---
+
+💸 Quy đổi cụ thể theo yêu cầu đúc coin tại PetGen:
+Sản phẩm  Giá USD  Quy đổi VND
+Đồng BAE  22 USD  ~576,400 VND
+Đồng SOI  2 USD  ~52,400 VND
+ĐỒNG ON 90 USD  90 USD  ~2,358,000 VND
+
+
 ---
 
 📊 Gợi ý để kiểm tra thu nhập theo giờ của bot sau khi thuê cùng chính hãng PetGen:
