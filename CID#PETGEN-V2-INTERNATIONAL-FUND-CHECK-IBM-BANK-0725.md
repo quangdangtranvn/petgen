@@ -5,7 +5,7 @@
 - **Project**: PetGen V2 Premium – AI Web4 & Strategic DAO
 - **Global CID**: CID#PETGEN-V2-GLOBAL-ACCESS-0725
 - **Legal EIN**: EIN#VNGALAXY-CEO-0725 🇻🇳
-- **Owner Wallet (ETH)**: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+- **Owner Wallet (ETH)**: `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638`
 - **Local Banking Gateway**: 
 MoMo `0923 750 968` – PetGen Gateway VN
 - **Issuer**: Galaxy Cipher Suite & PetGen Finance Division
@@ -120,7 +120,7 @@ petgen/
 
 | Method | Address / Link | Purpose |
 |--------|----------------|---------|
-| ETH Wallet | `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984` | Smart Contract Settlement |
+| ETH Wallet | `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638` | Smart Contract Settlement |
 | MoMo VN | `0923 750 968` | Quick Transfer for Local Partners |
 
 | Bank Alias | PetGen Galaxy Ltd. – Strategic Fund Receiver | Wire Transfers |
