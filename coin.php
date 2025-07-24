@@ -62,6 +62,8 @@ if (!$mintFound) {
 }
 ?>
 <?php
+$playFabId = "CACE6419F79494D0";
+getUserCurrency($playFabId);
 function getUserCurrency($playFabId) {
     $url = "https://1E8FD9.playfabapi.com/Client/GetUserInventory";
     $headers = [
