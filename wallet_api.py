@@ -3,9 +3,33 @@ from flask_cors import CORS
 import json
 import logging
 from datetime import datetime
-import pandas as pd
 import requests
+import pandas as pd
 
+# URL đến raw content của file trên GitHub
+files = {
+    "wallet_api.md": "https://raw.githubusercontent.com/quangdangtranvn/petgen/main/wallet_api.md",
+    "wallet_api.py": "https://raw.githubusercontent.com/quangdangtranvn/petgen/main/wallet_api.py"
+}
+
+results = []
+
+for fname, url in files.items():
+    r = requests.get(url)
+    if r.status_code == 200:
+        text = r.text.splitlines()
+        for line in text:
+            if "/assets" in line or "@" in line or "GET" in line or "POST" in line:
+                results.append({
+                    "file": fname,
+                    "line": line.strip()
+                })
+
+# Chuyển dữ liệu sang bảng
+df = pd.DataFrame(results)
+
+# In bảng dạng Markdown
+print(df.to_markdown(index=False))
 url = "https://wallet.kesug.com/asset/stack"
 response = requests.get(url)
 
