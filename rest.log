@@ -16,3 +16,13 @@
   - Glow Status: ACTIVE
   - Stack Refresh: 2 vòng / 1h
 [16:16] [EXPORT] Ghi log hoàn tất ✅ - Sẵn sàng gửi team tài chính
+# REST Activity Log - Baby Bot Rainbow Wings
+# Session: RW-BB2-2025-07-24T16:00
+# Operator: Quang Bluekie
+
+[16:01] [GET] /wallet → 200 OK | Payload: {"balance": 1200.00}
+[16:02] [GET] /assets → 200 OK | Total assets: 42
+[16:03] [GET] /assets/stack → 200 OK | Stack active: 27
+[16:04] [GET] /assets/stack/SOI → 200 OK | Glow: 610% | Price: $2
+[16:05] [POST] /trade/execute → 201 Created | Token: Tenzora | Amount: $1350
+[16:06] [SYNC] cleanTransitMainWallet → Status: Synced ✅
