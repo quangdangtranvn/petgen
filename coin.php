@@ -9,7 +9,6 @@ echo json_encode([
     "total_wins" => $totalWins,
     "win_rate" => $winRate . "%"
 ]);
-?>
 
 $win = 0;
 $lose = 0;
