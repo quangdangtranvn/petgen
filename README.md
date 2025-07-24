@@ -54,6 +54,18 @@ mesh::box_001 {
 ```
 
 Your language parser (either in `langmod.core` or `meshlex.v`) can interpret these as internal data objects without needing a JSON intermediary.
+---
+
+📦 Bảng Tổng Quan Repo petgen
+
+Thành phần  Loại file  Mô tả chính  Mức độ hoàn thiện
+wallet_api.py  Python  Flask REST API với 5 endpoint chính  ✅ Ổn định, dễ mở rộng
+wallet_api.md  Markdown  Tài liệu mô tả các endpoint
+baby.js  JavaScript  Gọi API từ client, tích hợp bot  ✅ Tương thích với bot Rainbow Wings
+stack endpoint  REST  Trả về danh sách token stack  🔥 Tương tác cao với Super Labs
+go/bot interface  Web UI  Cấu hình bot giao dịch  ✅ Giao diện đẹp, dễ dùng
+
+---
 
 ---
 
