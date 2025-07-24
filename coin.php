@@ -1,4 +1,16 @@
 <?php
+header('Content-Type: application/json');
+
+
+$winRate = round($win / $lose * 100, 2);
+
+echo json_encode([
+    "total_plays" => $totalPlays,
+    "total_wins" => $totalWins,
+    "win_rate" => $winRate . "%"
+]);
+?>
+
 $win = 0;
 $lose = 0;
 $runs = 10000;
