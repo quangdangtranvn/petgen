@@ -147,7 +147,7 @@ module.exports = {
     id: "petgen-factory-001",
     name: "PetGen Web4 Factory",
     wallet: {
-      main: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+      main: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
       threshold: "0.005"
     },
     tokens: [
@@ -189,7 +189,7 @@ module.exports = {
   projectName: "PetGen Web4 Protocol",
   owner: "Quang Tran Dang",
   chain: "BNB Smart Chain",
-  mainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+  mainWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
   paymentTag: "0923750968",
   momoService: 0923750968,
   tokenSymbols: ["$AZT", "$BAE", "$ETH"],
@@ -212,7 +212,7 @@ module.exports = {
 };
 // 📦 config.js — glowing config tích hợp bot sàn tài trợ
 export const Config = {
-  wallet: "0x6143908CA80f618B1C41a764C1409a276B59CAe5",
+  wallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
   sponsorExchange: {
     name: "Kesug Exchange",
     botEndpoint: "https://wallet.kesug.com/go/bot",
