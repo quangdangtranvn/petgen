@@ -6,7 +6,7 @@
 
 - **Chiến dịch**: Crown Funding – PetGen V2 Premium Launch
 - **Mã CID hợp đồng**: CID#DONATE-CROWN-0725
-- **Ví nhận**: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+- **Ví nhận**: `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638`
 - **Loại hình**: Reward-Based + Strategic Equity
 - **Nền tảng**: PetGen Web4 + Galaxy Finance Gateway
 
