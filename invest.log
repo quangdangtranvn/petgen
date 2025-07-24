@@ -3,6 +3,8 @@
 # Operator: Quang Bluekie
 # Mode: AutoGlow Scan
 # Token: RainbowWings | Cervatrix | Tenzora | CharmStack
+[POST] https://github.com/quangdangtranvn/petgen/main/coin.php
+Payload: { "playfabid": "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638" }
 
 [16:01] [INIT] Bot khởi động - trạng thái: Glow ON, Pulse SYNC
 [16:02] [ASSET_SCAN] Tổng token scan: 42 | Stack active: 27
