@@ -128,7 +128,8 @@ _**Đơn vị kiểm duyệt**: PetGen Teams
     "manifestCID": "PETGEN-V2-GLOBAL-ACCESS-0725",
     "dunsID": "20021007",
     "ssnMock": "075-20-0021",
-    "ethWallet": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+    "contract": "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+"wallet": "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
     "linkedEmails": [
       "quangdt2220@gmail.com",
       "quangtd.9b@gmail.com",
