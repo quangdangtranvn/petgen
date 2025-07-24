@@ -88,7 +88,7 @@ const sibsStack = {
       decimals: 18,
       explorer: "https://wallet.kesug.com/view",
       logoURI: "{cloud}/bae.png",
-      cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+      cleanTransitMainWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
       powStackingEnabled: true,
       powEntryPoint: "{cloud}/stack",
       powRewardWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
@@ -100,10 +100,10 @@ const sibsStack = {
       explorer: "https://blockchair.com/polygon/address/0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984#app-gallery",
       logoURI: "{cloud}/azt.png",
       fromContract: "https://blockchair.com/polygon/address/0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45#app-gallery",
-      cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+      cleanTransitMainWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
       powStackingEnabled: true,
       powEntryPoint: "{cloud}/stack",
-      powRewardWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+      powRewardWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
     },
     {
       symbol: "SOI",
