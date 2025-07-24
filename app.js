@@ -73,7 +73,7 @@ const einMetadata = {
       "quangdangtrandev@gmail.com"
     ],
     phone: "0923750968",
-    walletETH: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+    walletETH: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
   },
   identifiers: {
     ssnMock: "075-20-0021",
@@ -82,11 +82,11 @@ const einMetadata = {
     resolutionCode: "UN-RSA/SC-2211042"
   },
   finance: {
-    currency: "$AZT, $ETH",
+    currency: "$AZT, $ETH","BAE","SOI","ON"
     totalSupply: 200000,
     royaltyProtocol: "Web4 AutoSync",
     royaltyWallets: [
-      "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984"
+      "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
     ],
     paymentTag: "0923750968",
     status: "Founder Tier · Verified"
