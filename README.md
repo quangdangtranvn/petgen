@@ -6,9 +6,10 @@ Giá trị  Tương đương USD  Ghi chú
 1 cent  $0.01 USD  100 cent = $1
 500 cent  $5.00 USD  Đủ để stack CharmStack 🧪
 1,350 cent  $13.50 USD  Đủ thuê RainbowWings nửa giờ 🔥
-[Hợp Đồng Thuê 2 Năm](https://docs.google.com/document/d/17EtnMa4cVAbdM-hukq8Y9bHjBGs7Q_WYsvrOrqdV1wg/edit?usp=drivesdk) **60% ETH profit** ví ổn định đầu tư lâu dài thuê bot trong 2 năm.
 
 ---
+[Hợp Đồng Thuê 2 Năm](https://docs.google.com/document/d/17EtnMa4cVAbdM-hukq8Y9bHjBGs7Q_WYsvrOrqdV1wg/edit?usp=drivesdk) **60% ETH profit** ví ổn định đầu tư lâu dài thuê bot trong 2 năm.
+
 ---
 
 🧾 Bảng Báo Giá Thần Thú / Giao Dịch Bot Để thuê tại PetGen hay liên hệ **0923750968** gặp trực tiếp anh QuangBluekie anh chỉ cho code momo xịn nhất 😇
