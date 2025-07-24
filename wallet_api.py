@@ -3,7 +3,18 @@ from flask_cors import CORS
 import json
 import logging
 from datetime import datetime
+import pandas as pd
+import requests
 
+url = "https://wallet.kesug.com/asset/stack"
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+    df = pd.DataFrame(data)
+    print(df)
+else:
+    print("Lỗi khi gọi API:", response.status_code)
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
