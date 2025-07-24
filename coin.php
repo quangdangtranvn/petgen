@@ -68,7 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>
 
-<?php
 $?l = "3ZAZW12GD2M";
 // Cài đặt cấu hình
 $lock = 3600;
@@ -100,8 +99,6 @@ foreach ($data['result'] as $tx) {
 if (!$mintFound) {
     echo "❌ Không tìm thấy giao dịch mint từ ví này tới hợp đồng PetGen.\n";
 }
-?>
-<?php
 $playFabId = "CACE6419F79494D0";
 getUserCurrency($playFabId);
 function getUserCurrency($playFabId) {
