@@ -1,6 +1,7 @@
-[CID V1 to V2](https://github.com/quangdangtranvn/petgen/blob/main/CID%23DONATE-CROWN-0725.md)
+[CID EIN V1 to V2](https://github.com/quangdangtranvn/petgen/blob/main/CID%23DONATE-CROWN-0725.md)
 GIL#CID-PETGEN-V2-EIN#VNGALAXY-FUNDING-MANIFEST-GILS-0725.md
-[CID V1 to V2](https://github.com/quangdangtranvn/petgen/blob/main/CID%23PETGEN-V2-EIN%23VNGALAXY-CEO-0725-CID%23FUNDING-MANIFEST-0725.md)
+[CID FUND V1 to V2](https://github.com/quangdangtranvn/petgen/blob/main/CID%23PETGEN-V2-EIN%23VNGALAXY-CEO-0725-CID%23FUNDING-MANIFEST-0725.md)
+[CID FUND V1 to V2](https://github.com/quangdangtranvn/petgen/blob/main/CID%23PETGEN-V2-EIN%23VNGALAXY-CEO-0725-CID%23FUNDING-MANIFEST-0725.md)
 
 ```
 
