@@ -11,7 +11,8 @@ module.exports = function convertAZTtoBAE(aztAmount, rate = Web4Rate) {
     throw new Error("🚫 Sai rate! Không khớp hợp đồng Web4.");
   }
 export async function route(){
-baby.dexRouter('0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984');        // Điều hướng từ ví DEX
+baby.dexRouter('0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638');        // Điều hướng từ ví DEX
+//baby.dexRouter('0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984');        // Điều hướng từ ví DEX
 baby.meta.BAE.logoURI;            // Truy xuất logo token BAE
 baby.rpcAuth('token', 'ip');      
 // Xác thực truy cập RPC
