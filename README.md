@@ -2,12 +2,12 @@
 
 📊 Gợi ý để kiểm tra thu nhập theo giờ của bot sau khi thuê cùng chính hãng PetGen:
 
-Phương pháp  Mô tả  Ưu điểm
-Log giao dịch  Ghi lại từng lệnh trade trong 1 giờ gần nhất  Chính xác, dễ tính lợi nhuận
-Tích hợp Google Sheets  Bot ghi dữ liệu vào bảng tính theo thời gian thực  Dễ xem lại, xuất báo cáo
-Dashboard nội bộ  Dùng Flask hoặc Streamlit để hiển thị earnings  Tùy chỉnh theo giao diện mong muốn
-Webhook Discord  Gửi thông báo mỗi lần bot kiếm được tiền  Có thể xem lịch sử theo giờ
-
+|Phương pháp|  Mô tả  Ưu điểm
+|Log giao dịch|  Ghi lại từng lệnh trade trong 1 giờ gần nhất  Chính xác, dễ tính lợi nhuận
+|Tích hợp Google Sheets|  Bot ghi dữ liệu vào bảng tính theo thời gian thực  Dễ xem lại, xuất báo cáo
+|Dashboard nội bộ|  Dùng Flask hoặc Streamlit để hiển thị earnings  Tùy chỉnh theo giao diện mong muốn
+|Webhook Discord|  Gửi thông báo mỗi lần bot kiếm được tiền  Có thể xem lịch sử theo giờ
+|Telegram autobot| Tự động xử lý giao dịch và hoàn tất nhanh nhất theo đúng quy định PetGen.
 ---
 ### PETGEN CIPHER KIT WEB4 V1.0
 ## LINK ZIP DRIVE KIT TO DOWNLOAD:
