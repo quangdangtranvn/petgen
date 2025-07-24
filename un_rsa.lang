@@ -9,6 +9,7 @@ chain       = "polygon"
 deploy      = true
 owner       = "0xbluekie.vault.1042.eth"
 supply      = "0x98ec1ef7c80ef597b93ab4a177f5a9d9a75fda45"
+wallet = "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638"
 zone        = "ALT-X42"
 resolution  = "UN-RSA/SC-2211042"
 
