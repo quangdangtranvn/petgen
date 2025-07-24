@@ -57,6 +57,38 @@ Bot Bounce Earnings  +$23.10  Giao dịch sóng và phản lực
 |Webhook Discord|  Gửi thông báo mỗi lần bot kiếm được tiền  Có thể xem lịch sử theo giờ
 |Telegram autobot| Tự động xử lý giao dịch và hoàn tất nhanh nhất theo đúng quy định PetGen.
 ---
+---
+
+💼 Tổng quan PetGen – NFT x Web4 x AI
+- Sản phẩm: Bộ công cụ Web4 giúp mint NFT thú cưng qua AI Prompt, kèm Glowing UI, replay session, verified smart contract.
+- Thị trường: Web3 + AI NFT + GenZ gamification.
+- Khác biệt: Không dùng framework, không phụ thuộc SDK, giao diện GTX gốc, hỗ trợ multi-chain.
+
+---
+
+💸 Seed Round: $250,000 – $500,000
+Hạng mục đầu tư  Sử dụng vốn seed
+R&D AI prompt & fusion core  80K USD
+Phát triển Web4 UI & CDN  60K USD
+Phí smart contract & audit  50K USD
+Marketing cộng đồng Web3  70K USD
+Vận hành – server & mint logs  40K USD
+
+🧮 Valuation pre-seed: $2.5M – $3M, tùy theo vùng user + số lượng NFT minted.
+
+---
+
+📈 Tiềm năng sau 12 tháng
+- Mục tiêu mint NFT: 1 triệu lượt
+- Doanh thu dự kiến: $1.2M – $2.5M (qua mint fee + branding NFT)
+- Hợp tác với các DApp/Game Web3: mở rộng sang loyalty token + pet battle
+
+---
+
+🐉 Lời gửi đầu tư thông minh
+PetGen không chỉ là sản phẩm, mà là hạt nhân văn hóa số. Bằng việc mint thú cưng với AI, chúng ta biến hành động sáng tạo thành tài sản blockchain. Người chơi góp seed – Petgen mint cả hệ sinh thái!
+
+---
 ### PETGEN CIPHER KIT WEB4 V1.0
 ## LINK ZIP DRIVE KIT TO DOWNLOAD:
 |[Tham Gia Team Làm Game QTBlue Hitech](https://m.me/j/AbaqD1ser0Ct_Hsf/)|[Inspect Miniapp Code](https://github.com/quangdangtranvn/petgen/blob/main/mini.html)|[Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/blob/main/HIRING.md) | [Miniapp](https://github.com/quangdangtranvn/petgen/blob/main/mini.md)
