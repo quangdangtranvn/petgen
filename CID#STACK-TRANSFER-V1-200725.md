@@ -6,7 +6,7 @@
 
 - **Tên đơn vị nhận**: Đối tác chiến lược – Super App Galaxy (PetGen V2)
 - **Mã CID staking**: CID#STACK-TRANSFER-V2-0725
-- **Ví nhận**: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984` ✅
+- **Ví nhận**: `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638` ✅
 - **Network**: Arbitrum + Polygon
 - **Hợp đồng staking**: `StakePetGenVault.sol` – Verified ✅
 
