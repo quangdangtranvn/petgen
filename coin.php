@@ -9,7 +9,7 @@ for ($i = 0; $i < $runs; $i++) {
     if ($result <= 70) { // 70% tỷ lệ thắng
         $win++;
     } else {
-        $lose++;
+        $lose++;$runs--;
     }
 if ($win = 5)
  $runs = 0;
