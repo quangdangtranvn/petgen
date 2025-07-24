@@ -10,11 +10,13 @@ A REST API service for querying wallet asset data with parameter-based filtering
 - Token stack information
 - Request logging with metadata
 - CORS enabled for web applications
-## Installation
+## Installation Wallet
 
 \`\`\`bash
+
 public_url = get_public_url("5000")
 print(f"Public URL: {public_url}")
+
 \`\`\`
 
 ## Installation
