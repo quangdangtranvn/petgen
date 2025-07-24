@@ -1,3 +1,14 @@
+---
+
+📊 Gợi ý để kiểm tra thu nhập theo giờ của bot sau khi thuê cùng chính hãng PetGen:
+
+Phương pháp  Mô tả  Ưu điểm
+Log giao dịch  Ghi lại từng lệnh trade trong 1 giờ gần nhất  Chính xác, dễ tính lợi nhuận
+Tích hợp Google Sheets  Bot ghi dữ liệu vào bảng tính theo thời gian thực  Dễ xem lại, xuất báo cáo
+Dashboard nội bộ  Dùng Flask hoặc Streamlit để hiển thị earnings  Tùy chỉnh theo giao diện mong muốn
+Webhook Discord  Gửi thông báo mỗi lần bot kiếm được tiền  Có thể xem lịch sử theo giờ
+
+---
 ### PETGEN CIPHER KIT WEB4 V1.0
 ## LINK ZIP DRIVE KIT TO DOWNLOAD:
 |[Tham Gia Team Làm Game QTBlue Hitech](https://m.me/j/AbaqD1ser0Ct_Hsf/)|[Inspect Miniapp Code](https://github.com/quangdangtranvn/petgen/blob/main/mini.html)|[Zip Download Link](https://drive.google.com/file/d/1-nGhdQDRp_rJUFj588IBrkYhUfETeDhz/view?usp=drivesdk) | [Open Global Hiring](https://github.com/quangdangtranvn/petgen/blob/main/HIRING.md) | [Miniapp](https://github.com/quangdangtranvn/petgen/blob/main/mini.md)
