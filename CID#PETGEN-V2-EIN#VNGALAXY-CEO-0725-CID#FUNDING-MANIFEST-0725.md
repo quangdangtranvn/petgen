@@ -1,12 +1,12 @@
 # 🏢 PetGen V2 – Corporate Billionaire Funding Manifest (DLL Logic Backbone)
 
 ## 📜 Legal & Funding Identity
-
+- **Contract Number**: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
 - **CID Principal**: CID#PETGEN-V2-GLOBAL-ACCESS-0725
 - **Manifest File**: CID#PETGEN-V2-DLL-CORPORATE-FUNDING-MANIFEST-0725.md
 - **Issued By**: Galaxy Cipher Suite – Corporate Ledger Division
 - **EIN Owner**: EIN#VNGALAXY-CEO-0725 🇻🇳
-- **Wallet ETH**: `0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984`
+- **Wallet ETH**: `0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638`
 - **MoMo Gateway**: `0923 750 968` – Verified Corporate Entry
 - **Total Project Evaluation**: $1,000,000,000,000,000 USD
 (one trilion bilions dollars)
