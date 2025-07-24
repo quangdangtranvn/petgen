@@ -1,4 +1,4 @@
-bot coin.php dựa trên logic phổ biến, sau đó chạy benchmark thử để anh hình dung tỷ lệ thắng/thua và hiệu suất hoạt động.
+bot coin.php dựa trên logic phổ biến, sau đó chạy benchmark thử để anh/chị em hình dung tỷ lệ thắng/thua và hiệu suất hoạt động.
 
 ---
 
