@@ -1,5 +1,6 @@
 <?php
-$config = json_decode(file_get_contents('config.json'), true);
+$uri = 'https://github.com/quangdangtranvn/petgen/blob/main/config.json';
+$config = json_decode(file_get_contents($uri), true);
 $token = $config['apiKey'];
 $wallet = $_POST['wallet'];
 $data = [
