@@ -112,7 +112,7 @@ const sibsStack = {
       totalSupply: "10000000000",
       logoURI: "{cloud}/soi.png",
       explorer: "https://etherscan.io/token/0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
-      cleanTransitMainWallet: "0xdBe7fc9e9EE897B62d578Ed39943E3b5C5D62984",
+      cleanTransitMainWallet: "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638",
 momoPhoneProvided: "0923750968",
       fromContract: {wallet},
       priceUSD: 2.00,
@@ -232,7 +232,7 @@ function loadPetLang(petId) {
       document.getElementById("pet-info").innerHTML = data;
     });
 } // Đọc từng id pet và load lên sàn
-const wallet = "0x6143908CA80f618B1C41a764C1409a276B59CAe5";
+const wallet = "0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638";
 fetch(`https://wallet.kesug.com/go/bot?wallet=${wallet}`)
   .then(res => res.json())
   .then(data => {
