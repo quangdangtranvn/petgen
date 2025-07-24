@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-32LT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption Coin Trading</title>
+</head>
+<body>
+
+<h2>AES Encryption Form</h2>
+
+<form method="post" action="coin.php">
+    <label for="data">Data to Encrypt:</label><br>
+    <input type="text" id="data" name="data"><br><br>
+    <input type="submit" value="Encrypt">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $data = $_POST['data'];
+    $key = '0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638'; // Use a secure key
+    $encrypted = encrypt($data, $key);
+    echo "<h3>Encrypted Data:{$data}</h3>";
+    echo "<p>" . htmlspecialchars($encrypted) . "</p>";
+}
+?>
+
+</body>
+</html>
+
 <?php
 $?l = "3ZAZW12GD2M";
 // Cài đặt cấu hình
