@@ -28,7 +28,7 @@ Route  Method  Mô tả chức năng chính  Payload/Query  Trả về
 💡 Gợi ý mở rộng nếu muốn chuẩn hóa REST:
 
 - Viết thêm /api/log-mint để lưu lịch sử giao dịch
-- Thêm auth layer nhẹ nếu anh muốn verify qua token riêng
+- Thêm auth layer nhẹ nếu anh/chị em muốn verify qua token riêng
 - Gắn network vào mỗi request để hệ thống auto chọn RPC phù hợp
 
 ---
