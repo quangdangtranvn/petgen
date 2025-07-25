@@ -1,5 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style>
+		.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+</style>
+<meta rel="card" charset="UTF-8" />
+<head>
+  <meta rel="grid-view" charset="UTF-8" />
+  <title>PetGen Game Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <canvas id="petGraph" width="800" height="400"></canvas>
+<script>
+  const ctx = document.getElementById('petGraph');
+  new Chart(ctx, {
+    type: 'network', // or bar, line, etc.
+    data: {
+      nodes: [{ id: 'Cat' }, { id: 'dog.ini' }, { id: 'Prompt' }],
+      edges: [{ from: 'Prompt', to: 'Cat' }, { from: 'dog.ini', to: 'Cat' }]
+    }
+  });
+</script>
+</head>
+<div class="grid-view">
+  <div class="card">
+    <iframe src="htmls/pet.html"></iframe>
+    <p>pet1.html</p>
+  </div>
+  <div class="card">
+    <iframe src="htmls/mini.html"></iframe>
+    <p>pet2.html</p>
+  </div>
+</div>
+<body>
+<html lang="en">
 <head>
   <meta charset="UTF-32LT" />
   <title>PetGen Game Editor</title>
