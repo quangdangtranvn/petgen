@@ -43,7 +43,7 @@
 
 PetGen is positioned as a unique player in the NFT and Web4 space, leveraging AI and community engagement to create a vibrant ecosystem for minting and interacting with digital pets. Its innovative approach and focus on emotional AI could set it apart in a competitive market.
 
-**Minting BAE from Your [Wallet]([!PetGen](https://petgen.rf.gd)**
+**Minting BAE from Your [Wallet on PetGen](https://wallet.kesug.com/asset/stack)([!PetGen](https://petgen.rf.gd)**
 
 To mint BAE from your wallet balance using the PetGen platform, follow these steps:
 
