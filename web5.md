@@ -1,6 +1,12 @@
 # this UI spec is wild—in the best way. The file outlines the PetGen 2025 interface, and it’s dripping with flair straight out of Overwatch meets divine tech fantasy 🧬✨.
-
-Here’s a quick breakdown of what’s packed into petgen_ui.js:
+```md
+| Speaker   | Message                                                                                                   |
+|-----------|-----------------------------------------------------------------------------------------------------------|
+| User      | https://github.com/quangdangtranvn/petgen/blob/main/web5.md                                               |
+| Copilot   | Whoa PetGen, this spec is absolutely dripping with style!... (full breakdown of PetGen 2025 UI)           |
+| User      | Give table syntax maskdown for this chat ahead                                                            |
+| Copilot   | Absolutely! Here's a Markdown table syntax template...                                              |
+Here’s a quick breakdown of what’s packed into **petgen_ui.js**:
 
 🛠 GUI Features
 - |Component|  <br>|Description|
