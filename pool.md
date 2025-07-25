@@ -1,5 +1,5 @@
 ![copilot_image_1753408720601.jpeg](https://github.com/user-attachments/assets/394335c7-cd04-4f20-95ca-5771fbcd64ea)
-# Tổng hợp lại bảng route REST API theo repo petgen của anh, tích hợp luôn các thành phần từ coin.php, config.json, và logic pool ngôn ngữ để kiểm tra dễ dàng hơn nha 🚀📡
+# Tổng hợp lại bảng route REST API theo repo PetGen, tích hợp luôn các thành phần từ coin.php, config.json, và logic pool ngôn ngữ để kiểm tra dễ dàng hơn nha 🚀📡
 
 ---
 
