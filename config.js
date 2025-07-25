@@ -36,7 +36,7 @@ route = "rpcEndpoint": ["http://wallet.kesug.com","http://petgen.rf.gd","https:/
 }
 };
 
-export async const route = "rpcEndpoint": ["http://wallet.kesug.com","http://petgen.rf.gd","https://github.com/quangdangtranvn/petgen"];
+export async const route = ["http://wallet.kesug.com","http://petgen.rf.gd","https://github.com/quangdangtranvn/petgen"];
 const langData = {
   "ui.characterName": "Bluekieshine-X",
   "ui.role": "Support / DPS Hybrid",
