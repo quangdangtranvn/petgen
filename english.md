@@ -42,3 +42,51 @@
 **Conclusion**
 
 PetGen is positioned as a unique player in the NFT and Web4 space, leveraging AI and community engagement to create a vibrant ecosystem for minting and interacting with digital pets. Its innovative approach and focus on emotional AI could set it apart in a competitive market.
+
+**Minting BAE from Your Wallet**
+
+To mint BAE from your wallet balance using the PetGen platform, follow these steps:
+
+1. **Access the Minting Interface**:
+   - Navigate to the PetGen minting page at [PetGen Minting](https://preview.quangbluekie.io).
+
+  
+
+2. **Connect Your Wallet**:
+   - Ensure your wallet (0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638) is connected to the platform.
+   - Use MetaMask or any compatible wallet to connect.
+
+  
+
+3. **Select the BAE Token**:
+   - Choose the BAE token from the available options in the minting interface.
+
+  
+
+4. **Check Your Balance**:
+   - Verify that you have sufficient balance in your wallet to cover the minting fee for BAE.
+
+  
+
+5. **Initiate the Minting Process**:
+   - Click on the mint button to start the minting process.
+   - Confirm the transaction in your wallet.
+
+  
+
+6. **Transaction Confirmation**:
+   - Wait for the transaction to be confirmed on the blockchain.
+   - You will receive a notification once the minting is successful.
+
+  
+
+7. **View Your Minted BAE**:
+   - After successful minting, you can view your newly minted BAE in your wallet or on the PetGen platform.
+
+  
+
+**Important Notes**:
+
+- Ensure that your wallet is funded with enough cryptocurrency to cover the minting costs.
+- Keep an eye on gas fees, as they can vary based on network congestion.
+- If you encounter any issues, refer to the documentation or support available on the PetGen platform.
