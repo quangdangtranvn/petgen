@@ -1,3 +1,17 @@
+const jwt = require('jsonwebtoken');
+
+// User registration
+app.post('/api/register', async (req, res) => {
+  // Save user to the database
+});
+
+// User login
+//app.post('/api/login', async (req, res) => {
+  // Validate user credentials
+  const token = jwt.sign({ userId: user._id }, 'your_jwt_secret');
+  res.json({ token });
+});
+
 // app.js
 const express = require('express');
 const app = express();
