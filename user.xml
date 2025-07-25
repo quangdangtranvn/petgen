@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+    <User >
+        <User ID>1</User ID>
+        <Name>PetGen</Name>
+        <Email>qtbluesoft@gmail.com</Email>
+        <Status>🎮Active</Status>
+    </User >
+    <User >
+        <User ID>2</User ID>
+        <Name>Jane Smith</Name>
+        <Email>janesmith@example.com</Email>
+        <Status>🧸Online but learning</Status>
+    </User >
+    <User >
+        <User ID>3</User ID>
+        <Name>Emily Johnson</Name>
+        <Email>emilyj@example.com</Email>
+        <Status>🧩Chatbot treating</Status>
+    </User >
+</Users>
