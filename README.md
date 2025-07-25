@@ -54,7 +54,7 @@ Bot Bounce Earnings  +$23.10  Giao dịch sóng và phản lực
 
 ---
 
-_ # 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)
+- |# 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)|
 |----------|---------|----------------------|
 Quốc gia/Khu vực  Mã Tiền  Tên Tiền Tệ  Tỷ Giá (1 USD = ?)  90 USD = ? VND
 |----------|---------|----------------------|
