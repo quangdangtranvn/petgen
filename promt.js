@@ -29,3 +29,17 @@ export class ContractAdapter {
     return await this.contract.getPetsByOwner(walletAddress);
   }
 }
+export class CDNAdapter {
+  constructor(baseUrl = "https://cdn.quangbluekie.io/assets") {
+    this.baseUrl = baseUrl;
+  }
+
+  getPetImagePath(petType, version = "v1") {
+    return `${this.baseUrl}/${version}/images/${petType}.webp`;
+  }
+
+  async fetchGallery(petType) {
+    const res = await fetch(`${this.baseUrl}/gallery/${petType}.json`);
+    return await res.json();
+  }
+}
