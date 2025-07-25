@@ -53,7 +53,7 @@ To mint BAE from your wallet balance using the PetGen platform, follow these ste
   
 
 2. **Connect Your Wallet**:
-   - Ensure your wallet (0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638) is connected to the platform.
+   - Ensure your wallet **(0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638)** is connected to the platform.
    - Use MetaMask or any compatible wallet to connect.
 
   
