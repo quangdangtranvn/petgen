@@ -86,7 +86,7 @@ Sản phẩm  Giá USD  Quy đổi VND
 
 - 📊 Gợi ý để kiểm tra thu nhập theo giờ của bot sau khi thuê cùng chính hãng PetGen:
 |----------|---------|-------|-----|----|-----|
-|Phương pháp| ** Mô tả  Ưu điểm
+|Phương pháp| **Mô tả  Ưu điểm
 |Log giao dịch|  Ghi lại từng lệnh trade trong 1 giờ gần nhất  Chính xác, dễ tính lợi nhuận
 |Tích hợp Google Sheets|  Bot ghi dữ liệu vào bảng tính theo thời gian thực  Dễ xem lại, xuất báo cáo
 |Dashboard nội bộ|  Dùng Flask hoặc Streamlit để hiển thị earnings  Tùy chỉnh theo giao diện mong muốn
