@@ -1,6 +1,15 @@
 {
 "wallet": '0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638',
   "apiKey": "afTatfu2kIIzNK4U1gWrzoAoJ14ywEKG",
+  "SI": { "name": "SOI", "usdValue": 2,"network": "etherium", "amount": 1, "wallet": "0923750968" },
+  "BB": { "name": "BNB","usdValue": 200,"network": "BNB", "amount": 1, "wallet": "0923750968" },
+  "BE": { "name": "BAE", "usdValue": 22,"network": "etherium", "amount": 1, "wallet": "0923750968" },
+  "AT": [
+    { "usdValue": 0.02, "amount": 1000 },
+    { "usdValue": 0.2, "amount": 500 },
+    { "usdValue": 0.04, "amount": 500 },
+    { "usdValue": 0.16, "amount": 500 }
+  ],
   "network": "polygon",
   "limits": {
     "maxMintPerDay": 10,
