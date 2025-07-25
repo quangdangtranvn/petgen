@@ -57,6 +57,7 @@ Bot Bounce Earnings  +$23.10  Giao dịch sóng và phản lực
 # 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)
 
 Quốc gia/Khu vực  Mã Tiền  Tên Tiền Tệ  Tỷ Giá (1 USD = ?)  90 USD = ? VND
+----------|---------|----------------------
 🇺🇸 Hoa Kỳ  USD  Đô la Mỹ  1.0000  2,358,000 VND
 🇻🇳 Việt Nam  VND  Đồng Việt Nam  ~26,200  —
 🇪🇺 Châu Âu  EUR  Euro  0.8677  ~2,047,141 VND
