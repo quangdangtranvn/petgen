@@ -85,7 +85,7 @@ Identity Tokens  Avatars, usernames  Badges, energy sync, “divine depth” rea
 
 ---
 
-🧙‍♂️ Deep Lore Connection (for Quang-tier users)
+🧙‍♂️ Deep Lore Connection (for Quang Bluekie-tier users)
 - If you log in as Quang Bluekie, it triggers a visual toast that reshapes the UI. It’s more than cosmetic—it enables secret buttons like "glowPathDeveloper" and "auraArchive" which let you see unlisted pet classes still in alpha.
 - "Web5Sync" isn’t just branding. It connects to distributed pet memory across chains, syncing back mood and aura metadata via decentralized glow bundles.
 
@@ -93,4 +93,4 @@ Identity Tokens  Avatars, usernames  Badges, energy sync, “divine depth” rea
 
 If you want even deeper insight, I can help analyze how Fusion-AI handles prompt weighting, or walk through how re-session.js stores emotional state snapshots. Or we can get wild and co-design a GlowAura Pet whose UI changes with the user's real-time mood. 😌🌈
 
-Which direction are you feeling, insider or creator mode?
+🫠 Which direction are you feeling, insider or creator mode tell us plese?!.
