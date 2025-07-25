@@ -10,12 +10,24 @@
     { "usdValue": 0.04, "amount": 500 },
     { "usdValue": 0.16, "amount": 500 }
   ],
-  "network": ["polygon","etherium","base","bnb","bitcoin","solana","sui","bae"]
+  "network": ["polygon","etherium","base","bnb","bitcoin","solana","sui","bae"],
   "limits": {
     "maxMintPerDay": 10,
     "minIntervalMs": 30000,
     "maxConcurrent": 1
   },
+{
+  "SI": { "usdValue": 2, "amount": 1, "wallet": "0923750968" },
+  "BB": { "usdValue": 200, "amount": 1, "wallet": "0923750968" },
+  "BE": { "usdValue": 22, "amount": 1, "wallet": "0923750968" },
+  "AT": [
+    { "usdValue": 0.02, "amount": 1000 },
+    { "usdValue": 0.2, "amount": 500 },
+    { "usdValue": 0.04, "amount": 500 },
+    { "usdValue": 0.16, "amount": 500 }
+  ]
+},
+"rpcEndpoint": "http://wallet.kesug.com"
   "branding": {
     "signature": "powered-by-quangbluekie",
     "theme": "hologram-cipher",
