@@ -22,5 +22,34 @@ const Rest5Config = {
         delimiter: '='
     }
 };
+// parsers.js
 
-export default Rest5Config;
+import { unzipBuffer } from './utils';
+import ini from 'ini';
+// file config for profile
+export function parseIni(file, { sectionPrefix, sectionSuffix, keyValueDelimiter }) {
+  const text = file.text();
+  return ini.parse(
+    text,
+    { section: sectionPrefix + sectionSuffix, delimiter: keyValueDelimiter }
+  );
+}
+// function to draw gui from GTX Native Lang.
+export function parseLang(file, { ignoreEmptyLines, delimiter }) {
+  const lines = file.text().split('\n');
+  return lines
+    .filter(l => !ignoreEmptyLines || l.trim() !== '')
+    .map(l => l.split(delimiter))
+    .reduce((acc, [k, v]) => ({ ...acc, [k.trim()]: v.trim() }), {});
+}
+}
+// function to draw repository from PetGen.
+export async function parseIp(file, { unzipOnLoad, showFileList }) {
+  const buffer = await file.arrayBuffer();
+  const files = unzipOnLoad ? await unzipBuffer(buffer) : [buffer];
+  if (showFileList) console.log(files.map(f => f.name));
+  return files;
+}
+
+// You can flesh out parseNhac similarly...
+export default Rest5Config, parseIp, parseLang, parseIni;
