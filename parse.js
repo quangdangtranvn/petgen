@@ -50,6 +50,13 @@ export async function parseIp(file, { unzipOnLoad, showFileList }) {
   if (showFileList) console.log(files.map(f => f.name));
   return files;
 }
-
+class Logger {
+  constructor(level) { /* ... */ }
+  info(msg)    { /* ... */ }
+  warn(msg)    { /* ... */ }
+  error(msg)   { /* ... */ }
+  verbose(msg) { /* ... */ }
+}
+export const logger = new Logger(Rest5Config.logLevel);
 // You can flesh out parseNhac similarly...
-export default Rest5Config, parseIp, parseLang, parseIni;
+export default Rest5Config,logger,parseIp, parseLang, parseIni;
