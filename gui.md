@@ -2,7 +2,7 @@
 💡 Dưới đây là bản tổng hợp chi tiết để anh/em hay các baby kiểm tra lại hoặc dùng cho DOM setup:
 
 ---
-'''javascript
+'''.javascript
 import requests
 response = requests.get("https://petgen.rf.gd/api", headers={"Authorization": "Bearer YOUR_API_KEY_IN_PetGen"})
 '''
