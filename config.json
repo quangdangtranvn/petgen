@@ -10,7 +10,7 @@
     { "usdValue": 0.04, "amount": 500 },
     { "usdValue": 0.16, "amount": 500 }
   ],
-  "network": "polygon",
+  "network": ["polygon","etherium","base","bnb","bitcoin","solana","sui","bae"]
   "limits": {
     "maxMintPerDay": 10,
     "minIntervalMs": 30000,
