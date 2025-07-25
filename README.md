@@ -54,7 +54,7 @@ Bot Bounce Earnings  +$23.10  Giao dịch sóng và phản lực
 
 ---
 
-# 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)
+_ # 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)
 |----------|---------|----------------------|
 Quốc gia/Khu vực  Mã Tiền  Tên Tiền Tệ  Tỷ Giá (1 USD = ?)  90 USD = ? VND
 |----------|---------|----------------------|
@@ -86,12 +86,12 @@ Sản phẩm  Giá USD  Quy đổi VND
 
 - 📊 Gợi ý để kiểm tra thu nhập theo giờ của bot sau khi thuê cùng chính hãng PetGen:
 |----------|---------|-------|-----|----|-----|
-|Phương pháp|  Mô tả  Ưu điểm
+|Phương pháp| ** Mô tả  Ưu điểm
 |Log giao dịch|  Ghi lại từng lệnh trade trong 1 giờ gần nhất  Chính xác, dễ tính lợi nhuận
 |Tích hợp Google Sheets|  Bot ghi dữ liệu vào bảng tính theo thời gian thực  Dễ xem lại, xuất báo cáo
 |Dashboard nội bộ|  Dùng Flask hoặc Streamlit để hiển thị earnings  Tùy chỉnh theo giao diện mong muốn
 |Webhook Discord|  Gửi thông báo mỗi lần bot kiếm được tiền  Có thể xem lịch sử theo giờ
-|Telegram autobot| Tự động xử lý giao dịch và hoàn tất nhanh nhất theo đúng quy định PetGen.
+|Telegram autobot| Tự động xử lý giao dịch và hoàn tất nhanh nhất theo đúng quy định PetGen.**
 ---
 ---
 
