@@ -55,7 +55,7 @@ class Logger {
   info(msg)    { /* ... */ }
   warn(msg)    { /* ... */ }
   error(msg)   { /* ... */ }
-  verbose(msg) { /* ... */ }
+  verbose(msg) { /* Redifination Version Refine: ... */ }
 }
 export const logger = new Logger(Rest5Config.logLevel);
 // You can flesh out parseNhac similarly...
