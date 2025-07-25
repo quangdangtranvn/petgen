@@ -125,3 +125,25 @@ initAuditPanel({
   title: "PetAudit: Skin Sâm Hóa Vibe",
   sections: ["Vibe Glow", "Mức baby boy", "Chỉ số thần bảo hộ"]
 });
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const app = express();
+import * from '.config';
+app.use(bodyParser.json());
+
+// Connect to MongoDB
+mongoose.connect('mongodb://{config.route}/petgen', { useNewUrlParser: true, useUnifiedTopology: true });
+
+// Minting Route
+app.post('/api/mint', async (req, res) => {
+  const { name, traits } = req.body;
+  // Call the PetGen API to mint the pet
+  // Example: const result = await petGenAPI.mintPet(name, traits);
+  res.json({ message: 'Pet minted successfully!', pet: { name, traits } });
+});
+
+// Start the server
+app.listen(5000, () => {
+  console.log('Server is running on port 5000');
+});
