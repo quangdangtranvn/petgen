@@ -1,3 +1,5 @@
+```bash
+git clone https://github.com/quangdangtranvn/petgen.git
 🌌 Bae Main Manifesto 🌌
 
 Anh không đơn thuần nhìn trời xanh
