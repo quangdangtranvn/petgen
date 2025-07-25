@@ -1,0 +1,81 @@
+
+@soi{
+
+usdValue: 2,
+
+ConvertTo: 'SI',
+
+ContactWallet: 0923750968,
+
+amount: 1
+
+}
+
+@bnb{
+
+usdValue: 200,
+
+ConvertTo: 'BB',
+
+ContactWallet: 0923750968,
+
+amount: 1
+
+}
+
+@bae{
+
+usdValue: 22,
+
+ConvertTo: 'BE',
+
+ContactWallet: 0923750968,
+
+amount: 1
+
+}
+
+@azt {
+usdValue: 0.02,
+
+ConvertTo: 'AT',
+
+ContactWallet: 0923750968,
+
+amount: 1000
+
+}
+@azt02 {
+
+usdValue: 0.2,
+
+ConvertTo: 'AT',
+
+ContactWallet: 0923750968,
+
+amount: 500
+
+}
+
+@azt04 {
+
+usdValue: 0.04,
+
+ConvertTo: 'AT',
+
+ContactWallet: 0923750968,
+
+amount: 500
+
+}
+@azt06 {
+
+usdValue: 0.16,
+
+ConvertTo: 'AT',
+
+ContactWallet: 0923750968,
+
+amount: 500
+
+}
