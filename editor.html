@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+</style>
+<head>
+  <meta charset="UTF-8" />
+  <title>PetGen Game Editor</title>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/quangdangtranvn/petgen/main/style.css" />
+  <canvas id="petGraph" width="800" height="400"></canvas>
+<script>
+  const ctx = document.getElementById('petGraph');
+  new Chart(ctx, {
+    type: 'network', // or bar, line, etc.
+    data: {
+      nodes: [{ id: 'Lion' }, { id: 'https://github.com/quangdangtranvn/petgen/blob/main/gta.ini' }, { id: 'Prompt' }],
+      edges: [{ from: 'Prompt', to: 'Cat' }, { from: 'https://github.com/quangdangtranvn/petgen/blob/main/petgen_skin.ini', to: 'dragon' }]
+    }
+  });
+</script>
+</head>
+<div class="grid-view">
+  <div class="card">
+    <iframe src="https://github.com/quangdangtranvn/petgen/blob/main/pet.html"></iframe>
+    <p>pet1.html</p>
+  </div>
+  <div class="card">
+    <iframe src="https://raw.githubusercontent.com/quangdangtranvn/petgen/main/mini.html">Mini NFT Vault</iframe>
+     <iframe src="https://raw.githubusercontent.com/quangdangtranvn/petgen/main/programing.html">IDE Handle</iframe>
+    <p>pet2.html</p>
+  </div>
+</div>
+<body>
+  <h1>🐾 PetGen Game Editor</h1>
+
+  <section>
+    <input type="file" id="fileInput" multiple />
+    <button onclick="handleUpload()">Upload & Parse</button>
+  </section>
+
+  <section id="previewArea" onclick="sendToStream()">
+    <h2>📄 File Preview</h2>
+    <div id="output"></div>
+  </section>
+
+  <section>
+    <h2>🔧 REST Stream</h2>
+    <button onclick="sendToStream()">Send to /petgen/stream</button>
+    <div id="streamResult"></div>
+  </section>
+
+  <script src="rest.js">
+  	function handleUpload() {
+  const files = document.getElementById('fileInput').files;
+  for (let file of files) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const content = e.target.result;
+      document.getElementById('output').innerHTML += `<pre>${content}</pre>`;
+      // Call parser based on file extension
+      if (file.name.endsWith('.lang')) {
+        processLangFile(content);
+      }
+      // Add other file types here...
+    };
+    reader.readAsText(file);
+  }
+}
+
+function sendToStream() {
+  fetch('/petgen/stream', {
+    method: 'POST',
+    body: new FormData(document.getElementById('fileInput'))
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('streamResult').innerText = `Streamed to: ${data.url}`;
+  })
+  .catch(err => console.error('Stream error:', err));
+}
+</script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>File Extensions List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <div class="max-w-md mx-auto px-4 pt-4 pb-20">
+    <ul class="list-disc list-inside space-y-2 text-base leading-relaxed">
+      <li>
+<span class="font-bold">S
+Petgen:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.lang | .nhac | .ip </code>
+ Petgen Repo:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.ip</code>
+        <span class="font-mono">Python:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.py</code>
+      </li>
+      <li>
+        <span class="font-bold">Java:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.java</code>Petgen GUI:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.lang</code>Petgen music:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.nhac</code>,
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.class</code>
+        (compiled bytecode)
+      </li>
+      <li>
+        <span class="font-bold">JavaScript:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.js</code>
+      </li>
+      <li>
+        <span class="font-bold">PHP:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.php</code>
+      </li>
+      <li>
+        <span class="font-bold">Kotlin:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.kt</code>
+  <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.lang</code>
+      </li>
+  <code class="bg-blue-200 text-blue-900 rounded px-1.5 py-0.5 font-bold">.nhac</code>
+      <li>
+        <span class="font-bold">Swift:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.swift</code>
+      </li>
+      <li>
+        <span class="font-bold">C#:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.cs</code>
+      </li>
+      <li>
+        <span class="font-bold">C và C++:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.c</code>,
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.cpp</code>,
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.h</code>,
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.hpp</code>
+      </li>
+      <li>
+        <span class="font-bold">Go:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.go</code>
+      </li>
+      <li>
+        <span class="font-bold">Ruby:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.rb</code>
+      </li>
+      <li>
+        <span class="font-bold">TypeScript:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.ts</code>
+      </li>
+      <li>
+        <span class="font-bold">Scala:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.scala</code>
+      </li>
+      <li>
+        <span class="font-bold">R:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.r</code>
+      </li>
+      <li>
+        <span class="font-bold">Matlab:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.m</code>
+      </li>
+      <li>
+        <span class="font-bold">HTML:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.html</code>,
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.htm</code>
+      </li>
+      <li>
+        <span class="font-bold">CSS:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.css</code>
+      </li>
+      <li>
+        <span class="font-bold">XML:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.xml</code>
+      </li>
+      <li>
+        <span class="font-bold">JSON:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.json</code>
+      </li>
+      <li>
+        <span class="font-bold">SQL:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.sql</code>
+      </li>
+      <li>
+        <span class="font-bold">YAML:</span>
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.yaml</code>,
+        <code class="bg-blue-100 text-blue-900 rounded px-1.5 py-0.5 font-mono">.yml</code>
+      </li>
+    </ul>
+  </div>
+
+  <nav
+    class="fixed bottom-0 left-0 w-full border-t border-gray-200 bg-white flex justify-around items-center py-2"
+  >
+    <button class="flex flex-col items-center text-gray-700 text-xs">
+      <i class="fas fa-home text-xl"></i>
+      <span class="mt-1">Trang chủ</span>
+    </button>
+    <button class="flex flex-col items-center text-blue-600 text-xs font-semibold">
+      <i class="fas fa-search text-xl"></i>
+      <span class="mt-1">Tìm kiếm</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-700 text-xs">
+      <i class="fas fa-bell text-xl"></i>
+      <span class="mt-1">Thông báo</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-700 text-xs">
+      <i class="fas fa-moon text-xl"></i>
+      <span class="mt-1">Hoạt động</span>
+    </button>
+  </nav>
+</body>
+</html>
