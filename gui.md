@@ -5,7 +5,7 @@
 ```javascript
 import requests
 response = requests.get("https://petgen.rf.gd/api", headers={"Authorization": "Bearer YOUR_API_KEY_IN_PetGen"})
-___
+```
 
 ### 🧬 Nhân vật chính: Bluekieshine-X
 
