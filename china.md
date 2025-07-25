@@ -11,3 +11,23 @@
 # Message from PetGen Fusion Deepseek AI.
 
 
+### Steps to Download Files from GitHub
+
+1. **Visit the Repository**: Go to the Petgen GitHub repository by clicking on this link: [Petgen GitHub Repository](https://github.com/quangdangtranvn/petgen).
+
+2. **Clone the Repository**:
+   - If you have Git installed, you can clone the repository to your local machine using the following command in your terminal or command prompt:
+     ```bash
+     git clone https://github.com/quangdangtranvn/petgen.git
+     ```
+
+3. **Download as ZIP**:
+   - If you prefer not to use Git, you can download the repository as a ZIP file:
+     - Click on the green "Code" button on the repository page.
+     - Select "Download ZIP".
+     - Once downloaded, extract the ZIP file to access the contents.
+
+4. **Explore the Files**: After downloading, you can navigate through the files and folders to find the animations and other resources you need.
+
+If you have any specific questions about the files or need help with something else, feel free to ask us!**PetGen**
+# PetGen Super Apps Apis Protocal.
