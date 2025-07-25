@@ -53,7 +53,30 @@ const langData = {
   "ui.voice.2": "Let’s light up the dream zone!",
   "ui.voice.3": "Glow calibrated. Support initiated."
 };
+# Example API call (check PetGen docs for actual endpoints)
+import requests
 
+url = "https://petgen-api.example.com/generate"
+headers = {"Authorization": "key_from_firebase_config"} 
+data = {"breed": "golden_retriever"}
+
+response = requests.post(url, json=data, headers=headers)
+print(response.json())
+
+export class CDNAdapter {
+  constructor(baseUrl = "https://cdn.quangbluekie.io/assets") {
+    this.baseUrl = baseUrl;
+  }
+
+  getPetImagePath(petType, version = "v1") {
+    return `${this.baseUrl}/${version}/images/${petType}.webp`;
+  }
+
+  async fetchGallery(petType) {
+    const res = await fetch(`${this.baseUrl}/gallery/${petType}.json`);
+    return await res.json();
+  }
+}
 document.getElementById("character-name").textContent = langData["ui.characterName"];
 document.getElementById("role").textContent = langData["ui.role"];
 document.getElementById("description").textContent = langData["ui.description"];
