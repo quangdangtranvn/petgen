@@ -56,7 +56,7 @@ const langData = {
 # Example API call (check PetGen docs for actual endpoints)
 import requests
 
-url = "https://petgen-api.example.com/generate"
+url = "{route[1]}";
 headers = {"Authorization": "key_from_firebase_config"} 
 data = {"breed": "golden_retriever"}
 
