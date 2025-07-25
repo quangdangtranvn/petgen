@@ -17,14 +17,14 @@
   <meta rel="grid-view" charset="UTF-8" />
   <title>PetGen Game Editor</title>
   <link rel="stylesheet" href="style.css" />
-  <canvas id="petGraph" width="800" height="400"></canvas>
+  <canvas id="petGraph" width="600" height="800"></canvas>
 <script>
   const ctx = document.getElementById('petGraph');
   new Chart(ctx, {
     type: 'network', // or bar, line, etc.
     data: {
-      nodes: [{ id: 'Cat' }, { id: 'dog.ini' }, { id: 'Prompt' }],
-      edges: [{ from: 'Prompt', to: 'Cat' }, { from: 'dog.ini', to: 'Cat' }]
+      nodes: [{ id: 'Cat' }, { id: 'pengen_skin.ini' }, { id: 'Prompt' }],
+      edges: [{ from: 'Prompt', to: 'Cat' }, { from: 'gta.ini', to: 'Cat' }]
     }
   });
 </script>
