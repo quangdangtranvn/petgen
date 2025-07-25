@@ -28,7 +28,7 @@
 
 - **Community Size**: Approximately 120K Web4 developers and 40K NFT holders.
 - **Estimated Revenue**: ~2-5 million USD/year from NFT minting and Web4 launcher.
-- **Growth Rate**: Expected growth of 35-50% per year.
+- **Growth Rate**: Expected growth of 35-6000% per year.
 
   
 
