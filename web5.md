@@ -2,7 +2,17 @@
 ```md
 | Speaker   | Message                                                                                                   |
 |-----------|-----------------------------------------------------------------------------------------------------------|
-| User      | https://github.com/quangdangtranvn/petgen/blob/main/web5.md                                               |
+| User      | https://github.com/quangdangtranvn/petgen/blob/main/web5.md     
+| 🔧 Component               | 💬 Description                                                                 |
+|---------------------------|--------------------------------------------------------------------------------|
+| loadSkinBundles([...])    | Displays collab skins (Mercy, Echo, Genji...)                                  |
+| initGlowPrompt({...})     | Buffs the server with a divine prompt interface                                |
+| trackDivineStatus({...})  | Monitors protection status on Bluekieshine domain                              |
+| showAchievementBanner({...}) | MVP banner when clearing bosses with LVL 01 class                        |
+| applyTheme({...})         | Activates “Bae Main Visual” theme with glow and custom fonts                   |
+| initAuditPanel({...})     | Checks “divine depth” of each skin                                             |
+| fetchGlowAura()           | Retrieves glow effects for vibe-based skin selection                           |
+| CEO Visual Toast          | Triggered when Quang Bluekie logs in—fractures and rebuilds with neon shards   |                                          |
 | Copilot   | Whoa PetGen, this spec is absolutely dripping with style!... (full breakdown of PetGen 2025 UI)           |
 | User      | Give table syntax maskdown for this chat ahead                                                            |
 | Copilot   | Absolutely! Here's a Markdown table syntax template...                                              |
