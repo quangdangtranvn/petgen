@@ -27,7 +27,7 @@
     { "usdValue": 0.16, "amount": 500 }
   ]
 },
-"rpcEndpoint": "http://wallet.kesug.com"
+"rpcEndpoint": ["http://wallet.kesug.com","http://petgen.rf.gd","https://github.com/quangdangtranvn/petgen"],
   "branding": {
     "signature": "powered-by-quangbluekie",
     "theme": "hologram-cipher",
