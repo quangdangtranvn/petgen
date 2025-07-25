@@ -28,6 +28,7 @@
   ]
 },
 "rpcEndpoint": ["http://wallet.kesug.com","http://petgen.rf.gd","https://github.com/quangdangtranvn/petgen"],
+"route": ["http://wallet.kesug.com","http://petgen.rf.gd","https://github.com/quangdangtranvn/petgen"],
   "branding": {
     "signature": "powered-by-quangbluekie",
     "theme": "hologram-cipher",
