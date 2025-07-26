@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+	
 <meta charset="UTF-32LT">
 <html lang="en">
  <head>
@@ -8,6 +9,69 @@
    Overwatch 2 Bluekieshine-X
   </title>
   <script src="https://cdn.tailwindcss.com">
+  // app.js
+
+export class PetGenApp {
+  constructor(wallet) {
+    this.wallet = wallet;
+    this.baseURL = 'https://preview.quangbluekie.io/petgen'; // adjust if needed
+  }
+
+  async fetchCoin() {
+    try {
+      const response = await fetch(`${this.baseURL}/coin.php`);
+      return await response.json();
+    } catch (err) {
+      console.error('Error fetching coin:', err);
+      return null;
+    }
+  }
+
+  async fetchAppLogic() {
+    try {
+      const response = await fetch(`${this.baseURL}/app.js?w=${this.wallet}`);
+      return await response.json();
+    } catch (err) {
+      console.error('Error fetching app logic:', err);
+      return null;
+    }
+  }
+
+  async mintPet(data) {
+    try {
+      const response = await fetch(`${this.baseURL}/mint.php`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          wallet: this.wallet,
+          ...data,
+        }),
+      });
+      return await response.json();
+    } catch (err) {
+      console.error('Error minting pet:', err);
+      return null;
+    }
+  }
+
+  async loopMinting(cycles = 10) {
+    for (let i = 0; i < cycles; i++) {
+      const coinData = await this.fetchCoin();
+      const appLogic = await this.fetchAppLogic();
+      const mintResponse = await this.mintPet({
+        coin: coinData,
+        logic: appLogic,
+      });
+
+      console.log(`Cycle ${i + 1} minted pet:`, mintResponse);
+    }
+
+    // Final POST to coin.php for syncing or logging
+    await fetch(`${this.baseURL}/coin.php`, {
+      method: 'POST',
+    });
+  }
+}
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
@@ -294,9 +358,6 @@
     <p>Rank #1 – Pulse Active</p>
     <button onclick="openPortal()">💫 Portal to Dreamroom</button>
   </div>
-document.getElementById("character-name").textContent = langData["ui.characterName"];
-document.getElementById("role").textContent = langData["ui.role"];
-document.getElementById("description").textContent = langData["ui.description"];
   <script>
     function openPortal() {
       alert("🌌 Portal đến Dreamroom đã mở – cảm xúc đang được giải mã...");
@@ -310,6 +371,11 @@ function renderSkinOptions() {
     const skinName = langData[`ui.skin.${i}`];
     addToDropdown("skin-selector", skinName);
   }
+ export function renderModel() {
+  document.getElementById("character-name").textContent = langData["ui.characterName"];
+document.getElementById("role").textContent = langData["ui.role"];
+document.getElementById("description").textContent = langData["ui.description"];
+}
 }
 
 function playVoiceLine(id) {
