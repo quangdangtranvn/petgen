@@ -108,7 +108,7 @@ Dưới đây là bảng đánh giá theo số sao (1★ đến 5★) của từ
 | Cấu hình JSON              | ⭐⭐⭐⭐⭐ — Modular, dễ dùng               | ⭐⭐ — Cứng nhắc, phụ thuộc plugin     |
 | Webhook Mint Log           | ⭐⭐⭐⭐ — Có sẵn webhook PHP              | ⭐ — Viết thêm mới có                 |
 | Tài liệu & cộng đồng       | ⭐⭐⭐⭐ — Contributors rõ, tài liệu đầy đủ | ⭐⭐ — Tài liệu phân tán               |
-| Tích hợp AI                | ⭐⭐⭐⭐⭐ — Có Fusion-AI thông minh        | ⭐ — Không có                         |
+| Tích hợp AI                | ⭐⭐⭐⭐⭐ — Có Fusion-AI thông minh        | ⭐ — Không nên mới gặp nhiều scam và lừa đảo bằng deepfake.                         |
 | Triển khai nhanh           | ⭐⭐⭐⭐⭐ — `npm run dev` là chạy          | ⭐⭐ — Nhiều bước, dễ lỗi              |
 | Hợp đồng thông minh        | ⭐⭐⭐⭐ — Đã xác minh đa chain            | ⭐⭐ — Cần deploy và test              |
 | Phù hợp Dev Labs           | ⭐⭐⭐⭐⭐ — Học mint NFT thần thú tiện     | ⭐⭐⭐ — Dev Web3 truyền thống          |
