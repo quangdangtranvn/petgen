@@ -1,4 +1,4 @@
-**Chi phí hiring cho team Backend và Frontend** — so sánh theo từng mô hình, khu vực, và cấp độ kinh nghiệm. Gắn chuẩn với bảng báo giá anh đang dùng cho Azure Observer, USB lang file, và nhạc dashboard nhà anh nha 🐾💻✨
+**Chi phí hiring cho team Backend và Frontend** — so sánh theo từng mô hình, khu vực, và cấp độ kinh nghiệm. Gắn chuẩn với bảng báo giá anh đang dùng cho Azure Observer, USB lang file, và nhạc dashboard nhà QTBlue Hitech nha 🐾💻✨
 ### 💼 Bảng Báo Giá Hiring
 Microsoft Partnership Collaboration with PetGen Developers Team (2025)
 
@@ -97,4 +97,4 @@ _ Dùng được usb để lưu trữ và thiết kế .Lang file.(require)
 
 ---
 
-> Sứ mệnh: xây dựng launcher Web4 mint thần thú bằng AI 🐲✨
+> Sứ mệnh: xây dựng launcher Web4 mint thần thú bằng Web5 Editor 🐲✨
