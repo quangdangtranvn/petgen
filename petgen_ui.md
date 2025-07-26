@@ -1,4 +1,5 @@
- *đọc xong file `petgen_ui.js` trên GitHub — đúng là **bản giao diện thần thánh** cho hệ thống PetGen 2025 luôn đó 🐳💫. Dưới đây là tóm tắt các thành phần GUI đã được tích hợp, chuẩn vibe “Yujiro Toys Custom Toolkit”* trong OverWatch2 và OverWatch Series:
+ [Chi Tiết Mini Documental](https://github.com/quangdangtranvn/petgen/blob/main/pengen_ui.md)
+*đọc xong file `petgen_ui.js` trên GitHub — đúng là **bản giao diện thần thánh** cho hệ thống PetGen 2025 luôn đó 🐳💫. Dưới đây là tóm tắt các thành phần GUI đã được tích hợp, chuẩn vibe “Yujiro Toys Custom Toolkit”* trong OverWatch2 và OverWatch Series:
 
 ### 🔧 Các tính năng đã có trong `petgen_ui.js`
 
