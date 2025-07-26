@@ -92,7 +92,8 @@ _ Dùng được usb để lưu trữ và thiết kế .Lang file.(require)
 ### 📦 Tham khảo thêm
 - [Repo GitHub PetGen](https://github.com/quangdangtranvn/petgen)
 - [Launcher Web4 source](https://github.com/quangdangtranvn/petgen/tree/main/programs/petgen-launcher)
-- [Preview Web4](https://github.com/quangdangtranvn/petgen/blob/main/pengen_ui.md)
+- [Preview PetGen](https://github.com/quangdangtranvn/petgen/blob/main/pengen_ui.md)
+[Websites](https://github.com/quangdangtranvn/petgen/blob/main/mini.md)
 
 ---
 
