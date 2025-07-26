@@ -76,7 +76,7 @@ Microsoft Partnership Collaboration with PetGen Developers Team (2025)
 - Biết bộ Web cơ bản: xử lý webhook, session (require)
 - Hiểu cấu trúc modular JSON & file-based routing
 - Quen dùng Git, GitHub để đóng góp mã nguồn
-_ Dùng được usb để lưu trữ và thiết kế .Lang file.(require)
+_ Dùng được usb để lưu trữ và thiết kế .Lang file(require)
 
 ### 🧠 Mô tả công việc
 - Phát triển & tối ưu chương trình tại `programs/petgen-launcher`
