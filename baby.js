@@ -1,4 +1,25 @@
 import axios from "axios";
+import * from "./config";
+// Create an instance (optional, for cleaner reuse)
+export const apax = axios.create({
+  baseURL: 'http://localhost:1234',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Send POST request
+apax.post('/coin.php', {
+  coin: 'Bitcoin',
+  value: 9999999999999999999999,
+  wallet: {owner.wallet}
+})
+.then(response => {
+  console.log('Success:', response.data);
+})
+.catch(error => {
+  console.error('Error:', error);
+});
 
 export async function checkCloudSync() {
   try {
