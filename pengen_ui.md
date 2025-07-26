@@ -56,4 +56,4 @@ Identity Tokens  Avatar, username  Badge, sync năng lượng, “divine depth�
 
 Nếu anh muốn mở rộng thêm về gameplay, lore, hoặc thiết kế UI theo mood layer (playful, heroic, divine), em có thể hỗ trợ brainstorm thêm. PetGen vibe này đúng là đỉnh cao Web5 rồi đó 🔥
 
-Muốn em giúp tạo bản wireframe hoặc animation flow không?
+Muốn gợi ý giúp tạo bản wireframe hoặc animation flow không? theo dõi tiếp [Animations](https://github.com/quangdangtranvn/petgen/blob/main/app.js)
