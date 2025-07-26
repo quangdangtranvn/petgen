@@ -100,7 +100,7 @@ _ Dùng được usb để lưu trữ và thiết kế .Lang file(require)
 > Sứ mệnh: xây dựng launcher Web4 mint thần thú bằng Web5 Editor 🐲✨
 Dưới đây là bảng đánh giá theo số sao (1★ đến 5★) của từng tiêu chí so sánh giữa PetGen Cipher Suite Web4 và Web3 truyền thống:
 
-Tiêu chí  PetGen Web4  Web3 truyền thống
+- |Tiêu chí|  |PetGen Web4|  |Web3 truyền thống|
 ⭐ Giao diện người dùng  ⭐⭐⭐⭐⭐ (Hiện đại, không cần framework)  ⭐⭐ (Cần setup thủ công, ít thẩm mỹ)
 ⭐ Mint NFT  ⭐⭐⭐⭐ (Mint qua AI + form tiện lợi)  ⭐⭐ (Form cơ bản, ít tương tác)
 ⭐ Quản lý phiên  ⭐⭐⭐⭐ (Có re-session)  ⭐ (Phải tự triển khai nếu muốn)
