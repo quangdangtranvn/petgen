@@ -61,3 +61,39 @@ Microsoft Partnership Collaboration with PetGen Developers Team (2025)
 [Blackbox Sponsorship](https://blackboxai.partnerlinks.io/ddm7q473yy5p)
 # QTBlue HiTech Official Visit Page:
 @qtblue on any SEO pages
+
+# 🧩 Tuyển Web4 Dev · Dự án PetGen Cipher Suite
+
+## 🌟 Giới thiệu
+**PetGen Launcher** là bộ chương trình Web4 siêu nhẹ, không cần framework, giúp người dùng mint NFT thú cưng từ lệnh AI prompt. Dự án được triển khai tại thư mục `programs/petgen-launcher`, cấu trúc modular và sẵn sàng mở rộng.
+
+> Giao diện glowing · Mint AI NFT · Web4 không cần JS framework
+
+## 👩‍💻 Vị trí: **Web4 Developer**
+
+### 📌 Yêu cầu
+- HTML/CSS thuần (ưu tiên GTX-Lang CSS hoặc Tailwind)(plus)
+- Biết bộ Web cơ bản: xử lý webhook, session (require)
+- Hiểu cấu trúc modular JSON & file-based routing
+- Quen dùng Git, GitHub để đóng góp mã nguồn
+_ Dùng được usb để lưu trữ và thiết kế .Lang file.(require)
+
+### 🧠 Mô tả công việc
+- Phát triển & tối ưu chương trình tại `programs/petgen-launcher`
+- Tích hợp chức năng mint NFT từ AI prompt
+- Làm việc với cấu trúc session, tạo hiệu ứng UI glowing
+- Ghi log, xử lý webhook và đóng gói launcher `petgen-kit.zip`
+
+### 🚀 Quyền lợi
+- Làm việc với tác giả dự án `quangbluekie`
+- Học về AI prompt, glowing UI & Web4
+- Ghi nhận đóng góp trong file `CONTRIBUTORS.md`
+
+### 📦 Tham khảo thêm
+- [Repo GitHub PetGen](https://github.com/quangdangtranvn/petgen)
+- [Launcher Web4 source](https://github.com/quangdangtranvn/petgen/tree/main/programs/petgen-launcher)
+- [Preview Web4](https://github.com/quangdangtranvn/petgen/blob/main/pengen_ui.md)
+
+---
+
+> Sứ mệnh: xây dựng launcher Web4 mint thần thú bằng AI 🐲✨
