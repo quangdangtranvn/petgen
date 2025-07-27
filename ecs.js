@@ -125,3 +125,126 @@ class ECS {
     });
   }
 }
+// Boolean Panel with Multi-Select Capability
+export async ECS.Systems.BooleanPanelSystem = class {
+    constructor() {
+        this.panel = null;
+        this.selectedEntities = [];
+        this.operation = 'union';
+    }
+
+    init() {
+        this.createPanel();
+        export async ECS.eventBus.subscribe('selection-changed', this.onSelectionChanged.bind(this));
+    }
+
+    createPanel() {
+        this.panel = document.createElement('div');
+        this.panel.className = 'boolean-panel hidden';
+        this.panel.innerHTML = `
+            <div class="panel-header">
+                <h3>Boolean Operations</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="panel-body">
+                <div class="operation-select">
+                    <label>Operation:</label>
+                    <select id="bool-op">
+                        <option value="union">Union (A ∪ B)</option>
+                        <option value="difference">Difference (A - B)</option>
+                        <option value="intersection">Intersection (A ∩ B)</option>
+                    </select>
+                </div>
+                <div class="entity-selection">
+                    <h4>Selected Entities:</h4>
+                    <div class="entity-list" id="bool-entity-list"></div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button id="apply-bool">Apply Boolean</button>
+                <button id="cancel-bool">Cancel</button>
+            </div>
+        `;
+        document.body.appendChild(this.panel);
+
+        // Event listeners
+        this.panel.querySelector('.close-btn').addEventListener('click', () => this.hide());
+        this.panel.querySelector('#apply-bool').addEventListener('click', () => this.applyBoolean());
+        this.panel.querySelector('#cancel-bool').addEventListener('click', () => this.hide());
+        this.panel.querySelector('#bool-op').addEventListener('change', (e) => {
+            this.operation = e.target.value;
+        });
+    }
+
+    onSelectionChanged(entities) {
+        this.selectedEntities = entities;
+        this.updateEntityList();
+        if (entities.length > 1) {
+            this.show();
+        } else {
+            this.hide();
+        }
+    }
+
+    updateEntityList() {
+        const list = this.panel.querySelector('#bool-entity-list');
+        list.innerHTML = '';
+        
+        this.selectedEntities.forEach((entity, index) => {
+            const item = document.createElement('div');
+            item.className = 'entity-item';
+            item.innerHTML = `
+                <input type="checkbox" id="ent-${index}" checked 
+                       data-id="${entity.id}">
+                <label for="ent-${index}">${entity.name || `Entity ${entity.id}`}</label>
+            `;
+            list.appendChild(item);
+        });
+    }
+
+    getSelectedForOperation() {
+        return Array.from(this.panel.querySelectorAll('.entity-item input:checked'))
+            .map(input => this.selectedEntities.find(e => e.id === input.dataset.id));
+    }
+
+    applyBoolean() {
+        const selected = this.getSelectedForOperation();
+        if (selected.length < 2) {
+            alert('Select at least 2 entities');
+            return;
+        }
+
+        // Perform boolean operation (pseudo-implementation)
+        const result = this.performBooleanOperation(selected, this.operation);
+        
+        // Add result to scene
+        ECS.world.addEntity(result);
+        this.hide();
+    }
+
+    performBooleanOperation(entities, operation) {
+        // Actual boolean implementation would go here
+        // This is framework-specific (e.g., ThreeBSP, ThreeCSG)
+        console.log(`Performing ${operation} on`, entities);
+        
+        // Return result entity
+        return new ECS.Entity(null, {
+            mesh: this.combineMeshes(entities, operation),
+            transform: new ECS.Components.Transform()
+        });
+    }
+
+    show() {
+        this.panel.classList.remove('hidden');
+        this.panel.style.display = 'block';
+    }
+
+    hide() {
+        this.panel.classList.add('hidden');
+        this.panel.style.display = 'none';
+    }
+};
+
+// Initialize system
+ECS.systems.booleanPanel = new ECS.Systems.BooleanPanelSystem();
+ECS.systems.booleanPanel.init();
