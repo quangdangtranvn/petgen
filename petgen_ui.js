@@ -139,7 +139,7 @@ mongoose.connect('mongodb://{config.route}/petgen', { useNewUrlParser: true, use
 app.post('/api/mint', async (req, res) => {
   const { name, traits } = req.body;
   // Call the PetGen API to mint the pet
-  // Example: const result = await petGenAPI.mintPet(name, traits);
+  const result = await petGenAPI.mintPet(name, traits);
   res.json({ message: 'Pet minted successfully!', pet: { name, traits } });
 });
 
