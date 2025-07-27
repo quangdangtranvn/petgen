@@ -43,7 +43,7 @@ hệ thống ECS của PetGen với các engine games phổ biến hiện nay. D
 
 | Engine / Repo     | ECS Support          | Stars ⭐         | Open Source | Scripting Language(s)      | Notable Strengths                         |
 |-------------------|----------------------|------------------|-------------|-----------------------------|-------------------------------------------|
-| **PetGen**        | ✅ Custom ECS         | ⭐⭐⭐⭐⭐ (internal) | ✅ Yes      | JavaScript (custom ECS)     | Lightweight, modular, AI prompt-ready     |
+| **PetGen**        | ✅ Custom ECS         | ⭐⭐⭐⭐⭐ (super) | ✅ Yes      | JavaScript (custom ECS)     | Lightweight, modular, AI prompt-ready     |
 | **Unity**         | ✅ Built-in ECS       | ⭐⭐⭐⭐⭐ (20+)      | ❌ Partial  | C#                          | Versatile, huge community, cross-platform |
 | **Unreal Engine** | ✅ Gameplay Framework | ⭐⭐⭐⭐⭐ (46+)      | ✅ Yes      | C++, Blueprints              | AAA graphics, cinematic tools             |
 | **Godot**         | ✅ Node-based ECS     | ⭐⭐⭐⭐⭐ (65+)      | ✅ Yes      | GDScript, C#, C++           | Free, open-source, great 2D support       |
