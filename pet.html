@@ -132,6 +132,13 @@
     });
 }
 loadLang("sibs-only.lang");
+// Gắn Animate cho model:
+import * as anim from './petgen.js';
+// Khi DOM đã sẵn sàng
+window.addEventListener('DOMContentLoaded', () => {
+  const animator = new OBBAnimator('#features');
+  animator.run();
+});
   </script>
  </body>
 </html>
