@@ -1,4 +1,22 @@
 const jwt = require('jsonwebtoken');
+// JS tween animation cho mỗi .feature
+import gsap from 'gsap';
+
+window.addEventListener('DOMContentLoaded', () => {
+  const features = document.querySelectorAll('.feature');
+
+  gsap.set(features, { opacity: 0, y: 40 });
+
+  features.forEach((feature, i) => {
+    gsap.to(feature, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: i * 0.3,
+      ease: 'power2.out'
+    });
+  });
+});
 export class view {
 // petgen_custom.js
 export const TOTAL_FRAMES = Math.floor(360 / 3 * 1.5); // 180
