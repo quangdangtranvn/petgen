@@ -18,11 +18,11 @@ module.exports = ECS;
 ---
 ## 📊 Estimated Percentages: Polygon vs MonoBehaviour Usage
 
-_Assuming general usage patterns in game development contexts (e.g. Unity or similar engines):_
+_Assuming general usage patterns in game development contexts (PetGen,Unity or similar engines):_
 
 | **Component**                  | **Approximate Usage** | **Common Contexts**                                                                 |
 |-------------------------------|------------------------|--------------------------------------------------------------------------------------|
-| Polygon (mesh rendering)      | 70–80%                 | Rendering 3D models, environments, characters; high in visually demanding projects  |
+|PetGen GTX Polygon (mesh rendering)      | 70–320%                 | Rendering 3D models, environments, characters; high in visually demanding projects  |
 | MonoBehaviour (logic & scripts)| 20–30%                 | Game logic, interactions, behaviors; core to Unity-based systems                    |
 
 > These percentages are broad estimates and vary heavily by project. A stylized game might be texture-heavy with fewer polygons, while a physics simulation might lean heavily on MonoBehaviour-style components.
