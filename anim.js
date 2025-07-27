@@ -13,7 +13,7 @@ class OBBAnimator {
   // Tween từng feature tuần tự
   animate() {
     this.features.forEach((feature, index) => {
-      this.animateSingleFeature(feature, index);
+      this.anim(feature, index);
     });
   }
 
@@ -33,7 +33,7 @@ class OBBAnimator {
     this.prepare();
     this.animate();
 //Có một nhân vật tĩnh thì dùng một anim line này:
-// this.anim()
+// this.anim();
   }
 }
 
