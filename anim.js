@@ -1,4 +1,34 @@
 export class OBBAnimator {
+  constructor(elements, options = {}) {
+    this.elements = elements;
+    this.duration = options.duration || 800;
+    this.easing = options.easing || 'ease-in-out';
+  }
+
+  static fromSelector(selector, options) {
+    const els = document.querySelectorAll(selector);
+    return new OBBAnimator(els, options);
+  }
+
+  static fromContainer(containerSelector, options) {
+    const container = document.querySelector(containerSelector);
+    const els = container?.querySelectorAll('.feature') || [];
+    return new OBBAnimator(els, options);
+  }
+
+  animate() {
+    this.elements.forEach((el, index) => {
+      el.style.transform = 'scale(0.95) translateY(20px)';
+      el.style.opacity = '0';
+      el.style.transition = `all ${this.duration}ms ${this.easing}`;
+      setTimeout(() => {
+        el.style.transform = 'scale(1) translateY(0)';
+        el.style.opacity = '1';
+      }, 100 * index);
+    });
+  }
+}
+export class OBBAnimator {
   constructor(input, options = {}) {
     this.duration = options.duration || 800;
     this.easing = options.easing || 'ease-in-out';
