@@ -1,3 +1,39 @@
+class Model {
+  constructor(x = 0, y = 0, z = 0, w = 0, p = 1) {
+    this.coords = [x, y, z, w, p];
+  }
+
+  grow(factor = 1) {
+    this.coords = this.coords.map(v => v * factor);
+  }
+}
+class Circle {
+  constructor(x = 0, y = 0, z = 360) {
+    this.coords = [x, y, z];
+  }
+
+  grow(factor = 1) {
+    this.coords = this.coords.map(v => v * factor);
+  }
+}
+class Box {
+  constructor(x = 0, y = 0, z = 0, w = 0) {
+    this.coords = [x, y, z, w];
+  }
+
+  grow(factor = 1) {
+    this.coords = this.coords.map(v => v * factor);
+  }
+}
+class Mirror {
+  constructor(x = 0, y = 0, z = 0, w = 0) {
+    this.coords = [x, y, z, w];
+  }
+
+  grow(factor = 1) {
+    this.coords = this.coords.map(v => v * factor);
+  }
+}
 // ECS struct-like class in JS mimicking C# style
 class ECS {
   constructor(options = {}) {
