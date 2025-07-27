@@ -39,3 +39,15 @@ hệ thống ECS của PetGen với các engine games phổ biến hiện nay. D
 - Nếu bất cứ ai muốn mở rộng PetGen ECS theo hướng giống Unity DOTS hay Godot SceneTree, PetGen Fusion AI có thể giúp mọi người refactor lại theo hướng Entity → Component → System chuẩn hóa hơn.
 
 ---
+### 🧩 So sánh PetGen ECS với các Game Engine nổi bật
+
+| Engine / Repo     | ECS Support          | Stars ⭐         | Open Source | Scripting Language(s)      | Notable Strengths                         |
+|-------------------|----------------------|------------------|-------------|-----------------------------|-------------------------------------------|
+| **PetGen**        | ✅ Custom ECS         | ⭐⭐⭐⭐⭐ (internal) | ✅ Yes      | JavaScript (custom ECS)     | Lightweight, modular, AI prompt-ready     |
+| **Unity**         | ✅ Built-in ECS       | ⭐⭐⭐⭐⭐ (20+)      | ❌ Partial  | C#                          | Versatile, huge community, cross-platform |
+| **Unreal Engine** | ✅ Gameplay Framework | ⭐⭐⭐⭐⭐ (46+)      | ✅ Yes      | C++, Blueprints              | AAA graphics, cinematic tools             |
+| **Godot**         | ✅ Node-based ECS     | ⭐⭐⭐⭐⭐ (65+)      | ✅ Yes      | GDScript, C#, C++           | Free, open-source, great 2D support       |
+| **O3DE**          | ✅ Modular ECS        | ⭐ (1)            | ✅ Yes      | C++, Lua                    | Apache 2.0, high-fidelity simulations      |
+| **GameMaker**     | ❌ No ECS             | ⭐⭐ (2)           | ❌ Closed   | GML                         | Drag-and-drop, beginner-friendly          |
+| **Phaser**        | ❌ No ECS             | ⭐ (1)            | ✅ Yes      | JavaScript                  | Web games, fast prototyping               |
+| **CryEngine**     | ✅ Entity System      | ⭐ (new)          | ✅ Yes      | C++                         | Realistic rendering, FPS legacy           |
