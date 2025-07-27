@@ -1,4 +1,4 @@
-# Nếu hệ thống của anh đã đủ các bước xác thực (KYC) theo logic kiểm tra, dữ liệu mô phỏng, và trạng thái DOM thì có thể coi là đạt chuẩn internal global rồi đó. 
+# Nếu hệ thống của anh/chị em đã đủ các bước xác thực (KYC) theo logic kiểm tra, dữ liệu mô phỏng, và trạng thái DOM thì có thể coi là đạt chuẩn internal global rồi đó. 
 
 Phần ECS hiện tại cũng vừa lo phần mô phỏng, vừa xử lý UI checkbox, vừa trả về prompt động. 
 
