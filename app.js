@@ -1,4 +1,50 @@
 const jwt = require('jsonwebtoken');
+export class view {
+// petgen_custom.js
+export const TOTAL_FRAMES = Math.floor(360 / 3 * 1.5); // 180
+let currentFrame = 0;
+
+// BitArray setup
+export const bitArrays = {
+  rootA: new Uint8Array(64), // 8×8
+  rootB: new Uint8Array(64)
+};
+
+export const dictRoot = {
+  rootA: (idx) => {
+    // Apply animation logic per index
+    const intensity = bitArrays.rootA[idx];
+    return `translate(${intensity * 2}px, ${intensity * 2}px)`;
+  },
+  rootB: (idx) => {
+    const angle = bitArrays.rootB[idx] * 6;
+    return `rotate(${angle}deg)`;
+  }
+};
+
+// Animation loop
+function animatePetFrame() {
+  const frameRatio = currentFrame / TOTAL_FRAMES;
+
+  for (let i = 0; i < 64; i++) {
+    // Simulate data mutation for each frame
+    bitArrays.rootA[i] = Math.floor(Math.sin(frameRatio * Math.PI * 2 + i) * 4 + 4);
+    bitArrays.rootB[i] = Math.floor(Math.cos(frameRatio * Math.PI * 2 + i) * 4 + 4);
+
+    // Apply transform to DOM elements (assuming grid of divs)
+    const el = document.getElementById(`cell-${i}`);
+    if (el) {
+      el.style.transform =
+        dictRoot.rootA(i) + ' ' + dictRoot.rootB(i);
+    }
+  }
+
+  currentFrame = (currentFrame + 1) % TOTAL_FRAMES;
+  requestAnimationFrame(animatePetFrame);
+}
+
+ animatePetFrame();
+}//end class view
 
 // User registration
 app.post('/api/register', async (req, res) => {
