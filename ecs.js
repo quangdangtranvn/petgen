@@ -248,3 +248,6 @@ export async ECS.Systems.BooleanPanelSystem = class {
 // Initialize system
 ECS.systems.booleanPanel = new ECS.Systems.BooleanPanelSystem();
 ECS.systems.booleanPanel.init();
+
+// Packed By PetGen
+export default ECS;
