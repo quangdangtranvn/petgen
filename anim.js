@@ -1,3 +1,69 @@
+// ES module: petgen.js
+export class OBBAnimator {
+  constructor(input, options = {}) {
+    this.duration = options.duration || 800;
+    this.easing = options.easing || 'ease-in-out';
+
+    if (typeof input === 'string') {
+      const container = document.querySelector(input);
+      if (container?.querySelector('.feature')) {
+        this.mode = 'gsap';
+        this.container = container;
+        this.features = container.querySelectorAll('.feature');
+      } else {
+        this.mode = 'simple';
+        this.elements = document.querySelectorAll(input);
+      }
+    } else if (input instanceof Element) {
+      this.mode = 'gsap';
+      this.container = input;
+      this.features = input.querySelectorAll('.feature');
+    } else if (input instanceof NodeList || Array.isArray(input)) {
+      this.mode = 'simple';
+      this.elements = input;
+    } else {
+      this.mode = 'simple';
+      this.elements = [];
+    }
+  }
+
+  prepare() {
+    if (this.mode === 'gsap') {
+      gsap.set(this.features, { opacity: 0, y: 40 });
+    }
+  }
+
+  animate() {
+    if (this.mode === 'gsap') {
+      this.features.forEach((f, i) => this.anim(f, i));
+    } else {
+      this.elements.forEach((el, index) => {
+        el.style.transform = 'scale(0.95) translateY(20px)';
+        el.style.opacity = '0';
+        el.style.transition = `all ${this.duration}ms ${this.easing}`;
+        setTimeout(() => {
+          el.style.transform = 'scale(1) translateY(0)';
+          el.style.opacity = '1';
+        }, 100 * index);
+      });
+    }
+  }
+
+  anim(feature, index) {
+    gsap.to(feature, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: index * 0.3,
+      ease: 'power2.out'
+    });
+  }
+
+  run() {
+    this.prepare();
+    this.animate();
+  }
+}
 export class OBBAnimator {
   constructor(elements, options = {}) {
     this.elements = elements;
