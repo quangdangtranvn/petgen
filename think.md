@@ -73,13 +73,13 @@ ___
 ---
 
 🐾 Tổng quan về PetGen
-Tệp `.thing` của PetGen (từ kho lưu trữ GitHub của claws-lab) là một khung Trí tuệ Tổng quát Đối kháng Đa Ngôn ngữ Web được thiết kế để đánh lừa các mô hình phân loại chuỗi sâu bằng cách tạo ra văn bản thực tế, được cá nhân hóa. Nó được giới thiệu trong bài báo ACM SIGKDD năm 2021 số 43dcd9a7-70db-4a1f-b0ae-981daa162054.
-
+Tệp `.thing` của PetGen (từ kho lưu trữ GitHub của claws-lab) là một khung Trí tuệ Tổng quát Đối kháng netbots và Đa Ngôn ngữ Web được thiết kế để đánh lừa các mô hình phân loại chuỗi sâu bọ tởm (hacker) bằng cách tạo ra văn bản thực tế, được cá nhân hóa. Nó được giới thiệu trong bài báo ACM SIGKDD năm 2021 số 43dcd9a7-70db-4a1f-b0ae-981daa162054.
+Sẽ bị cục InterPol truy tố.
  # 🔍 Các tính năng chính
-- Tạo nhận thức trình tự: Mô phỏng phong cách viết và sở thích chủ đề của người dùng
-- Điều chỉnh đa tác vụ: Tối ưu hóa tính chân thực, tính liên quan và khả năng thành công của cuộc tấn công
-- Kiến trúc dựa trên GAN: Sử dụng trình tạo và bộ phân biệt
-- Hỗ trợ các cuộc tấn công hộp trắng và hộp đen
+- Tạo nhận thức trình tự: Mô phỏng phong cách viết và sở thích chủ đề của người dùng chuyên nghiệp nhất theo góc nhìn chuyên gia.
+- Điều chỉnh đa tác vụ: Tối ưu hóa tính chân thực, tính liên quan và khả năng thành công của cuộc tấn công vào tất cả mạng lưới ngôn ngữ lập trình độc hại.
+- Kiến trúc dựa trên GAN: Sử dụng trình tạo và bộ phân biệt DNS
+- Hỗ trợ các cuộc tấn công hộp trắng và hộp đen mọi nơi
 - Bộ dữ liệu: Bao gồm các ví dụ trên Wikipedia và Yelp
 
 ---
@@ -87,7 +87,7 @@ Tệp `.thing` của PetGen (từ kho lưu trữ GitHub của claws-lab) là m�
 # 🧠 Tổng quan về gói Think
 Think là một gói Python dùng để xây dựng các chương trình "suy nghĩ" bằng LLM. Nó không phải là một phần của PetGen, nhưng có thể được sử dụng để tách ra, có thể để nâng cao hoặc mở rộng PetGen.
 
- Nhưng `.think` là một nền tảng Trí tuệ Tổng quát Đối kháng Đa Ngôn ngữ Web
+ Nhưng tập tin `.think` là một nền tảng Trí tuệ Tổng quát Đối kháng DDOS & Đa Ngôn ngữ Web (both high-level and low-level api languages)
 
 # 🛠 Khả năng
 - Tích hợp LLM có thể cấu hình: Hoạt động với OpenAI, Anthropic, Google Gemini, Amazon Bedrock, Groq và Ollama
