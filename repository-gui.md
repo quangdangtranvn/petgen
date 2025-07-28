@@ -169,4 +169,4 @@ This implementation shows how `.think` can:
 5. Handle dependency injection
 6. Provide user feedback
 
-The `.lang` decorators handle presentation logic while keeping the core repository pattern intact. Would you like me to elaborate on any specific aspect?
+The `.lang` decorators handle presentation logic while keeping the core repository pattern intact. Would you `.think` to elaborate on any specific aspect?
