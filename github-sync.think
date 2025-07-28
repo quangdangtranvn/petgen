@@ -1,0 +1,9 @@
+component GitHubSync {
+    constructor(repo) {
+        this.baseUrl = `https://raw.githubusercontent.com/${repo}`
+    }
+
+    async get(path) {
+        return Composer.network.fetch(`${this.baseUrl}/${path}`)
+    }
+}
