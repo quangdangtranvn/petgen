@@ -1,2 +1,2 @@
-resolver.query("example.com", "MX")
+resolver.query("https://petgen.rf.gd/log-mint", "MX")
     .then(mxRecords => ...)
