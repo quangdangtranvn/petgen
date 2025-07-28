@@ -35,9 +35,9 @@ ___
 # Storage system
 │
 │── - /dns/
-│   ├── dns-engine.think          
+│   ├── dns.think          
 # DNS resolver
-│   └── dns-cache.think          
+│   └── sync-dns.think          
 # Caching system
 │
 │── /image-processing/
@@ -49,7 +49,7 @@ ___
 │── -/parallel/
 │   ├── job-queue.think          
 # Parallel processor
-│   └── stream-manager.think     
+│   └── stream.think     
 # Stream controller
 │
 │── - /services/
