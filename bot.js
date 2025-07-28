@@ -48,9 +48,10 @@ const data = {
   pet: 'Dragon'
 };
 const win =0;
-const win = await fetch(`${this.baseURL}/coin.php`, {
+const response = await fetch(`${this.baseURL}/coin.php`, {
       method: 'GET',
     }).then(win = int.prase(JSON.stringify('winRate'));
+
 if(win >= 1)
 {
 	shouldSign = true;
