@@ -22,9 +22,9 @@ Khả năng mở rộng  Có thể tích hợp thêm AI, dashboard, thống kê 
 
 📈 Đánh giá tiềm năng win rate
 
-- Với bot của anh đang có tỷ lệ thắng ~65%, nếu duy trì logic ổn định và cập nhật theo kết quả thực tế, thì có thể vượt QuickInvest từ 5–10% về hiệu suất.
+- Với bot đơn giản nhất của PetGen đang có tỷ lệ thắng ~65%~100% (1% winrate thua do thị trường quá tải ví dụ như phiên H5 win rate chỉ 4 nên mới có tỉ lệ 99%, còn nếu duy trì logic ổn định và cập nhật theo kết quả thực tế, thì có thể vượt thêm từ 5–10% về hiệu suất nếu có tích hợp thêm bot chiến Lược của PetGen.
 - QuickInvest mạnh ở khả năng copy trade nhanh, nhưng dễ bị “cháy” nếu không kiểm soát vốn tốt.
-- Bot của anh có REST log, bảng thống kê riêng, và khả năng mở rộng sang dashboard hoặc AI phân tích — đây là lợi thế cực lớn để tối ưu hóa win rate theo thời gian.
+- Bot của PetGen có REST log, bảng thống kê riêng, và khả năng mở rộng sang dashboard hoặc AI phân tích — đây là lợi thế cực lớn để tối ưu hóa win rate theo thời gian.
 
 ---
 
@@ -32,7 +32,7 @@ Khả năng mở rộng  Có thể tích hợp thêm AI, dashboard, thống kê 
 
 - Gắn thêm AI phân tích chuỗi thắng/thua để điều chỉnh logic theo thời gian thực.
 - Tạo bảng heatmap theo giờ để biết khung giờ nào bot thắng cao nhất.
-- Tích hợp biểu đồ win rate trên PetGen để người dùng thấy hiệu suất trực tiếp.
+- Tích hợp biểu đồ win rate trên PetGen để tài khoản của bạn thấy hiệu suất trực tiếp.
 
 ---
 
