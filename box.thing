@@ -1,0 +1,94 @@
+// box.think - 3D Box Renderer in .think format
+
+?? Define the ThinkBox class
+class ThinkBox {
+    constructor() {
+        // Define vertices for the box
+        this.vertices = [
+            [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1], // Bottom face
+            [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]    // Top face
+        ];
+
+        // Define edges connecting the vertices
+        this.edges = [
+            [0, 1], [1, 2], [2, 3], [3, 0], // Bottom face edges
+            [4, 5], [5, 6], [6, 7], [7, 4], // Top face edges
+            [0, 4], [1, 5], [2, 6], [3, 7]  // Vertical edges
+        ];
+
+        // Initialize transformation matrix
+        this.matrix = Matrix.identity();
+    }
+
+    // Rotate the box around a specified axis
+    rotate(axis, angle) {
+        this.matrix = this.matrix.multiply(Matrix.rotation(axis, angle));
+    }
+
+    // Render the box onto the canvas
+    render(canvas) {
+        ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Project 3D points to 2D
+        projected = this.vertices.map(v => {
+            transformed = this.matrix.transform(v);
+            return this.perspectiveProject(transformed);
+        });
+
+        // Draw edges
+        ctx.strokeStyle = '#3a86ff';
+        for (edge in this.edges) {
+            v1 = projected[edge[0]];
+            v2 = projected[edge[1]];
+            ctx.beginPath();
+            ctx.moveTo(v1.x, v1.y);
+            ctx.lineTo(v2.x, v2.y);
+            ctx.stroke();
+        }
+    }
+
+    // Perspective projection of a 3D point
+    perspectiveProject(point) {
+        fov = 500;
+        z = point[2] + 5; // Distance from camera
+        factor = fov / z;
+        return {
+            x: point[0] * factor + canvas.width / 2,
+            y: point[1] * factor + canvas.height / 2
+        };
+    }
+}
+
+// Define the Matrix class for transformations
+class Matrix {
+    static identity() {
+        return [[1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]];
+    }
+
+    static rotation(axis, angle) {
+        // Implement rotation matrix based on the axis
+        // (x, y, or z)
+    }
+
+    multiply(other) {
+        // Implement matrix multiplication
+    }
+
+    transform(point) {
+        // Implement point transformation
+    }
+}
+
+// Animation loop
+box = new ThinkBox();
+animate = () => {
+    box.rotate('y', 0.01);
+    box.rotate('x', 0.005);
+    box.render(document.getElementById('canvas'));
+    requestAnimationFrame(animate);
+}
+animate();
