@@ -1,4 +1,4 @@
-
+![copilot_image_1753743569585.jpeg](https://github.com/user-attachments/assets/7b67e7b2-71d3-43d7-a066-6f6410d2e7bd)
 # File name: example(.think)
 ## Explanation:
 - Main Loop: Initializes a loop that runs at 60 frames per minute.
