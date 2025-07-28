@@ -1,0 +1,12 @@
+using "think-composer" as Composer
+using "image-cloner" as ImageCloner
+
+Composer.init()
+
+const cloner = new ImageCloner()
+cloner.clone(
+    "github://user/repo/images/sample.jpg",
+    "/local/sample.webp"
+).then(() => {
+    Composer.logger.log("Clone completed!")
+})
