@@ -1,4 +1,4 @@
-# Here are up to 10 files in the petgen repo that contain "think" in their names (results may be incomplete due to search limits):
+# Here are up to 10 files in the petgen repo that contain "think" in their names or file name `.think`:
 
 1. think.md  
 2. mx.think  
