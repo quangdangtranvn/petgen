@@ -1,3 +1,4 @@
+class parse{
 const Rest5Config = {
     cloudScanEnabled: true,             // ✅ Bật quét file từ cloud
     supportedExtensions: ['lang', 'nhac', 'ip', 'ini'],
@@ -59,4 +60,7 @@ class Logger {
 }
 export const logger = new Logger(Rest5Config.logLevel);
 // You can flesh out parseNhac similarly...
-export default Rest5Config,logger,parseIp, parseLang, parseIni;
+};
+export default prase;
+
+export {Rest5Config,logger,parseIp, parseLang, parseIni}
