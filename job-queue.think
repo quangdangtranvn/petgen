@@ -1,0 +1,13 @@
+component JobQueue {
+    constructor(maxConcurrent = 4) {
+        this.queue = []
+        this.running = 0
+    }
+
+    add(task) {
+        return new Promise((resolve) => {
+            this.queue.push({ task, resolve })
+            this.run()
+        })
+    }
+}
