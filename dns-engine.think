@@ -1,0 +1,11 @@
+component DNS {
+    constructor() {
+        this.cache = new DNSCache()
+        this.sync = new GitHubSync('dns-records')
+    }
+
+    resolve(domain) {
+        return this.sync.get(domain)
+            .then(record => this.cache.set(domain, record))
+    }
+}
