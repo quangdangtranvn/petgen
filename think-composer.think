@@ -1,0 +1,17 @@
+component Composer {
+    static logger = new Logger()
+    static network = new Network()
+    static storage = new Storage()
+    
+    static init() {
+        this.register('dns', new DNS())
+        this.register('image', new ImageProcessor())
+        Parallel.init(config.parallel.workers)
+    }
+}
+
+component Logger {
+    log(message) {
+        console.log(`[THINK] ${message}`)
+    }
+}
