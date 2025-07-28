@@ -27,29 +27,44 @@ ___
 ___
 - /petgen-mockups/
 │── /core/
-│   ├── think-composer.think       # Main composer
-│   ├── think-network.think       # Network ops
-│   └── think-storage.think       # Storage system
+│   ├── think-composer.think       
+# Main `composer`
+│   ├── think-network.think       
+# Network ops
+│   └── think-storage.think       
+# Storage system
 │
-│── /dns/
-│   ├── dns-engine.think          # DNS resolver
-│   └── dns-cache.think          # Caching system
+│── - /dns/
+│   ├── dns-engine.think          
+# DNS resolver
+│   └── dns-cache.think          
+# Caching system
 │
 │── /image-processing/
-│   ├── image-cloner.think        # Image processor
-│   └── image-utils.think        # Helper functions
+│   ├── image-cloner.think        
+# Image processor
+│   └── image-utils.think        
+# Helper functions
 │
-│── /parallel/
-│   ├── job-queue.think          # Parallel processor
-│   └── stream-manager.think     # Stream controller
+│── -/parallel/
+│   ├── job-queue.think          
+# Parallel processor
+│   └── stream-manager.think     
+# Stream controller
 │
-│── /services/
-│   ├── github-sync.think        # GitHub integration
-│   └── verification.think       # Validation service
+│── - /services/
+│   ├── github-sync.think        
+# GitHub integration
+│   └── verification.think       
+# - Validation service
 │
-│── examples/
-│   ├── file-clone.think         # Usage example
-│   └── image-sync.think        # Sample implementation
+── examples/
+│   ├── file-clone.think         
+# Usage - example
+│   └── image-sync.think        
+# Sample ## implementation
 │
-│── config.think                 # Configuration
-└── README.think                # Documentation
+│── config.think                 
+### Configuration
+└── README.think                
+## Documentation
