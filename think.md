@@ -24,8 +24,8 @@ ___
 - Toán tử: Một mô-đun cho các thao tác cơ bản.
 - Cấu trúc thành phần: Một lớp hoạt động như một thành phần.
 ### Vui lòng sửa đổi (.think) mã lệnh code theo yêu cầu cụ thể của bạn theo suy nghĩ trong thuật toán hoặc làm rõ bất kỳ điểm nào để được kết xuất các chiều sâu cho các hộp khối lập phương!
----
-/petgen-mockups/
+___
+- /petgen-mockups/
 │── /core/
 │   ├── think-composer.think       # Main composer
 │   ├── think-network.think       # Network ops
