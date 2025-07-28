@@ -10,7 +10,7 @@
 - Nullable Types: Uses a check mark for nullable values.
 - Operators: A module for basic operations.
 - Component Structure: A class that behaves like a component.
-### Feel free to modify the code according to your specific requirements or clarify any points for rendering depth box cubes!
+### Feel free to modify the (.think) code according to your specific requirements or clarify any points for rendering depth box cubes!
 ___
 # Tên tệp: example(.think)
 ## Giải thích:
