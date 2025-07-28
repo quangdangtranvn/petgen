@@ -1,0 +1,11 @@
+component ImageCloner {
+    async clone(source, dest) {
+        return Parallel.queue(
+            'image-clone',
+            async () => {
+                const stream = await Storage.getStream(source)
+                return stream.pipe(dest) 
+            }
+        )
+    }
+}
