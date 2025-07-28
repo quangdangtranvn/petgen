@@ -1,0 +1,256 @@
+// physics-engine.think - Rigidbody & Raycasting System
+
+?? === Physics Configuration ===
+config {
+    gravity: [0, -9.81, 0],
+    collisionIterations: 5,
+    raycastMaxDistance: 1000,
+    contactOffset: 0.01
+}
+
+?? === Math Extensions === 
+lib math.extended {
+    ? Vector operations
+    vec3: {
+        add: \$a, b) -> [a[0]+b[0], a[1]+b[1], a[2]+b[2]],
+        sub: \$a, b) -> [a[0]-b[0], a[1]-b[1], a[2]-b[2]],
+        scale: \$v, s) -> [v[0]*s, v[1]*s, v[2]*s],
+        dot: \$a, b) -> a[0]*b[0] + a[1]*b[1] + a[2]*b[2],
+        cross: \$a, b) -> [
+            a[1]*b[2] - a[2]*b[1],
+            a[2]*b[0] - a[0]*b[2],
+            a[0]*b[1] - a[1]*b[0]
+        ],
+        length: \$v) -> sqrt(v[0]*v[0] + v[1]*v[1] + v[2]*v[2]),
+        normalize: \$v) -> {
+            len = this.length(v)
+            return len > 0 ? [v[0]/len, v[1]/len, v[2]/len] : [0,0,0]
+        }
+    },
+
+    ? Ray operations
+    ray: {
+        create: \$origin, direction) -> { origin, direction },
+        closestPoint: \$ray, point) -> {
+            t = math.vec3.dot(
+                math.vec3.sub(point, ray.origin),
+                ray.direction
+            )
+            return math.vec3.add(
+                ray.origin,
+                math.vec3.scale(ray.direction, t)
+            )
+        }
+    }
+}
+
+?? === Collision Detection ===
+component Collider {
+    abstract methods {
+        intersectRay(ray),
+        testCollision(other),
+        getClosestPoint(point)
+    }
+}
+
+component BoxCollider extends Collider {
+    constructor(size = [1,1,1]) {
+        this.size = size
+        this.halfExtents = math.vec3.scale(size, 0.5)
+    }
+
+    intersectRay(ray) {
+        ? Implement ray-AABB intersection
+        tmin = -Infinity
+        tmax = Infinity
+        
+        for (i in 0..2) {
+            invD = 1.0 / ray.direction[i]
+            t0 = (-this.halfExtents[i] - ray.origin[i]) * invD
+            t1 = (this.halfExtents[i] - ray.origin[i]) * invD
+            
+            if (invD < 0.0) {
+                [t0, t1] = [t1, t0]
+            }
+            
+            tmin = max(t0, tmin)
+            tmax = min(t1, tmax)
+            
+            if (tmax <= tmin) return null
+        }
+        
+        return {
+            point: math.vec3.add(
+                ray.origin,
+                math.vec3.scale(ray.direction, tmin)
+            ),
+            distance: tmin,
+            normal: [0,1,0] ?TODO: Calculate proper normal
+        }
+    }
+
+    testCollision(other) {
+        ? AABB-AABB collision
+        return abs(this.position[0] - other.position[0]) < (this.halfExtents[0] + other.halfExtents[0]) &&
+               abs(this.position[1] - other.position[1]) < (this.halfExtents[1] + other.halfExtents[1]) &&
+               abs(this.position[2] - other.position[2]) < (this.halfExtents[2] + other.halfExtents[2])
+    }
+}
+
+?? === Rigidbody Component ===
+component Rigidbody {
+    constructor(mass = 1.0) {
+        this.mass = mass
+        this.velocity = [0,0,0]
+        this.angularVelocity = [0,0,0]
+        this.force = [0,0,0]
+        this.torque = [0,0,0]
+        this.useGravity = true
+        this.isKinematic = false
+    }
+
+    update(dt) {
+        if (this.isKinematic) return
+
+        ? Apply forces
+        acceleration = math.vec3.scale(
+            this.force,
+            1.0 / this.mass
+        )
+        
+        ? Apply gravity
+        if (this.useGravity) {
+            acceleration = math.vec3.add(
+                acceleration,
+                config.gravity
+            )
+        }
+
+        ? Integrate velocity
+        this.velocity = math.vec3.add(
+            this.velocity,
+            math.vec3.scale(acceleration, dt)
+        )
+
+        ? Integrate position (handled by Transform)
+        this.transform.position = math.vec3.add(
+            this.transform.position,
+            math.vec3.scale(this.velocity, dt)
+        )
+
+        ? Clear forces
+        this.force = [0,0,0]
+    }
+
+    addForce(force, worldPoint = null) {
+        this.force = math.vec3.add(this.force, force)
+        
+        if (worldPoint) {
+            r = math.vec3.sub(worldPoint, this.transform.position)
+            this.torque = math.vec3.add(
+                this.torque,
+                math.vec3.cross(r, force)
+            )
+        }
+    }
+}
+
+?? === Physics World ===
+singleton PhysicsWorld {
+    bodies: [],
+    colliders: [],
+
+    init() {
+        this.bodies = []
+        this.colliders = []
+    },
+
+    addBody(body) {
+        this.bodies.push(body)
+        if (body.collider) {
+            this.colliders.push(body.collider)
+        }
+    },
+
+    update(dt) {
+        ? Update all rigidbodies
+        for (body in this.bodies) {
+            body.update(dt)
+        }
+
+        ? Collision detection
+        contacts = []
+        for (i in 0..this.colliders.length-1) {
+            for (j in i+1..this.colliders.length-1) {
+                if (this.colliders[i].testCollision(this.colliders[j])) {
+                    contacts.push({
+                        colliderA: this.colliders[i],
+                        colliderB: this.colliders[j]
+                    })
+                }
+            }
+        }
+
+        ? Collision resolution
+        for (iter in 0..config.collisionIterations) {
+            for (contact in contacts) {
+                ?TODO: Implement collision response
+            }
+        }
+    }
+}
+
+?? === Raycast System ===
+component Raycaster {
+    static raycast(ray) {
+        closestHit = null
+
+        for (collider in PhysicsWorld.colliders) {
+            hit = collider.intersectRay(ray)
+            if (hit && (!closestHit || hit.distance < closestHit.distance)) {
+                closestHit = hit
+                closestHit.collider = collider
+            }
+        }
+
+        return closestHit
+    }
+
+    static raycastFromScreen(posX, posY) {
+        ? Convert screen coords to world ray
+        camera = RenderSystem.mainCamera
+        ray = camera.screenPointToRay(posX, posY)
+        return this.raycast(ray)
+    }
+}
+
+?? === Integration Example ===
+component PhysicsBox extends Box {
+    constructor() {
+        super()
+        this.rigidbody = new Rigidbody(2.0)
+        this.collider = new BoxCollider()
+    }
+
+    update(dt) {
+        super.update(dt) 
+        this.rigidbody.update(dt)
+        this.collider.position = this.transform.position
+    }
+}
+
+?? Initialize physics with main app
+app.init = \$-> {
+    PhysicsWorld.init()
+    RenderSystem.init()
+    
+    ? Create test box
+    box = new PhysicsBox()
+    box.rigidbody.addForce([5, 10, 0])
+    PhysicsWorld.addBody(box)
+
+    ? Raycast test example
+    if (Raycaster.raycastFromScreen(100, 100)) {
+        console.log("Hit something!")
+    }
+}).bind(app)
