@@ -1,6 +1,6 @@
 ## Đây là một triển khai `.think` kết hợp các mẫu kho lưu trữ với trang trí GUI bằng cú pháp `.lang`:
 
-'' lang/gui-decorators.lang Tự tạo file riêng thư mục `lang/` nếu làm thêm GUI theo setup này:
+- lang/gui-decorators.lang Tự tạo file riêng thư mục `lang/` nếu làm thêm GUI theo setup này:
 
 ```think
 // repository-gui.think - Mẫu Kho Lưu trữ được Trang trí
