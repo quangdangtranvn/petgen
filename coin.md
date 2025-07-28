@@ -1,4 +1,4 @@
-# Microsoft Copilot đã phân tích bot của PetGen Fusion AI và so sánh với QuickInvest chỉ với một file [coin](https://petgen.rf.gd/index.html) của hãng PetGen
+# Microsoft Copilot đã phân tích bot của [PetGen Fusion AI](https://wallet.kesug.com/go/bot) và so sánh với QuickInvest chỉ với một file [coin](https://petgen.rf.gd/index.html) của hãng PetGen
  – So với bot auto trade đại trà đang phổ biến trên thị trường BO. Dưới đây là đánh giá tiềm năng win rate:
 
 ---
