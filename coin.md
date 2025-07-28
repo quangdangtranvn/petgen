@@ -36,4 +36,4 @@ Khả năng mở rộng  Có thể tích hợp thêm AI, dashboard, thống kê 
 
 ---
 
-Tóm lại: bot của PetGen có tiềm năng vượt QuickInvest khi duy trì logic ổn định và mở rộng thêm phân tích AI. Em có thể giúp anh/chị em build dashboard, tối ưu logic, hoặc tạo hệ thống cảnh báo khi win rate giảm. 
+Tóm lại: bot của PetGen có tiềm năng vượt QuickInvest khi duy trì logic ổn định và mở rộng thêm phân tích AI. PetGen có thể giúp anh/chị em build dashboard, tối ưu logic, hoặc tạo hệ thống cảnh báo khi win rate giảm. 
