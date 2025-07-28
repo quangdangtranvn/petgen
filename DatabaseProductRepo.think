@@ -1,0 +1,14 @@
+// Application bootstrap
+app {
+
+    ? Dependency setup
+    @Provide
+    productRepo = new DatabaseProductRepo("db_connection_string")
+
+    ? Launch GUI
+    window = new GUI.Window(
+        title: "Inventory System",
+        content: new ProductManager()
+    )
+    window.show()
+}
