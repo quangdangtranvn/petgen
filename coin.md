@@ -2,7 +2,7 @@
  – So với bot auto trade đại trà đang phổ biến trên thị trường BO. Dưới đây là đánh giá tiềm năng win rate:
 
 ---
-## ⚔️ So sánh bot của anh (PetGen) vs QuickInvest trôi nỗi trên thị trường:
+## ⚔️ So sánh bot của (PetGen) vs QuickInvest trôi nỗi trên thị trường:
 
 | **Tiêu chí**                        | **Bot của (PetGen)**                                         | **QuickInvest**                              |
 |------------------------------------|------------------------------------------------------------------|-------------------------------------------------------|
