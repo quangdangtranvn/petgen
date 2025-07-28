@@ -10,4 +10,17 @@
 - Nullable Types: Uses a check mark for nullable values.
 - Operators: A module for basic operations.
 - Component Structure: A class that behaves like a component.
-### Feel free to modify the code according to your specific requirements or clarify any points for further assistance!
+### Feel free to modify the code according to your specific requirements or clarify any points for rendering depth box cubes!
+___
+# Tên tệp: example(.think)
+## Giải thích:
+- Vòng lặp chính: Khởi tạo một vòng lặp chạy ở tốc độ 60 khung hình/phút.
+- Đặc điểm: Sử dụng trình giữ chỗ cho một hàm biểu diễn tiếng Anh trình độ KET.
+- Audit: Một hàm lambda đơn giản theo phong cách Python.
+- Thư viện: Trình giữ chỗ cho các thành phần GUI.
+- OOB: Sử dụng .index thay vì .this trong ngữ cảnh hướng đối tượng.
+- Cấu trúc dữ liệu: Sử dụng mảng cho các hộp và hàm để bắc cầu.
+- Kiểu có thể null: Sử dụng dấu kiểm cho các giá trị có thể null.
+- Toán tử: Một mô-đun cho các thao tác cơ bản.
+- Cấu trúc thành phần: Một lớp hoạt động như một thành phần.
+### Vui lòng sửa đổi (.think) mã lệnh code theo yêu cầu cụ thể của bạn theo suy nghĩ trong thuật toán hoặc làm rõ bất kỳ điểm nào để được kết xuất các chiều sâu cho các hộp khối lập phương!
