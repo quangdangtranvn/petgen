@@ -97,7 +97,7 @@ Think là một gói Python dùng để xây dựng các chương trình "suy ng
 
 ---
 
-#🧬 Cách Chúng Có Thể Hoạt Động Cùng Nhau
+### 🧬 Cách Chúng Có Thể Hoạt Động Cùng Nhau
 Nếu bạn đang xây dựng một hệ thống đối kháng kiểu PetGen và muốn sử dụng các LLM hiện đại để tạo hoặc đánh giá, Think có thể là một cầu nối mạnh mẽ. Ví dụ:
 - Sử dụng Think để tạo các văn bản Trí tuệ Tổng quát ứng viên thông qua GPT hoặc Claude
 - Đưa các văn bản đó vào bộ phân biệt của PetGen để chấm điểm
