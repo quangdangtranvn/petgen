@@ -1,0 +1,281 @@
+// stream-cloner.think - Parallel File/Image Stream Cloner
+
+?? === Core Dependencies ===
+using "https://raw.githubusercontent.com/quangdangtranvn/petgen/main/think-composer.js" as Composer
+using "https://raw.githubusercontent.com/quangdangtranvn/petgen/main/think-parallel.js" as Parallel
+using "https://raw.githubusercontent.com/quangdangtranvn/petgen/main/think-storage.js" as Storage
+
+?? === Configuration ===
+config {
+    cloning: {
+        chunkSize: 1024 * 1024, // 1MB chunks
+        maxParallelOps: 4,
+        hashAlgorithm: "sha256",
+        verifyClones: true,
+        retryAttempts: 3
+    },
+    githubSync: {
+        repoPath: "user/repo/branch",
+        syncInterval: 30000 // 30 seconds
+    }
+}
+
+?? === Stream Processor ===
+component StreamCloner {
+    constructor(sourceUrl, destPath) {
+        this.source = sourceUrl
+        this.destination = destPath
+        this.jobQueue = new Parallel.JobQueue(config.cloning.maxParallelOps)
+        this.chunkMap = new Map()
+        this.completedBytes = 0
+        this.totalBytes = 0
+    }
+
+    async clone() {
+        try {
+            ? 1. Initialize source stream
+            sourceMeta = await this.getStreamMetadata()
+            this.totalBytes = sourceMeta.size
+            
+            ? 2. Create destination stream
+            await Storage.createWriteStream(this.destination, {
+                size: this.totalBytes,
+                mimetype: sourceMeta.mimetype
+            })
+            
+            ? 3. Parallel chunk processing
+            await this.processChunks(sourceMeta.chunks)
+            
+            ? 4. Verification
+            if (config.cloning.verifyClones) {
+                await this.verifyClone()
+            }
+            
+            return { success: true, bytes: this.totalBytes }
+        } catch (err) {
+            Composer.logger.error(`Clone failed: ${err}`)
+            throw err
+        }
+    }
+
+    async getStreamMetadata() {
+        if (this.source.startsWith("github://")) {
+            return this.getGithubMetadata()
+        } else {
+            return this.getLocalFileMetadata()
+        }
+    }
+
+    async getGithubMetadata() {
+        repoPath = this.source.replace("github://", "")
+        response = await Composer.Network.httpGet({
+            url: `https://api.github.com/repos/${repoPath}`,
+            headers: { "Accept": "application/vnd.github.v3.raw" }
+        })
+        
+        return {
+            size: parseInt(response.headers['content-length']),
+            mimetype: response.headers['content-type'],
+            chunks: this.calculateChunks(parseInt(response.headers['content-length'])),
+            etag: response.headers['etag']
+        }
+    }
+
+    calculateChunks(totalSize) {
+        chunks = []
+        numChunks = Math.ceil(totalSize / config.cloning.chunkSize)
+        
+        for (i = 0; i < numChunks; i++) {
+            start = i * config.cloning.chunkSize
+            end = Math.min(start + config.cloning.chunkSize, totalSize)
+            chunks.push({ start, end, size: end - start })
+        }
+        
+        return chunks
+    }
+
+    async processChunks(chunks) {
+        chunkPromises = chunks.map(chunk => 
+            this.jobQueue.add(async () => {
+                try {
+                    return await this.processChunk(chunk)
+                } catch (err) {
+                    Composer.logger.error(`Chunk ${chunk.start}-${chunk.end} failed: ${err}`)
+                    throw err
+                }
+            })
+        )
+        
+        await Promise.all(chunkPromises)
+    }
+
+    async processChunk(chunk, attempt = 0) {
+        try {
+            ? Get chunk data
+            chunkData = await this.fetchChunk(chunk)
+            
+            ? Verify hash
+            if (chunk.hash && !this.verifyChunkHash(chunkData, chunk.hash)) {
+                throw new Error("Chunk hash verification failed")
+            }
+            
+            ? Write chunk
+            await Storage.writeStream(this.destination, {
+                data: chunkData,
+                position: chunk.start
+            })
+            
+            ? Update progress
+            this.completedBytes += chunk.size
+            Composer.emit('progress', {
+                bytes: this.completedBytes,
+                total: this.totalBytes,
+                percent: (this.completedBytes / this.totalBytes) * 100
+            })
+        } catch (err) {
+            if (attempt < config.cloning.retryAttempts) {
+                return this.processChunk(chunk, attempt + 1)
+            }
+            throw err
+        }
+    }
+
+    async verifyClone() {
+        sourceHash = await this.getSourceHash()
+        destHash = await Storage.getFileHash(this.destination)
+        
+        if (sourceHash !== destHash) {
+            throw new Error(`Verification failed: hashes differ (src: ${sourceHash}, dest: ${destHash})`)
+        }
+    }
+
+    async getSourceHash() {
+        if (this.source.startsWith("http")) {
+            head = await Composer.Network.httpHead(this.source)
+            return head.headers['x-content-sha256']
+        }
+        return Storage.getFileHash(this.source)
+    }
+}
+
+?? === GitHub Synchronizer ===
+component GitHubStreamSync extends Composer.BaseComponent {
+    constructor() {
+        super('GitHubStreamSync')
+        this.sync = new Composer.GitHubSync(
+            config.githubSync.repoPath,
+            Storage.getSecret('githubToken')
+        )
+        this.fileRegistry = new Map()
+    }
+
+    async initialize() {
+        await this.sync.initialize()
+        this.sync.on('sync:complete', \=> this.onSyncUpdate())
+    }
+
+    async onSyncUpdate() {
+        changes = await Storage.get('github_changes.json')
+        await this.processChanges(changes)
+    }
+
+    async processChanges(changes) {
+        operations = []
+        
+        for (change of changes.files) {
+            if (change.status === 'modified') {
+                operations.push(this.updateFile(change))
+            } else if (change.status === 'removed') {
+                operations.push(Storage.delete(change.path))
+            }
+        }
+        
+        await Promise.all(operations)
+    }
+
+    async updateFile(file) {
+        ? Implement differential updates
+        if (this.fileRegistry.has(file.path)) {
+            return this.updateExistingFile(file)
+        } else {
+            return this.cloneNewFile(file)
+        }
+    }
+
+    async cloneNewFile(file) {
+        sourceUrl = `github://${config.githubSync.repoPath}/${file.path}`
+        cloner = new StreamCloner(sourceUrl, file.path)
+        await cloner.clone()
+        this.fileRegistry.set(file.path, {
+            lastHash: file.hash,
+            size: file.size
+        })
+    }
+}
+
+?? === Image Processing Extension ===
+component ImageCloner extends StreamCloner {
+    constructor(sourceUrl, destPath) {
+        super(sourceUrl, destPath)
+        this.imageProcessor = new Composer.ImagePipeline()
+    }
+
+    async clone() {
+        result = await super.clone()
+        
+        ? Post-process image
+        await this.imageProcessor.process(this.destination, {
+            format: 'webp',
+            quality: 85,
+            resize: { width: 1920, height: 1080 }
+        })
+        
+        return result
+    }
+}
+
+?? === Unified Cloning Interface ===
+component CloneEngine {
+    static async clone(source, destination, options = {}) {
+        if (options.imageOptimize) {
+            cloner = new ImageCloner(source, destination)
+        } else {
+            cloner = new StreamCloner(source, destination)
+        }
+        
+        return cloner.clone()
+    }
+
+    static async syncFromGitHub() {
+        syncer = new GitHubStreamSync()
+        return syncer.initialize()
+    }
+}
+
+?? === Usage Examples ===
+? 1. Simple file clone
+CloneEngine.clone(
+    "https://example.com/large-file.zip",
+    "/storage/downloads/file.zip"
+)
+
+? 2. GitHub-based image sync
+CloneEngine.syncFromGitHub().then(\=> {
+    CloneEngine.clone(
+        "github://user/repo/main/images/photo.jpg",
+        "/storage/images/photo.jpg",
+        { imageOptimize: true }
+    )
+})
+
+? 3. Parallel batch processing
+files = [
+    { src: "file1.txt", dest: "backup/file1.txt" },
+    { src: "file2.jpg", dest: "backup/file2.webp" }
+]
+
+Parallel.map(files, \file => 
+    CloneEngine.clone(file.src, file.dest, {
+        imageOptimize: file.dest.endsWith('.webp')
+    })
+)
