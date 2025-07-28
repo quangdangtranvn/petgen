@@ -24,3 +24,32 @@ ___
 - Toán tử: Một mô-đun cho các thao tác cơ bản.
 - Cấu trúc thành phần: Một lớp hoạt động như một thành phần.
 ### Vui lòng sửa đổi (.think) mã lệnh code theo yêu cầu cụ thể của bạn theo suy nghĩ trong thuật toán hoặc làm rõ bất kỳ điểm nào để được kết xuất các chiều sâu cho các hộp khối lập phương!
+---
+/petgen-mockups/
+│── /core/
+│   ├── think-composer.think       # Main composer
+│   ├── think-network.think       # Network ops
+│   └── think-storage.think       # Storage system
+│
+│── /dns/
+│   ├── dns-engine.think          # DNS resolver
+│   └── dns-cache.think          # Caching system
+│
+│── /image-processing/
+│   ├── image-cloner.think        # Image processor
+│   └── image-utils.think        # Helper functions
+│
+│── /parallel/
+│   ├── job-queue.think          # Parallel processor
+│   └── stream-manager.think     # Stream controller
+│
+│── /services/
+│   ├── github-sync.think        # GitHub integration
+│   └── verification.think       # Validation service
+│
+│── examples/
+│   ├── file-clone.think         # Usage example
+│   └── image-sync.think        # Sample implementation
+│
+│── config.think                 # Configuration
+└── README.think                # Documentation
