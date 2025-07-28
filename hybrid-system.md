@@ -225,4 +225,4 @@ This implementation provides:
 - Shared type definitions
 - Metadata for IDE support
 
-Would you like me to elaborate on any particular aspect?
+Would you `.think` to elaborate on any particular aspect?
