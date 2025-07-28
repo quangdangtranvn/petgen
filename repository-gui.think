@@ -1,0 +1,95 @@
+// repository-gui.think - Decorated Repository Pattern
+
+?? === GUI Decorators ===
+using "./lang/gui-decorators.lang" as GUI
+
+?? === Repository Core ===
+component Product {
+    @GUI.TableColumn("ID", width: 80)
+    @GUI.RequiredField
+    id: Int
+
+    @GUI.TableColumn("Product Name", width: 200)
+    @GUI.MaxLength(100)
+    name: String
+
+    @GUI.TableColumn("Price", format: "C2")
+    @GUI.Range(min: 0, max: 10000)
+    price: Decimal
+}
+
+?? === Repository Interface ===
+@GUI.ServiceComponent("Product Manager")
+component ProductRepository {
+
+    @GUI.Operation("Add Product")
+    async addProduct(product: Product): Bool {
+        ? Validate and add to storage
+        return Storage.execute("products.add", product)
+    }
+
+    @GUI.Operation("Find Product")
+    @GUI.Searchable(fields: ["name", "id"])
+    async getProductById(id: Int): Product? {
+        return Storage.query("products.getById", {id})
+    }
+
+    @GUI.TableDisplay
+    async getAllProducts(): [Product] {
+        return Storage.query("products.getAll")
+    }
+}
+
+?? === Concrete Implementation ===
+@GUI.Implementation("Database Storage")
+component DatabaseProductRepo extends ProductRepository {
+    
+    @GUI.Initialize
+    constructor(connectionString: String) {
+        this.db = new SQLConnection(connectionString)
+    }
+
+    @Override
+    async addProduct(product: Product): Bool {
+        try {
+            return this.db.execute(
+                "INSERT INTO products VALUES (?, ?, ?)",
+                [product.id, product.name, product.price]
+            )
+        } catch {
+            @GUI.ErrorToast("Failed to add product")
+            return false
+        }
+    }
+}
+
+?? === Decorated GUI Component ===
+@GUI.Page(title: "Product Management")
+component ProductManager {
+
+    @GUI.Inject
+    repo: ProductRepository
+
+    @GUI.DataGrid(
+        source: "getAllProducts",
+        actions: ["edit", "delete"]
+    )
+    products: [Product]
+
+    @GUI.Form("Add Product")
+    async addNewProduct(
+        @GUI.Field("Name") name: String,
+        @GUI.Field("Price") price: Decimal
+    ) {
+        newProduct = {
+            id: Math.random().toString(36).substring(2, 9),
+            name: name,
+            price: price
+        }
+
+        if (await this.repo.addProduct(newProduct)) {
+            @GUI.SuccessToast("Product added!")
+            this.products.refresh()
+        }
+    }
+}
