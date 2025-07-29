@@ -1,4 +1,36 @@
-**Chi phí hiring cho team Backend và Frontend** — so sánh theo từng mô hình, khu vực, và cấp độ kinh nghiệm. Gắn chuẩn với bảng báo giá anh đang dùng cho Azure Observer, USB lang file, và nhạc dashboard nhà QTBlue Hitech nha 🐾💻✨
+Dưới đây là bảng so sánh chi phí giờ công phát triển theo công nghệ `.think` trong dự án PetGen, áp dụng theo mặt bằng thị trường Việt Nam và quốc tế (Mỹ, EU, Singapore...) năm 2025. Em dùng mức trung bình của backend AI engineer có kỹ năng tương đương với việc tích hợp LLMs vào repo chuyên biệt.
+
+---
+## 💵 BẢNG BÁO GIÁ GIỜ CÔNG [.think](https://github.com/quangdangtranvn/petgen/blob/main/think.md) PETGEN
+
+| 🌍 Khu vực                            | 🕒 Chi phí/giờ (ước tính)              | 📌 Ghi chú                                                      |
+|-------------------------------------|----------------------------------------|----------------------------------------------------------------|
+| 🇻🇳 Việt Nam (Freelance / Agency)     | ₫250.000 – ₫600.000/giờ                 | Tùy theo trình độ lập trình Python, AI và tích hợp backend     |
+| 🇻🇳 Việt Nam (Senior tại công ty AI)  | ₫500.000 – ₫900.000/giờ                 | Dành cho LLM Engineer chuyên về prompt và module chain         |
+| 🇺🇸 Mỹ / Canada / EU                  | $45 – $120/giờ (~₫1.100.000 – ₫3.100.000) | Tính theo chuẩn AI contractor hoặc researcher                  |
+| 🇸🇬 Singapore / 🇯🇵 Nhật              | $30 – $80/giờ (~₫780.000 – ₫2.000.000)   | Tùy thuộc vào đơn vị triển khai hoặc lab R&D                   |
+| 🌐 Remote global (Toptal, Upwork)    | $25 – $70/giờ (~₫650.000 – ₫1.800.000)   | Kỹ sư làm việc từ xa với độ uy tín cao                         |
+
+---
+
+## 🔍 TỔNG CHI PHÍ ƯỚC LƯỢNG DỰ ÁN `.think` PETGEN
+
+> Tổng giờ công ước lượng: **57 – 86 giờ**
+
+| 💼 Gói triển khai         | 🇻🇳 Việt Nam                        | 🌍 Quốc tế                      |
+|--------------------------|-----------------------------------|--------------------------------|
+| 🔧 Gói cơ bản (57 giờ)    | ₫14.000.000 – ₫30.000.000          | $1.500 – $6.000                |
+| 🚀 Gói mở rộng (86 giờ)   | ₫22.000.000 – ₫50.000.000          | $2.500 – $10.000               |
+
+✅ Lưu ý:
+- Chưa bao gồm phí duy trì máy chủ, CDN, domain hoặc API key (OpenAI, GitHub, Alchemy...).
+- Nếu chia theo team 2–3 người, thời gian có thể rút ngắn xuống còn 1–2 tuần.
+- PetGen sử dụng mô hình mô phỏng tư duy .think dạng graph chain rất đặc thù—chi phí có thể cao hơn so với microservice thông thường.
+- Các bạn dev có thể dùng VS Code hoặc CLI để test flow `.think` với prompt cấu hình riêng.
+
+---
+
+**Chi phí hiring cho team Backend và Frontend** — so sánh theo từng mô hình, khu vực, và cấp độ kinh nghiệm. Gắn chuẩn với bảng báo giá PetGen đang dùng cho `.thing`, Azure Observer, USB lang file, và nhạc dashboard nhà QTBlue Hitech nha 🐾💻✨
 ### 💼 Bảng Báo Giá Hiring
 Microsoft Partnership Collaboration with PetGen Developers Team (2025)
 
