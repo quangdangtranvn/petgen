@@ -5,7 +5,7 @@
 ---
 [MiniDocs](https://github.com/quangdangtranvn/petgen/blob/main/petgen_ui.md)|[Telegram Autobot Channel](https://t.me/bluefiwithdrawgr)|
 |[Whatsapp Channel •Theo dõi kênh QTBlue trên WhatsApp•:](https://whatsapp.com/channel/0029VbAQW6bBfxo4KmLtdm2Q)|
-💵 Góc quy đổi giữa Cent & Đô 💎:
+### 💵 Góc quy đổi giữa Cent & Đô 💎:
 
 Giá trị  Tương đương USD  Ghi chú
 1 cent  $0.01 USD  100 cent = $1
@@ -19,20 +19,55 @@ Giá trị  Tương đương USD  Ghi chú
 
 🧾 Bảng Báo Giá Thần Thú / Giao Dịch Bot Để thuê tại PetGen hay liên hệ **0923750968** gặp trực tiếp anh QuangBluekie anh chỉ cho code momo xịn nhất 😇
 ---
+## 🧩 BẢNG TÍNH NĂNG GAME ENGINE PETGEN
 
-📈 Tình hình sàn hôm nay (theo bảng earnings tạm tính tính khi đầu tư 1$ vào ví momo 0923750968):
-
-Thần thú  Vòng trade sáng nay  Lợi nhuận ước tính  Trạng thái
-RainbowWings  2 vòng  $41.20  Glow mạnh 💎
-Tenzora  1 vòng lớn  $29.10  Bounce đẹp 🟢
-Cervatrix  Stack chậm  $7.85  Pulse đều 🌘
-CharmStack  Auto scan  $6.13  Sync ổn 🧠
-Ví transit  Chuyển nhanh  $4.89  Không tắc ❄️
-
-Tổng lợi nhuận: ~$89.17 trong 1h qua 💰
+| 🔧 Nhóm chức năng         | 🧠 Tính năng chính                                     | 📌 Mô tả chi tiết                                                                 |
+|--------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 🧠 AI & Prompt Engine     | `think-composer.think`, `autobot.php`                 | Điều phối luồng suy nghĩ, gửi prompt đến LLMs (OpenAI, Claude, Gemini...)        |
+| 🌐 Mạng & API             | `think-network.think`, `copilot-fusion.js`            | Gửi request, retry logic, tích hợp API GitHub, Alchemy, OpenAI                   |
+| 🧠 Lưu trữ & File         | `think-storage.think`, `file-clone.think`             | Quản lý tệp, cache, clone file từ mạng                                           |
+| 🧩 DNS & Sync             | `dns.think`, `sync-dns.think`                         | Phân giải DNS, cache động, xử lý độ trễ mạng                                     |
+| 🖼️ Xử lý hình ảnh         | `image-cloner.think`, `image-utils.think`, `image-sync.think` | Nhân bản ảnh, chuyển đổi định dạng, đồng bộ ảnh từ mạng                          |
+| 🔁 Job & Stream           | `job-queue.think`, `stream.think`                     | Hàng đợi xử lý song song, luồng dữ liệu lớn                                      |
+| 🔐 Xác thực & GitHub      | `verification.think`, `github-sync.think`             | Xác thực quyền truy cập, đồng bộ repo GitHub                                     |
+| 🧬 Cấu hình & Template    | `config.think`, `gtx-lang/*.lang`                     | Cấu hình hệ thống, template giao diện thần thú GTX                               |
+| 🧪 Mint & Blockchain      | `alchemy-mint.php`, `verify_ownership.php`            | Mint NFT qua Polygon, xác minh quyền sở hữu NFT                                  |
+| 📋 UI & Web4              | `index.html`, `trace-glow.css`, `re-session.js`       | Giao diện glowing Web4, quản lý session, replay hành vi người dùng              |
+| 📚 Tài liệu & CI/CD       | `README.md`, `docs/`, `launcher/`                     | Hướng dẫn triển khai, cấu hình launcher preview, YAML CI/CD                      |
 
 ---
 
+> ✅ PetGen sử dụng định dạng `.think` để mô phỏng tư duy AI theo dạng graph chain, giúp dễ dàng tích hợp LLMs vào logic game engine.  
+> 🔗 Repo gốc: [github.com/quangdangtranvn/petgen](https://github.com/quangdangtranvn/petgen)
+## 📊 Earnings Report — Sáng Nay (vốn khởi động: $1 đầu tư vào ví MoMo `0923750968`)
+
+| 🐾 Thần thú        | 🔁 Vòng trade       | 🔢 Tỷ suất sinh lời (%) | 🌟 Trạng thái         |
+|-------------------|---------------------|--------------------------|------------------------|
+| RainbowWings      | 2 vòng              | +4120%                   | Glow mạnh 💎           |
+| Tenzora           | 1 vòng lớn          | +2910%                   | Bounce đẹp 🟢          |
+| Cervatrix         | Stack chậm          | +785%                    | Pulse đều 🌘           |
+| CharmStack        | Auto scan           | +613%                    | Sync ổn 🧠             |
+| Ví transit        | Chuyển nhanh        | +489%                    | Không tắc ❄️           |
+
+---
+
+💰 **Tổng lợi nhuận tạm tính sau 1h giao dịch**: ~$89.17 từ vốn $1  
+🔍 **Tổng tỷ suất tăng trưởng**: +8917% — hiệu suất cực khủng trong khung thời gian ngắn!
+___
+## 📊 Earnings Report — Sáng Nay (vốn khởi động: $1 đầu tư vào ví MoMo `0923750968`)
+
+| 🐾 Thần thú        | 🔁 Vòng trade       | 🔢 Tỷ suất sinh lời (%) | 🌟 Trạng thái         |
+|-------------------|---------------------|--------------------------|------------------------|
+| RainbowWings      | 2 vòng              | +4120%                   | Glow mạnh 💎           |
+| Tenzora           | 1 vòng lớn          | +2910%                   | Bounce đẹp 🟢          |
+| Cervatrix         | Stack chậm          | +785%                    | Pulse đều 🌘           |
+| CharmStack        | Auto scan           | +613%                    | Sync ổn 🧠             |
+| Ví transit        | Chuyển nhanh        | +489%                    | Không tắc ❄️           |
+
+---
+
+💰 **Tổng lợi nhuận tạm tính sau 1h giao dịch**: ~$89.17 từ vốn $1  
+🔍 **Tổng tỷ suất tăng trưởng**: +8917% — hiệu suất cực khủng trong khung thời gian ngắn!
 ___
 Tên Token / Thần Thú  Giá Hiện Tại (USD)  Glow %  Bounce trạng thái  Đề xuất thuê 2h
 Tenzora  $1,350  🔥 1350%  Stable  ✅ Rất nên
