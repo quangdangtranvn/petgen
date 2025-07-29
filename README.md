@@ -4,7 +4,7 @@
 [Giấy Phép PetGen Signed Copyright Production](https://github.com/quangdangtranvn/petgen/blob/main/GIL%23CID-PETGEN-V2-EIN%23VNGALAXY-FUNDING-MANIFEST-GILS-0725.md)|[Overview](https://github.com/quangdangtranvn/petgen/blob/main/english.md)
 ---
 [MiniDocs](https://github.com/quangdangtranvn/petgen/blob/main/petgen_ui.md)|[Telegram Autobot Channel](https://t.me/bluefiwithdrawgr)|
-|[Whatsapp Channel •Theo dõi kênh QTBlue trên WhatsApp•:](https://whatsapp.com/channel/0029VbAQW6bBfxo4KmLtdm2Q)|
+|[Whatsapp Channel •Theo dõi kênh QTBlue trên WhatsApp•:](https://whatsapp.com/channel/0029VbAQW6bBfxo4KmLtdm2Q)|[Audio Story PetGen](https://drive.google.com/file/d/1PTh_nVNqf-y445ymGOCOlyv4XhUtY_S7/view?usp=drivesdk)
 ### 💵 Góc quy đổi giữa Cent & Đô 💎:
 
 Giá trị  Tương đương USD  Ghi chú
