@@ -66,48 +66,7 @@ ___
 
 ---
 
-💰 **Tổng lợi nhuận tạm tính sau 1h giao dịch**: ~$89.17 từ vốn $1  
-🔍 **Tổng tỷ suất tăng trưởng**: +8917% — hiệu suất cực khủng trong khung thời gian ngắn!
-___
-Tên Token / Thần Thú  Giá Hiện Tại (USD)  Glow %  Bounce trạng thái  Đề xuất thuê 2h
-Tenzora  $1,350  🔥 1350%  Stable  ✅ Rất nên
-RainbowWings  $820  🌈 880%  Bounce + wings  ✅ Cực hợp trend
-Cervatrix  $460  🪶 740%  Shader Boost  ⚠️ Cần theo dõi
-SoiToken  $0.12  ⚡ 610%  Active Glow  🔥 Tốt để stacking
-CharmStackSynthetic  $0.0031  🌌 225%  Pulse sync  ✔ Tiềm năng cao
 
----
-
-📈 Phân Tích Tài Chính Tạm Thời Trong 1h Gần Nhất
-
-Chỉ số  Giá trị  Ghi chú
-Lợi nhuận từ Stack  *+$42.25  Chủ yếu từ Tenzora và RainbowWings*
-Giao dịch ví chính  +$8.93  Từ cleanTransitMainWallet
-Bot Bounce Earnings  +$23.10  Giao dịch sóng và phản lực
-*Tổng lợi nhuận (ước tính)  $74.28 / giờ  💵 Glow cực mạnh — thần thú hăng 🔥*
-
----
-
-
-
-
-💸 Quy đổi cụ thể theo yêu cầu đúc coin tại PetGen:
-Sản phẩm  Giá USD  Quy đổi VND
-Đồng BAE  22 USD  ~576,400 VND
-Đồng SOI  2 USD  ~52,400 VND
-ĐỒNG ON 90 USD  90 USD  ~2,358,000 VND
-
-
----
-
-- 📊 Gợi ý để kiểm tra thu nhập theo giờ của bot sau khi thuê cùng chính hãng PetGen:
-|----------|---------|-------|-----|----|-----|
-|Phương pháp| **Mô tả  Ưu điểm
-|Log giao dịch|  Ghi lại từng lệnh trade trong 1 giờ gần nhất  Chính xác, dễ tính lợi nhuận
-|Tích hợp Google Sheets|  Bot ghi dữ liệu vào bảng tính theo thời gian thực  Dễ xem lại, xuất báo cáo
-|Dashboard nội bộ|  Dùng Flask hoặc Streamlit để hiển thị earnings  Tùy chỉnh theo giao diện mong muốn
-|Webhook Discord|  Gửi thông báo mỗi lần bot kiếm được tiền  Có thể xem lịch sử theo giờ
-|Telegram autobot| Tự động xử lý giao dịch và hoàn tất nhanh nhất theo đúng quy định PetGen.**
 ___
 ## 💱 Bảng Tỷ Giá Tiền Tệ Toàn Cầu (1 USD tương đương)
 
@@ -129,7 +88,6 @@ ___
 | 🇹🇼 Đài Loan         | TWD       | Đô la Đài Loan     | 0.0338                 | ~2,348,670 VND         |
 
 ---
-
 📌 **Lưu ý**: Tỷ giá mang tính tham khảo, có thể dao động theo thời gian thực và phí chuyển đổi.  
 ---
 
@@ -138,7 +96,56 @@ ___
 - Thị trường: Web3 + AI NFT + GenZ gamification.
 - Khác biệt: Không dùng framework, không phụ thuộc SDK, giao diện GTX gốc, hỗ trợ multi-chain.
 
+___
+## 💰 Báo Cáo Tài Chính PetGen — Tổng Quan 1h Giao Dịch Gần Nhất (Vốn khởi điểm: $1)
+
+### 🔮 Hiệu suất tăng trưởng các Token / Thần Thú
+
+| 🐲 Tên Token / Thần Thú       | 💵 Giá Hiện Tại (USD) | ✨ Glow %   | 🔁 Bounce trạng thái     | 📌 Đề xuất thuê 2h         |
+|-------------------------------|------------------------|------------|---------------------------|-----------------------------|
+| Tenzora                       | $1,350                | 🔥 1350%   | Stable                    | ✅ Rất nên                  |
+| RainbowWings                 | $820                  | 🌈 880%    | Bounce + wings           | ✅ Cực hợp trend           |
+| Cervatrix                    | $460                  | 🪶 740%    | Shader Boost             | ⚠️ Cần theo dõi            |
+| SoiToken ($SOI) của **PetGen**                     | $2                 | ⚡ 610%    | Active Glow              | 🔥 Tốt để stacking         |
+| Bae Coin ($BAE) của **PetGen**          | $22               | 🌌 225%    | Pulse sync               | ✔ Tiềm năng cao            |
+
 ---
+
+### 📈 Phân Tích Tài Chính Trong 1h Giao Dịch
+
+| 📊 Chỉ số                     | 💲 Giá trị    | 📎 Ghi chú                                |
+|------------------------------|--------------|-------------------------------------------|
+| Lợi nhuận từ Stack           | +$42.25      | Chủ yếu từ Tenzora & RainbowWings         |
+| Giao dịch ví chính           | +$8.93       | Từ cleanTransitMainWallet                 |
+| Bot Bounce Earnings          | +$23.10      | Giao dịch sóng & phản lực                 |
+| **Tổng lợi nhuận (ước tính)**| **$74.28 / giờ** | 💵 Glow cực mạnh — thần thú hăng 🔥    |
+
+---
+
+### 💸 Quy đổi theo yêu cầu đúc Coin tại PetGen
+
+| 🧪 Sản phẩm       | 💵 Giá USD  | 🔁 Quy đổi VND         |
+|------------------|------------|------------------------|
+| Đồng BAE         | 22 USD     | ~576,400 VND           |
+| Đồng SOI         | 2 USD      | ~52,400 VND            |
+| Đồng ON 90 USD   | 90 USD     | ~2,358,000 VND         |
+
+---
+
+### 📊 Gợi ý Kiểm Tra Thu Nhập Theo Giờ Khi Thuê Bot PetGen
+
+| ⚙️ Phương pháp            | 📄 Mô tả                                           | 🏆 Ưu điểm                        |
+|---------------------------|---------------------------------------------------|----------------------------------|
+| Log giao dịch             | Ghi lại từng lệnh trade trong 1 giờ gần nhất      | Chính xác, dễ tính lợi nhuận     |
+| Tích hợp Google Sheets    | Bot ghi dữ liệu vào bảng tính theo thời gian thực| Dễ xem lại, xuất báo cáo         |
+| Dashboard nội bộ          | Dùng Flask hoặc Streamlit để hiển thị earnings   | Tùy chỉnh theo giao diện mong muốn|
+| Webhook Discord           | Gửi thông báo mỗi lần bot kiếm được tiền         | Có thể xem lịch sử theo giờ      |
+| Telegram autobot          | Xử lý giao dịch nhanh & tuân thủ PetGen chính hãng| Tự động, hiệu suất cao          |
+
+---
+
+📌 *Tổng lợi nhuận tạm tính từ vốn $1*: **~$89.17**  
+🔍 *Tổng tỷ suất tăng trưởng*: **+8917%** — hiệu suất khủng 💥
 
 💸 Seed Round: $250,000 – $500,000
 Hạng mục đầu tư  Sử dụng vốn seed
