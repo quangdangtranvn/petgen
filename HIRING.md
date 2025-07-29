@@ -1,6 +1,6 @@
 ![IMG_20250623_204100.jpg](https://github.com/user-attachments/assets/71445635-6c25-43ef-a644-37b902e166ff)
 ![IMG_20250622_110715.jpg](https://github.com/user-attachments/assets/3daea5aa-c83a-48b8-baf1-13a66daa0d3f)
-Dưới đây là bảng so sánh chi phí giờ công phát triển theo công nghệ `.think` trong dự án PetGen, áp dụng theo mặt bằng thị trường Việt Nam và quốc tế (Mỹ, EU, Singapore...) năm 2025. Em dùng mức trung bình của backend AI engineer có kỹ năng tương đương với việc tích hợp LLMs vào repo chuyên biệt.
+Dưới đây là bảng so sánh chi phí giờ công phát triển theo công nghệ `.think` trong dự án PetGen, áp dụng theo mặt bằng thị trường Việt Nam và quốc tế (Mỹ, EU, Singapore...) năm 2025. Fusion Copilot ChatBox dùng mức trung bình của backend AI engineer có kỹ năng tương đương với việc tích hợp LLMs vào repo chuyên biệt.
 ![copilot_image_1753743569585.jpeg](https://github.com/user-attachments/assets/7b67e7b2-71d3-43d7-a066-6f6410d2e7bd)
 ---
 ## 💵 BẢNG BÁO GIÁ GIỜ CÔNG [.think](https://github.com/quangdangtranvn/petgen/blob/main/think.md) PETGEN
