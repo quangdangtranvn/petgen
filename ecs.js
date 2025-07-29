@@ -1,3 +1,74 @@
+class PositionComponent extends Component {
+    constructor(x, y) {
+        super('position', { x, y });
+    }
+}
+
+class HealthComponent extends Component {
+    constructor(health) {
+        super('health', { health });
+    }
+}
+
+class Entity {
+    constructor(id) {
+        this.id = id;
+        this.components = {};
+    }
+
+    addComponent(component) {
+        this.components[component.type] = component;
+    }
+
+    getComponent(type) {
+        return this.components[type];
+    }
+}
+
+class Component {
+    constructor(type, data) {
+        this.type = type;
+        this.data = data;
+    }
+}
+
+class System {
+    constructor() {
+        this.entities = [];
+    }
+
+    addEntity(entity) {
+        this.entities.push(entity);
+    }
+
+    update() {
+        // Override in subclasses
+    }
+}
+
+class ECS {
+    constructor() {
+        this.entities = [];
+        this.systems = [];
+    }
+
+    createEntity() {
+        const entity = new Entity(this.entities.length);
+        this.entities.push(entity);
+        return entity;
+    }
+
+    addSystem(system) {
+        this.systems.push(system);
+    }
+
+    update() {
+        for (const system of this.systems) {
+            system.update();
+        }
+    }
+}
+
 class Model {
   constructor(x = 0, y = 0, z = 0, w = 0, p = 1) {
     this.coords = [x, y, z, w, p];
