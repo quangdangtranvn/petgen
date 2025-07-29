@@ -167,7 +167,9 @@ Vận hành – server & mint logs  40K USD
 ---
 
 🐉 Lời gửi đầu tư thông minh
-PetGen không chỉ là sản phẩm, mà là hạt nhân văn hóa số. Bằng việc mint thú cưng với AI, chúng ta biến hành động sáng tạo thành tài sản blockchain. Người chơi góp seed – Petgen mint cả hệ sinh thái!
+PetGen không chỉ là sản phẩm, mà là hạt nhân tên lửa công nghệ số. Bằng việc mint thú cưng với AI, chúng ta biến hành động sáng tạo thành tài sản blockchain. Người chơi hay người dùng góp seed – **PetGen** thay bạn dựng nên cả hệ sinh thái!
+– `.think` làm game không giới hạn bằng ngôn ngữ đa năng LLMs mới nhất của **PetGen**
+– Đổi mới và sáng tạo nhanh nhất siêu HDR OLED trên mọi nền tảng MMORPG trực tuyến hiện đại nhất!. Bằng bộ ngôn ngữ được PetGen phát triển `.lang` để render GUI GTX/RTX Chuẩn Siêu HD Nhất Thế Giới.
 
 ---
 ### PETGEN CIPHER KIT WEB4 V1.0
