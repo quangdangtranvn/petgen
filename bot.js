@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 import { Alchemy, Network } from 'alchemy-sdk';
 const CONTRACT_ADDRESS = '0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638';
-//const abiResponse = await alchemy.core.getContractABI(CONTRACT_ADDRESS);
+const abiResponse = await alchemy.core.getContractABI(CONTRACT_ADDRESS);
 //console.log(abiResponse);
 
 const Web3 = require('web3');
