@@ -128,5 +128,24 @@
     "responsive": true,
     "verifiedMomo": "0923750968"
   },
-  "status": "🌀 Verified by PetLang"
+  "status": "🌀 Verified by PetLang",
+  {
+  "pet": {
+    ".think": {
+      "enabled": true,
+      "promptTemplate": [
+        "Species: {{species}}",
+        "Rarity: {{rarity}}",
+        "Level: {{level}}",
+        "Owner: {{owner}}",
+        "Last Action: {{lastAction}}",
+        "Time of Day: {{timeOfDay}}",
+        "Mood: {{mood}}",
+        "Reflect on its current state and future goal in 1–2 sentences."
+      ].join("\n"),
+      "maxTokens": 10000000,
+      "temperature": 0.85
+    }
+  }
+}
 }
