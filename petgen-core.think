@@ -1,0 +1,40 @@
+const { Client, Intents } = require('discord.js');
+const { PetGenCore } = require('petgen-core');
+
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const petgen = new PetGenCore({ apiKey: process.env.PETGEN_KEY });
+
+client.on('messageCreate', async message => {
+  if (!message.content.startsWith('/petgen ')) return;
+  const [ , command, tokenId ] = message.content.split(' ');
+
+  if (command === 'mint') {
+    const pet = await petgen.mint({ tokenId });
+    return message.reply(`🚀 Minted your new ${pet.species} (ID: ${tokenId})!`);
+  }
+
+  if (command === 'think') {
+    const thought = await petgen.think({
+      tokenId,
+      variables: {
+        owner: message.author.username,
+        timeOfDay: new Date().toLocaleTimeString(),
+        lastAction: 'minted at level 1',
+        mood: 'excited'
+      }
+    });
+    return message.reply(`💭 ${thought}`);
+  }
+
+  if (command === 'say') {
+    const speech = await petgen.say({ tokenId, template: "Hello {{owner}}, I'm {{species}}!" });
+    return message.reply(`🗣️ ${speech}`);
+  }
+
+  if (command === 'stats') {
+    const info = await petgen.getStats({ tokenId });
+    return message.reply(`📊 ${JSON.stringify(info)}`);
+  }
+});
+
+client.login(process.env.DISCORD_TOKEN);
