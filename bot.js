@@ -6,7 +6,7 @@ const abiResponse = await alchemy.core.getContractABI(CONTRACT_ADDRESS);
 
 const Web3 = require('web3');
 const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
-const contract = new web3.eth.Contract(abiResponse, CONTRACT_ADDRESS);
+const nft = new web3.eth.Contract(abiResponse, CONTRACT_ADDRESS);
 
 document.getElementById('mintForm').addEventListener('submit', async (event) => {
     event.preventDefault();
