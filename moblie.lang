@@ -1,0 +1,49 @@
+Shop Mint: {
+  "mintPercent": 0.1,
+  "anims": {
+    "animation1": "path/to/animation1",  // Replace with actual animation paths from petgen
+    "animation2": "/storage/emulated/0/Download/petgen-main/petgen/anim/png_2"   // Replace with actual animation paths from petgen
+  },
+  "data": {
+    "petName": "Fluffie",
+    "ethPrice": 0.015,
+    "usdPrice": 45.23,
+    "eurPrice": 45.23,
+    "glow": "purple",
+    "rarityBoost": true,
+    "isBid": true
+  },
+{
+  "petName": "Fluffie #1",
+  "ethPrice": 0.015,
+  "usdPrice": 46.23,
+  "eurPrice": 42.31,
+  "glow": "purple",
+  "rarityBoost": true,
+Is Stacking:True
+},{
+  "petName": "Fluffie #2",
+  "ethPrice": 0.1,
+  "usdPrice": 460.23,
+  "eurPrice": 420.31,
+  "glow": "purple",
+  "rarityBoost": true,
+Is Stacking:True
+},
+
+}
+
+@package {
+  "name": "petgen-nft",
+  "version": "0.0.1",
+  "description": "PetGen NFT Minting Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+"run bot": "node bot.js"
+
+  },
+  "dependencies": {
+    "web3": "^1.6.0"
+  }
+}
