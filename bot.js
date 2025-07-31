@@ -4,6 +4,25 @@ const CONTRACT_ADDRESS = '0x45B286e1c19f147eDF33A3F3b83C9F8E6a706638';
 //const abiResponse = await alchemy.core.getContractABI(CONTRACT_ADDRESS);
 //console.log(abiResponse);
 
+const Web3 = require('web3');
+const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
+const contract = new web3.eth.Contract(abiResponse, CONTRACT_ADDRESS);
+
+document.getElementById('mintForm').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const petName = document.getElementById('petName').value;
+    const tokenURI = `https://wallet.kesug.com/${assets}`; // Replace with actual URI
+
+    const accounts = await web3.eth.getAccounts();
+    const messageElement = document.getElementById('message');
+
+    try {
+        await contract.methods.mint(tokenURI).send({ from: accounts[0], value: web3.utils.toWei('0.015', 'ether') });
+        messageElement.innerText = 'NFT Minted Successfully!';
+    } catch (error) {
+        messageElement.innerText = 'Error minting NFT: ' + error.message;
+    }
+});
 
 const settings = {
   apiKey: 'afTatfu2kIIzNK4U1gWrzoAoJ14ywEKG', // Thay bằng key thật
