@@ -1,14 +1,14 @@
 const express = require('express');
 const multer = require('multer');
 const { body, validationResult } = require('express-validator');
-const bmp = require('bmp-js'); // Install with: npm install bmp-js
+const bmp = require('bmp-js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware setup
-app.use(express.json()); // For JSON body parsing
-const upload = multer(); // In-memory file handling
+app.use(express.json());
+const upload = multer();
 
 // ----------------------------
 // 1. Varchar/Boolean Packet Handler
@@ -17,22 +17,22 @@ app.post('/api/data',
   [
     body('name').isString().withMessage('Name must be a string'),
     body('isActive').isBoolean().withMessage('isActive must be boolean'),
-    body('tags.*').optional().isString() // Array of varchars
+    body('description').optional().isString(),
+    body('tags.*').optional().isString()
   ],
   (req, res) => {
-    // Validate input
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
 
-    // Process valid data
-    const { name, isActive, tags = [] } = req.body;
+    const { name, isActive, description = '', tags = [] } = req.body;
     
-    // Business logic example
+    // Process data (example business logic)
     const response = {
       status: isActive ? 'ACTIVE' : 'INACTIVE',
       name: name.toUpperCase(),
+      description: description.substring(0, 100), // varchar limit
       tagCount: tags.length
     };
 
@@ -43,16 +43,14 @@ app.post('/api/data',
 // ----------------------------
 // 2. Bitmap Stream Handlers
 // ----------------------------
-// Method 1: Multipart Form Upload
+// Form-based upload
 app.post('/api/bitmap-form', upload.single('bitmap'), (req, res) => {
-  if (!req.file) {
-    return res.status(400).send('No file uploaded');
-  }
+  if (!req.file) return res.status(400).send('No file uploaded');
   
   try {
     const result = parseBitmap(req.file.buffer);
     res.json({
-      message: 'Bitmap processed from form',
+      message: 'Bitmap processed successfully',
       metadata: result
     });
   } catch (err) {
@@ -60,9 +58,9 @@ app.post('/api/bitmap-form', upload.single('bitmap'), (req, res) => {
   }
 });
 
-// Method 2: Raw Binary Stream
+// Raw binary stream
 app.post('/api/bitmap-stream', 
-  express.raw({ type: 'application/octet-stream', limit: '5MB' }),
+  express.raw({ type: 'application/octet-stream', limit: '10MB' }),
   (req, res) => {
     try {
       if (!req.body || req.body.length === 0) {
@@ -71,7 +69,7 @@ app.post('/api/bitmap-stream',
       
       const result = parseBitmap(req.body);
       res.json({
-        message: 'Bitmap processed from binary stream',
+        message: 'Bitmap stream processed',
         metadata: result
       });
     } catch (err) {
@@ -85,16 +83,14 @@ app.post('/api/bitmap-stream',
 // ----------------------------
 function parseBitmap(buffer) {
   // Basic validation
-  if (buffer.length < 54) throw new Error('File too small (min 54 bytes)');
-  
-  // Verify BMP signature
+  if (buffer.length < 54) throw new Error('Invalid bitmap: File too small');
   if (buffer.toString('hex', 0, 2) !== '424d') {
-    throw new Error('Invalid BMP signature');
+    throw new Error('Invalid BMP signature (expected "BM")');
   }
 
-  // Parse using bmp-js library
+  // Parse using bmp-js
   try {
-    const bmpData = bmp.decode(buffer, true); // Decode with RGBA
+    const bmpData = bmp.decode(buffer);
     return {
       width: bmpData.width,
       height: bmpData.height,
@@ -108,27 +104,12 @@ function parseBitmap(buffer) {
 }
 
 // ----------------------------
-// Test Routes
+// Server Start
 // ----------------------------
-app.get('/', (req, res) => {
-  res.send(`
-    <h1>API Endpoints</h1>
-    <h2>Data Packet (JSON):</h2>
-    <code>POST /api/data</code>
-    
-    <h2>Bitmap Upload:</h2>
-    <form action="/api/bitmap-form" method="post" enctype="multipart/form-data">
-      <input type="file" name="bitmap">
-      <button>Upload BMP (Form)</button>
-    </form>
-    
-    <h2>Binary Stream:</h2>
-    <code>POST /api/bitmap-stream (Content-Type: application/octet-stream)</code>
-  `);
-});
-
-// Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  console.log(`Test UI: http://localhost:${PORT}`);
+  console.log(`Endpoints:
+  - POST /api/data        : Process varchar/boolean data
+  - POST /api/bitmap-form : Upload bitmap via form
+  - POST /api/bitmap-stream : Stream raw bitmap data`);
 });
