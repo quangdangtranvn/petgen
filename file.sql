@@ -9,8 +9,8 @@ UPDATE nft
 SET status = 'frozen'
 WHERE token_id = 102;
 
-LOAD DATA INFILE '/storage/emulated/0/Download/petgen-main/view/wallets.csv'
-INTO TABLE pagma_nfts
+LOAD DATA INFILE '/asset/meta/wallets.csv'
+INTO TABLE nft
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
