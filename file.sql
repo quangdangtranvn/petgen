@@ -1,3 +1,11 @@
+CREATE TABLE nft (
+    token_id INT PRIMARY KEY,
+    owner_address VARCHAR(100),
+    metadata_url TEXT,
+    traits JSON,
+    status ENUM('active', 'burned', 'frozen') DEFAULT 'active',
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
 -- Burn an NFT
 UPDATE nft
 SET owner_address = '0x0000000000000000000000000000000000000000',
