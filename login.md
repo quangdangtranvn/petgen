@@ -43,7 +43,7 @@ return json_decode($result, true);
 
 📲 Bước 3: Sử dụng nó trong Logic Chỉ mục của bạn
 
-`php
+```php
 if ($SERVER['REQUESTMETHOD'] === 'POST' && isset($POST['customid'])) {
 $customId = $POST['customid'];
 $response = loginToPlayFab($customId);
@@ -57,7 +57,7 @@ echo '<form method="POST">
 <button type="submit">Đăng nhập bằng PlayFab</button>
 </form>';
 }
-`
+```
 
 ---
 
@@ -71,16 +71,16 @@ If you're integrating the PlayFab login flow into your index.php, here's a clean
 
 ⚙️ Step 1: Load PlayFab Config
 
-`php
+```php
 // index.php
 $config = include('playfab_config.php');
-`
+```
 
 ---
 
 🔐 Step 2: Handle Login Request via LoginWithCustomID
 
-`php
+```php
 function loginToPlayFab($customId) {
     global $config;
 
@@ -104,13 +104,13 @@ function loginToPlayFab($customId) {
 
     return json_decode($result, true);
 }
-`
+```
 
 ---
 
 📲 Step 3: Use It in Your Index Logic
 
-`php
+```php
 if ($SERVER['REQUESTMETHOD'] === 'POST' && isset($POST['customid'])) {
     $customId = $POST['customid'];
     $response = loginToPlayFab($customId);
@@ -124,7 +124,7 @@ if ($SERVER['REQUESTMETHOD'] === 'POST' && isset($POST['customid'])) {
         <button type="submit">Login with PlayFab</button>
     </form>';
 }
-`
+```
 
 ---
 
