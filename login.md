@@ -4,7 +4,7 @@ Nếu bạn đang tích hợp luồng đăng nhập PlayFab vào index.php, đâ
 
 ⚙️ Bước 1: Tải cấu hình PlayFab
 
-`php
+```php
 // index.php
 $config = include('playfab_config.php');
 `
