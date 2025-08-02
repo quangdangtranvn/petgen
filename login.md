@@ -7,8 +7,7 @@ Nếu bạn đang tích hợp luồng đăng nhập PlayFab vào index.php, đâ
 ```php
 // index.php
 $config = include('playfab_config.php');
-'''
-`
+```
 
 ---
 
