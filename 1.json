@@ -1,0 +1,23 @@
+{
+  "name": "nft web4 #1",
+  "description": "A legendary dragon from the ancient archives of the Pagma Collection.",
+  "image": "https://wallet.kesug.com/assets/pet.gif",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Dragon"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "Power",
+      "value": 920
+    }
+  ]
+}
