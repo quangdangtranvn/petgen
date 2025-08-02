@@ -7,13 +7,14 @@ Nếu bạn đang tích hợp luồng đăng nhập PlayFab vào index.php, đâ
 ```php
 // index.php
 $config = include('playfab_config.php');
+'''
 `
 
 ---
 
 🔐 Bước 2: Xử lý yêu cầu đăng nhập thông qua LoginWithCustomID
 
-`php
+```php
 function loginToPlayFab($customId) {
 global $config;
 
@@ -37,7 +38,7 @@ $result = filegetcontents($endpoint, false, $context);
 
 return json_decode($result, true);
 }
-`
+```
 
 ---
 
