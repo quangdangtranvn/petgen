@@ -98,3 +98,64 @@ cat project_info.csv
   ```
 
 This setup will prepare your Termux environment for working with the PetGen project and allow you to manage files effectively.
+___
+Dùng `pyenv` là cách xịn để quản lý nhiều phiên bản Python và tránh xung đột thư viện — đặc biệt hữu ích khi cài autobot siêu AI hoặc deploy qua nhiều môi trường.
+
+---
+
+⚙️ Các bước dùng pyenv trên Termux hoặc Linux
+
+1. Cài đặt pyenv
+```bash
+curl https://pyenv.run | bash
+```
+
+Sau đó thêm vào .bashrc, .zshrc, hoặc .profile tuỳ shell anh dùng:
+
+```bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+```
+
+Xong rồi reload lại:
+```bash
+source ~/.bashrc   # hoặc ~/.zshrc nếu xài zsh
+```
+
+---
+
+2. Cài Python version ổn định
+Dùng bản phù hợp với python-telegram-bot, ví dụ:
+
+```bash
+pyenv install 3.10.13
+pyenv global 3.10.13
+```
+
+> Bản 3.10 chạy rất tốt với thư viện bot và ít lỗi package
+
+---
+
+3. Kiểm tra lại phiên bản Python
+`bash
+python --version
+`
+Kết quả nên là: Python 3.10.13 ✅
+
+---
+
+4. Tạo môi trường riêng cho bot
+```bash
+pyenv virtualenv 3.10.13 petgen-bot-env
+pyenv activate petgen-bot-env
+```
+
+Giờ bạn có thể:
+```bash
+pip install -r requirements.txt
+python bot.py
+```
+
+---
+
