@@ -1,8 +1,68 @@
 import os
 from dotenv import load_dotenv
 from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes,Updater, CallbackContext
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes,Updater,Filters, CallbackContext
 import asyncio
+import logging
+
+# Set up logging
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
+logger = logging.getLogger(__name__)
+
+# Bot token from environment variable
+AI = os.getenv('DEEPSEEK_API_KEY')
+
+def start(update: Update, context: CallbackContext) -> None:
+    """Send a message when the command /start is issued."""
+    update.message.reply_text('Hi! Send me a photo to generate a pet.')
+
+def help_command(update: Update, context: CallbackContext) -> None:
+    """Send a message when the command /help is issued."""
+    update.message.reply_text('Help!')
+
+def handle_photo(update: Update, context: CallbackContext) -> None:
+    """Handle the user's photo and generate a pet."""
+    photo_file = update.message.photo[-1].get_file()
+    
+    # Download photo to memory
+    photo_bytes = io.BytesIO()
+    photo_file.download(out=photo_bytes)
+    photo_bytes.seek(0)
+    
+    # Here you would add your pet generation logic
+    # For now just echo back
+    update.message.reply_text('Received your photo! Pet generation would happen here.')
+
+def error(update: Update, context: CallbackContext) -> None:
+    """Log errors caused by updates."""
+    logger.warning('Update "%s" caused error "%s"', update, context.error)
+
+def main() -> None:
+    """Start the bot."""
+    if not TOKEN:
+        raise ValueError("No TELEGRAM_TOKEN environment variable set")
+        
+    updater = Updater(TOKEN)
+    dispatcher = updater.dispatcher
+
+    # Register command handlers
+    dispatcher.add_handler(CommandHandler("start", start))
+    dispatcher.add_handler(CommandHandler("help", help_command))
+    
+    # Register photo handler
+    dispatcher.add_handler(MessageHandler(Filters.photo, handle_photo))
+    
+    # Register error handler
+    dispatcher.add_handler(MessageHandler(Filters.command, error))
+    
+    # Start the Bot
+    updater.start_polling()
+    updater.idle()
+
+
 # Thêm não bộ Nơtron(Neutron) cho bot:
 import tensorflow as tf
 
@@ -174,7 +234,6 @@ if __name__ == "__promt__":
     print("đang khởi tạo bảng dự đoán và sữa chữa các lỗi module:", e)
     main()
     predict()
-
 
 async def run_bot():
     await app.initialize()
