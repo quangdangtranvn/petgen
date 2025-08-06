@@ -160,7 +160,7 @@ if __name__ == '__main__':
     asyncio.run(main())
     asyncio.run(run_bot())
     
-elif _name__ == '__init__':
+def predict()
     predictor = ModelPredictor()
     predictor.predict()
 
@@ -170,8 +170,7 @@ if __name__ == "__promt__":
   except Exception as e:
     print("đang khởi tạo bảng dự đoán và sữa chữa các lỗi module:", e)
     main()
-    predictor = ModelPredictor()
-    predictor.predict()
+    predict()
 elif __name__ == '__init__':
     asyncio.run(main())
     predictor = ModelPredictor()
