@@ -175,7 +175,7 @@ if __name__ == "__main__":
     asyncio.run(main())
     predictor = ModelPredictor()
     predictor.predict()
-elif _name__ == '__init__':
+elif __name__ == '__init__':
     asyncio.run(main())
     predictor = ModelPredictor()
     predictor.predict()
