@@ -207,7 +207,7 @@ async def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("ask", ask))
 
-from sub.connector import connect, SubProcessor
+from sub import connect, SubProcessor
 
     print("🚀 Bắt đầu chương trình chính")
     result = connect()
@@ -226,8 +226,7 @@ else:
 async def predict()
     predictor = ModelPredictor()
    await predictor.predict()
-
-if __name__ == "__promt__":
+elif __name__ == "__promt__":
   try:
     asyncio.run(main())
   except Exception as e:
