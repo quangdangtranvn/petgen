@@ -12,7 +12,7 @@ def greet_user(name):
 
 def process_data(data):
     if data:
-        result = data * 2  # Khai báo trong
+        result = data * 2
 elif
         print(result)
     # print(result) 
