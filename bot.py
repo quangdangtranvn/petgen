@@ -167,7 +167,7 @@ elif _name__ == '__init__':
     predictor = ModelPredictor()
     predictor.predict()
 
-if __name__ == "__main__":
+if __name__ == "__promt__":
   try:
     asyncio.run(main())
   except Exception as e:
