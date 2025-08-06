@@ -21,11 +21,11 @@ def go_command(update: Update, context: CallbackContext) -> None:
     # Example TensorFlow operation
     # Here you can add your TensorFlow model loading and prediction logic
     model = tf.keras.models.load_model('your_model.h5')  # Load your pre-trained model
-    input_data = [1, 2, 3]  # Example input data
+    input_data = [10, 22, 11]  # Example input data
     prediction = model.predict([input_data])  # Make a prediction
 
     # Formatting the response message
-    message = f"🔮 **Prediction Result:** {prediction[0][0]}"
+    message = f"🔮 **Prediction Result:** {prediction[0][2]}"
 
     # Sending the message to the user
     update.message.reply_text(message, parse_mode='Markdown')
@@ -45,9 +45,6 @@ def main() -> None:
 
     # Run the bot until you send a signal to stop
     updater.idle()
-
-if __name__ == '__main__':
-    main()
 
 # Load biến môi trường
 load_dotenv()
