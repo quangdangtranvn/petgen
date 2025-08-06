@@ -1,7 +1,7 @@
 import asyncio
 import discord
 from discord.ext import commands
-from model_init import ModelPredictor
+from model import ModelPredictor
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
