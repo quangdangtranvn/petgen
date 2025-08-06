@@ -114,6 +114,10 @@ class ModelPredictor:
         print(prediction)
         print(f"🎯 Nhãn dự đoán: {predicted_class[0]}")
         return predicted_class[0]
+    async def predict(self):
+        print("Đang dự đoán...")  # Simulate prediction
+        await asyncio.sleep(1)
+        print("Dự đoán hoàn tất.")
 
 # ✅ Ví dụ sử dụng
 def go_command(update: Update, context: CallbackContext) -> None:
@@ -217,22 +221,30 @@ from sub import connect, SubProcessor
     processor.run()
 
 if __name__ == '__main__':
-    asyncio.run(main())
-    asyncio.run(run_bot())
-    predict()
-else:
-    asyncio.run(predict())
+ try:
+    asyncio.run(start_all())
+ except Exception as e:
+        print("Đang khởi tạo bảng dự đoán và sửa chữa các lỗi module:", e)
+        # Fallback in case asyncio.run fails
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main())
+
+async def start_all():
+    await main()
+    await run_bot()
+    await predict()
 
 async def predict()
     predictor = ModelPredictor()
-   await predictor.predict()
- if __name__ == "__promt__":
+    await predictor.predict()
+ if __name__ == "__main__":
   try:
-    asyncio.run(main())
-  except Exception as e:
-    print("đang khởi tạo bảng dự đoán và sữa chữa các lỗi module:", e)
-    main()
-    predict()
+      asyncio.run(main())
+    except Exception as e:
+        print("Đang khởi tạo bảng dự đoán và sửa chữa các lỗi module:", e)
+        # Fallback in case asyncio.run fails
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main())
 
 async def run_bot():
     await app.initialize()
