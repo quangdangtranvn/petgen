@@ -17,10 +17,49 @@ def process_data(data):
         print(result)
     # print(result) 
 
+import numpy as np
+
+class ModelPredictor:
+    def __init__(self, model_path='petgen.h5', input_shape=(16, 16), num_classes=10):
+        self.model_path = model_path
+        self.input_shape = input_shape
+        self.num_classes = num_classes
+        self.model = self._load_or_create_model()
+
+    def _load_or_create_model(self):
+        if not os.path.exists(self.model_path):
+            print(f"❌ Không tìm thấy model tại: {self.model_path}")
+            print("👉 Tạo model mẫu để demo...")
+
+            model = tf.keras.Sequential([
+                tf.keras.layers.Input(shape=self.input_shape),
+                tf.keras.layers.Flatten(),
+                tf.keras.layers.Dense(128, activation='relu'),
+                tf.keras.layers.Dense(self.num_classes, activation='softmax')
+            ])
+            model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+            model.save(self.model_path)
+            print(f"✅ Đã tạo và lưu model mẫu tại: {self.model_path}")
+            return model
+        else:
+            print(f"✅ Đang load model từ: {self.model_path}")
+            return tf.keras.models.load_model(self.model_path)
+
+    def predict(self, input_data=None):
+        if input_data is None:
+            input_data = np.random.rand(1, *self.input_shape)
+        prediction = self.model.predict(input_data)
+        predicted_class = np.argmax(prediction, axis=1)
+        print("🔍 Kết quả dự đoán:")
+        print(prediction)
+        print(f"🎯 Nhãn dự đoán: {predicted_class[0]}")
+        return predicted_class[0]
+
+# ✅ Ví dụ sử dụng
 def go_command(update: Update, context: CallbackContext) -> None:
     # Example TensorFlow operation
     # Here you can add your TensorFlow model loading and prediction logic
-    model = tf.keras.models.load_model('your_model.h5')  # Load your pre-trained model
+    model = tf.keras.models.load_model('petgen.h5')  # Load your pre-trained model
     input_data = [10, 22, 11]  # Example input data
     prediction = model.predict([input_data])  # Make a prediction
 
@@ -108,13 +147,35 @@ async def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("ask", ask))
 
+from sub.connector import connect, SubProcessor
+
+    print("🚀 Bắt đầu chương trình chính")
+    result = connect()
+    print(f"✅ Kết quả từ sub: {result}")
+
+    processor = SubProcessor()
+    processor.run()
+
+if __name__ == '__main__':
+    asyncio.run(main())
     await app.initialize()
     await app.start()
     print("Bot đang chạy... 💬")
     await app.updater.start_polling()
     await app.idle()
+elif _name__ == '__init__':
+    predictor = ModelPredictor()
+    predictor.predict()
 
 if __name__ == "__main__":
-    asyncio.run(main())
-elif __name__ == '__main__':
+  try:
     main()
+    except Exception as e:
+    print("đang khởi tạo bản dự đoán và sữa chữa các lỗi module:", e)
+    asyncio.run(main())
+    predictor = ModelPredictor()
+    predictor.predict()
+elif _name__ == '__init__':
+    asyncio.run(main())
+    predictor = ModelPredictor()
+    predictor.predict()
