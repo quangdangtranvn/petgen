@@ -13,10 +13,10 @@ def greet_user(name):
 def process_data(data):
     if data:
         result = data * 2
-    elif
-        print(result)
-    # print(result) 
-
+        return result
+    else:
+        print("⚠️ Không có dữ liệu để xử lý.")
+        return None
 import numpy as np
 
 class ModelPredictor:
