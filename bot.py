@@ -226,7 +226,7 @@ else:
 async def predict()
     predictor = ModelPredictor()
    await predictor.predict()
-elif __name__ == "__promt__":
+ if __name__ == "__promt__":
   try:
     asyncio.run(main())
   except Exception as e:
