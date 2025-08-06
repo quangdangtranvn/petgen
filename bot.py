@@ -3,6 +3,51 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes,Updater, CallbackContext
 import asyncio
+# Thêm não bộ Nơtron(Neutron) cho bot:
+import tensorflow as tf
+
+def greet_user(name):
+    name = "By PetGen Bot"  # Khai báo đầu hàm
+    print(f"Hello, {name}!")
+
+def process_data(data):
+    if data:
+        result = data * 2  # Khai báo trong
+elif
+        print(result)
+    # print(result) 
+
+def go_command(update: Update, context: CallbackContext) -> None:
+    # Example TensorFlow operation
+    # Here you can add your TensorFlow model loading and prediction logic
+    model = tf.keras.models.load_model('your_model.h5')  # Load your pre-trained model
+    input_data = [1, 2, 3]  # Example input data
+    prediction = model.predict([input_data])  # Make a prediction
+
+    # Formatting the response message
+    message = f"🔮 **Prediction Result:** {prediction[0][0]}"
+
+    # Sending the message to the user
+    update.message.reply_text(message, parse_mode='Markdown')
+
+def main() -> None:
+    # Create the Updater and pass it your bot's token
+    updater = Updater(TOKEN)
+
+    # Get the dispatcher to register handlers
+    dispatcher = updater.dispatcher
+
+    # Register the command handler
+    dispatcher.add_handler(CommandHandler("go", go_command))
+
+    # Start the Bot
+    updater.start_polling()
+
+    # Run the bot until you send a signal to stop
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
 
 # Load biến môi trường
 load_dotenv()
