@@ -27,3 +27,7 @@ class ModelPredictor:
             input_data = np.random.rand(1, *self.input_shape)
         prediction = self.model.predict(input_data)
         return np.argmax(prediction, axis=1)[0]
+    async def predict(self):
+        print("Đang dự đoán...")  # Simulate prediction
+        await asyncio.sleep(1)
+        print("Dự đoán hoàn tất.")
