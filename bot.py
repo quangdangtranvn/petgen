@@ -159,6 +159,8 @@ from sub.connector import connect, SubProcessor
 if __name__ == '__main__':
     asyncio.run(main())
     asyncio.run(run_bot())
+    predict()
+else:
     asyncio.run(predict())
 
 async def predict()
