@@ -169,10 +169,10 @@ elif _name__ == '__init__':
 
 if __name__ == "__main__":
   try:
-    main()
+    asyncio.run(main())
   except Exception as e:
     print("đang khởi tạo bảng dự đoán và sữa chữa các lỗi module:", e)
-    asyncio.run(main())
+    main()
     predictor = ModelPredictor()
     predictor.predict()
 elif __name__ == '__init__':
