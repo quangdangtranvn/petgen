@@ -159,10 +159,11 @@ from sub.connector import connect, SubProcessor
 if __name__ == '__main__':
     asyncio.run(main())
     asyncio.run(run_bot())
-    
-def predict()
+    asyncio.run(predict())
+
+async def predict()
     predictor = ModelPredictor()
-    predictor.predict()
+   await predictor.predict()
 
 if __name__ == "__promt__":
   try:
@@ -171,10 +172,7 @@ if __name__ == "__promt__":
     print("đang khởi tạo bảng dự đoán và sữa chữa các lỗi module:", e)
     main()
     predict()
-elif __name__ == '__init__':
-    asyncio.run(main())
-    predictor = ModelPredictor()
-    predictor.predict()
+
 
 async def run_bot():
     await app.initialize()
