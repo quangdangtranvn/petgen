@@ -158,7 +158,7 @@ from sub.connector import connect, SubProcessor
 
 if __name__ == '__main__':
     asyncio.run(main())
-    await app.initialize()
+    app.initialize()
     await app.start()
     print("Bot đang chạy... 💬")
     await app.updater.start_polling()
