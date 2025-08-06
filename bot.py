@@ -158,11 +158,8 @@ from sub.connector import connect, SubProcessor
 
 if __name__ == '__main__':
     asyncio.run(main())
-    app.initialize()
-    await app.start()
-    print("Bot đang chạy... 💬")
-    await app.updater.start_polling()
-    await app.idle()
+    asyncio.run(run_bot())
+    
 elif _name__ == '__init__':
     predictor = ModelPredictor()
     predictor.predict()
@@ -179,3 +176,10 @@ elif __name__ == '__init__':
     asyncio.run(main())
     predictor = ModelPredictor()
     predictor.predict()
+
+async def run_bot():
+    await app.initialize()
+    await app.start()
+    print("Bot đang chạy... 💬")
+    await app.updater.start_polling()
+    await app.idle()
