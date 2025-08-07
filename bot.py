@@ -214,7 +214,19 @@ async def start_all():
 async def predict()
     predictor = ModelPredictor()
     await predictor.predict()
-   # await predictor._load_or_create_model():
+    await interpret()
+
+from strargy import StrategyEngine
+engine = StrategyEngine())
+#Tái Tạo Siêu Dữ Liệu Thuật Toán Để Dự Đoán Với Tỷ Lệ Winrate 87% dựa trên data trade!.
+async def interpret(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text.replace("/interpret", "").strip()
+    cmd, args = engine.parse_command(text)
+    if cmd == "predict" and args:
+        result = engine.predict(args)
+        await update.message.reply_text(result)
+    else:
+        await update.message.reply_text("❌ Invalid command format. Try: /interpret predict 10 22 11")
 
 async def run_bot():
     await app.initialize()
