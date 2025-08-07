@@ -196,4 +196,4 @@ Bot replies:
 
 ---
 
-``Would you like to expand this parser to support more commands like /train, /analyze, or even natural language like “What’s the prediction for 10, 22, and 11 on Trading Wining Secrects?!``
+``Would you like to expand this parser to support more commands like /train, /analyze, or even natural language like “What’s the prediction for 10, 22, and 11 on Trading Wining Secrects?!**87% Winrate AutoBot**``
