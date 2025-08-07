@@ -321,7 +321,7 @@ Người dùng gửi:
 
 Bot trả lời:
 ```
-🎯 Dự đoán: 3 (Độ tin cậy:  0.87)
+🎯 Dự đoán: 3 (Độ tin cậy:  0.87/1 Autobot token point)
 ```
 
 ---
