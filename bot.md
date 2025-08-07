@@ -157,8 +157,8 @@ class StrategyEngine:
 Add this to the top:
 
 ```python
-from strargy import StrategyEngine
-engine = StrategyEngine()
+from strargy import Strategy
+engine = Strategy()
 ```
 
 Then add a new command handler:
