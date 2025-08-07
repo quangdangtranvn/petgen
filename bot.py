@@ -216,9 +216,9 @@ async def predict()
     await predictor.predict()
     await interpret()
 
-from strargy import StrategyEngine
-engine = StrategyEngine())
-#Tái Tạo Siêu Dữ Liệu Thuật Toán Để Dự Đoán Với Tỷ Lệ Winrate 87% dựa trên data trade!.
+from strargy import Strategy
+engine = Strategy()
+#Tái Tạo Siêu Dữ Liệu Thuật Toán Của PetGen Để Dự Đoán Với Tỷ Lệ Winrate 87% dựa trên data trade thực!.
 async def interpret(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.replace("/interpret", "").strip()
     cmd, args = engine.parse_command(text)
