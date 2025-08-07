@@ -13,6 +13,7 @@ import numpy as np
     def get_high_low(self, threshold=15):
         """Trả về bảng cao/thấp dựa trên ngưỡng."""
         return [[1, 0] if x < threshold else [0, 1] for x in self.matches]
+
 # Bộ số
 xyz = np.array([10, 11, 22])
 
