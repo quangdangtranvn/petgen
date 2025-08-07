@@ -214,14 +214,6 @@ async def start_all():
 async def predict()
     predictor = ModelPredictor()
     await predictor.predict()
- if __name__ == "__main__":
-  try:
-      asyncio.run(main())
-    except Exception as e:
-        print("Đang khởi tạo bảng dự đoán và sửa chữa các lỗi module:", e)
-        # Fallback in case asyncio.run fails
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(main())
 
 async def run_bot():
     await app.initialize()
