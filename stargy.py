@@ -36,3 +36,25 @@ class StrategyEngine:
         confidence = np.max(prediction)
         print(f"📊 Prediction confidence: {confidence:.2f}")
         return confidence
+# strargy.py
+
+from pyparsing import Word, alphas, nums, Group
+
+class StrategyParser:
+    def __init__(self):
+        self.grammar = self._build_grammar()
+
+    def _build_grammar(self):
+        # Example PEG-style grammar: "command arg1 arg2"
+        command = Word(alphas)
+        arg = Word(nums)
+        return Group(command + arg + arg)
+
+    def parse(self, text):
+        try:
+            result = self.grammar.parse_string(text)
+            print(f"✅ Parsed result: {result}")
+            return result
+        except Exception as e:
+            print(f"❌ Parse error: {e}")
+            return None
