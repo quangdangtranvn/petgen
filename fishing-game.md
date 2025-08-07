@@ -198,7 +198,7 @@ I'll help you create a complete fish shooting multiplayer game beta using the Pe
                 <div class="ammo">Ammo: 50</div>
             </div>
         </div>
-        
+        <img src="https://1drv.ms/i/c/1ff9d75b2c678e30/EaAM8n37xK1Is1gPgGwxHJMBbA_XOeNvv0xBxzDSMTj7Ag" alt="Puffin Fish" id="puffinFish">
         <div id="gameUI">
             <h1>🐡 Fish Shooting Arena 🐡</h1>
             <p>Multiplayer Fish Shooting Game</p>
