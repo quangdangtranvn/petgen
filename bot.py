@@ -12,6 +12,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Load biến môi trường
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
 # Bot token from environment variable
 AI = os.getenv('DEEPSEEK_API_KEY')
 
@@ -34,13 +37,13 @@ def handle_photo(update: Update, context: CallbackContext) -> None:
     
     # Here you would add your pet generation logic
     # For now just echo back
-    update.message.reply_text('Received your photo! Pet generation would happen here.')
+    update.message.reply_text('Received your photo! PetGen generation would happen here.')
 
 def error(update: Update, context: CallbackContext) -> None:
     """Log errors caused by updates."""
     logger.warning('Update "%s" caused error "%s"', update, context.error)
 
-def main() -> None:
+def start() -> None:
     """Start the bot."""
     if not TOKEN:
         raise ValueError("No TELEGRAM_TOKEN environment variable set")
@@ -133,13 +136,16 @@ def go_command(update: Update, context: CallbackContext) -> None:
     # Sending the message to the user
     update.message.reply_text(message, parse_mode='Markdown')
 
-def main() -> None:
+def go_command(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text("🚀 Bot đã khởi động bằng DeepSeek API!")
+
+
+def go() -> None:
     # Create the Updater and pass it your bot's token
-    updater = Updater(TOKEN)
+    updater = Updater(AI, use_context = true) # Take DeepSeek API Tokens Key Config
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
-
     # Register the command handler
     dispatcher.add_handler(CommandHandler("go", go_command))
 
@@ -149,9 +155,7 @@ def main() -> None:
     # Run the bot until you send a signal to stop
     updater.idle()
 
-# Load biến môi trường
-load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")
+
 
 def reward_observation(update: Update, context: CallbackContext) -> None:
     # Data provided
@@ -181,7 +185,7 @@ def reward_observation(update: Update, context: CallbackContext) -> None:
     # Sending the message to the user
     update.message.reply_text(message, parse_mode='Markdown')
 
-def main() -> None:
+def reward() -> None:
     # Create the Updater and pass it your bot's token
     updater = Updater(TOKEN)
 
@@ -204,31 +208,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def ask(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Cứ hỏi, PetGen Fusion AI sẵn sàng trả lời tới sáng 🌙")
-
-async def main():
-    app = ApplicationBuilder().token(TOKEN).build()
-
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("ask", ask))
-
-from sub import connect, SubProcessor
-
-    print("🚀 Bắt đầu chương trình chính")
-    result = connect()
-    print(f"✅ Kết quả từ sub: {result}")
-
-    processor = SubProcessor()
-    processor.run()
-
-if __name__ == '__main__':
- try:
-    asyncio.run(start_all())
- except Exception as e:
-        print("Đang khởi tạo bảng dự đoán và sửa chữa các lỗi module:", e)
-        # Fallback in case asyncio.run fails
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(main())
-
 async def start_all():
     await main()
     await run_bot()
@@ -252,3 +231,30 @@ async def run_bot():
     print("Bot đang chạy... 💬")
     await app.updater.start_polling()
     await app.idle()
+
+async def main():
+    app = ApplicationBuilder().token(TOKEN).build()
+
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("ask", ask))
+    app.add_handler(CommandHandler("go", go))
+    app.add_handler(CommandHandler("reward", reward_observation))
+
+from sub import connect, SubProcessor
+
+    print("🚀 Bắt đầu chương trình chính")
+    result = connect()
+    print(f"✅ Kết quả từ sub: {result}")
+
+    processor = SubProcessor()
+    processor.run()
+
+if __name__ == '__main__':
+ try:
+    asyncio.run(start_all())
+ except Exception as e:
+        print("Đang khởi tạo bảng dự đoán và sửa chữa các lỗi module:", e)
+        # Fallback in case asyncio.run fails
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main())
+
