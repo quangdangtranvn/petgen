@@ -214,6 +214,7 @@ async def start_all():
 async def predict()
     predictor = ModelPredictor()
     await predictor.predict()
+    await predictor._load_or_create_model():
 
 async def run_bot():
     await app.initialize()
