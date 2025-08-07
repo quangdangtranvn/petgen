@@ -1,7 +1,7 @@
 // Game Configuration
 const GAME_CONFIG = {
     maxPlayers: 4,
-    fishSpawnRate: 1500,
+    entitySpawnRate: 1500,
     bulletSpeed: 8,
     fishSpeed: 1.5,
     ammoPerPlayer: 50,
@@ -25,11 +25,11 @@ let gameState = {
     currentPlayer: null,
     roomId: 'FISH001',
     gameTime: GAME_CONFIG.gameTime,
-    totalFish: 0,
+    totalEntities: 0,
     totalShots: 0,
     soundEnabled: true,
     gameTimer: null,
-    fishSpawnTimer: null
+    entitySpawnTimer: null
 };
 
 // API Configuration
@@ -65,7 +65,7 @@ async function startGame() {
     gameLoop();
     
     // Notify PetGen API that the game has started
-    await fetch(`${API_URL}/startGame`, {
+    await fetch(`${API_URL}/go`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
