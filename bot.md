@@ -197,3 +197,133 @@ Bot replies:
 ---
 
 ``Would you like to expand this parser to support more commands like /train, /analyze, or even natural language like “What’s the prediction for 10, 22, and 11 on Trading Wining Secrects?!``**87% Winrate AutoBot**
+# Lựa chọn miễn phí
+Tuyệt vời! Hãy tích hợp trình phân tích cú pháp theo kiểu PEG vào bot Telegram của bạn để nâng cao trí thông minh của PetGen AI chẳng hạn như diễn giải lệnh của người dùng, trích xuất dữ liệu có cấu trúc hoặc kích hoạt các lệnh kích hoạt ngôn ngữ tự nhiên.
+
+Chúng ta sẽ sử dụng pyparsing, một thư viện phân tích cú pháp theo kiểu PEG mạnh mẽ, và xây dựng một mô-đun có tên là strargy.py để tích hợp vào bot của bạn.
+
+ ---
+
+🧠 Mục tiêu
+Nâng cấp bot Telegram của bạn với một trình phân tích cú pháp có thể:
+- Hiểu các lệnh như "dự đoán 10 22 11"
+- Trích xuất đối số từ tin nhắn
+- Kích hoạt dự đoán mô hình dựa trên dữ liệu đầu vào đã phân tích cú pháp
+
+---
+
+📦 Bước 1: Cài đặt pyparsing
+
+Chạy lệnh này trong môi trường của bạn:
+
+```bash
+pip install pyparsing
+```
+
+---
+
+📁 Bước 2: Tạo strargy.py
+
+```python
+
+strargy.py
+
+from pyparsing import Word, alphas, nums, Group, OneOrMore
+import tensorflow as tf
+import numpy as np
+
+class StrategyEngine:
+def init(self, modelpath='petgen.h5', inputshape=(16, 16)):
+self.modelpath = modelpath
+self.inputshape = inputshape
+self.model = self.loadmodel()
+ self.grammar = self.buildgrammar()
+
+def loadmodel(self):
+try:
+model = tf.keras.models.loadmodel(self.modelpath)
+print(f"✅ Đã tải mô hình từ {self.model_path}")
+except Exception as e:
+print(f"❌ Tải mô hình không thành công: {e}")
+model = None
+return model
+
+def buildgrammar(self):
+# Ngữ pháp: lệnh theo sau là số
+command = Word(alphas)
+numbers = OneOrMore(Word(nums))
+return Group(command + numbers)
+
+def parse_command(self, text):
+try:
+result = self.grammar.parse_string(text)
+cmd = result[0]
+args = list(map(int, result[1:]))
+print(f"🔍 Lệnh đã phân tích cú pháp: {cmd}, args: {args}")
+return cmd, args
+except Exception as e:
+
+ print(f"❌ Lỗi phân tích cú pháp: {e}")
+return None, []
+
+def predict(self, args):
+if not self.model:
+return "Mô hình chưa được tải."
+
+ # Thêm dữ liệu đầu vào vào (16, 16)
+row = args + [0] * (16 - len(args))
+inputdata = [row for in range(16)]
+inputtensor = tf.converttotensor([inputdata])
+prediction = self.model.predict(input_tensor)
+label = np.argmax(prediction[0])
+confidence = np.max(prediction[0])
+return f"🎯 Prediction: {label} (Confidence: {confidence:.2f})"
+```
+
+---
+
+🤖 Bước 3: Cập nhật bot.py
+
+Thêm đoạn mã sau vào đầu:
+
+```python
+from strargy import Strategy
+engine = Strategy()
+```
+
+Sau đó, thêm trình xử lý lệnh mới:
+
+```python
+async def interpret(update: Update, context: ContextTypes.DEFAULT_TYPE):
+text =  update.message.text.replace("/interpret", "").strip()
+cmd, args = engine.parse_command(text)
+if cmd == "predict" and args:
+result = engine.predict(args)
+await update.message.reply_text(result)
+else:
+await update.message.reply_text("❌ Định dạng lệnh không hợp lệ. Thử: /interpret predict 10 22 11")
+```
+
+Đăng ký trình xử lý trong main():
+
+```python
+app.add_handler(CommandHandler("interpret", interpret))
+```
+
+---
+
+🧪 Ví dụ sử dụng
+
+Người dùng gửi:
+```
+/interpret predict 10 22 11
+```
+
+Bot trả lời:
+```
+🎯 Dự đoán: 3 (Độ tin cậy:  0.87)
+```
+
+---
+
+``Bạn có muốn mở rộng trình phân tích cú pháp này để hỗ trợ thêm các lệnh như /train, /analyze, hoặc thậm chí là ngôn ngữ tự nhiên như "Dự đoán cho 10, 22 và 11 trong Giao dịch Bí mật Thắng lợi là gì?!``**87% Tỷ lệ Thắng AutoBot**
