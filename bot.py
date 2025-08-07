@@ -242,7 +242,7 @@ async def main():
     app.add_handler(CommandHandler("go", go))
 app.add_handler(MessageHandler(Filters.photo, handle_photo))
     app.add_handler(CommandHandler("reward", reward_observation))
-
+  app.add_handler(CommandHandler("interpret", interpret))
 from sub import connect, SubProcessor
 
     print("🚀 Bắt đầu chương trình chính")
