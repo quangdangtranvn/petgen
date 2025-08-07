@@ -69,3 +69,131 @@ ___
 > 📌 Tổng chi phí triển khai ban đầu: khoảng 8.500.000 VNĐ  
 > (Chưa bao gồm chi phí token DeepSeek, VPS, hoặc domain)
 ---
+# Option 3
+Awesome! Let's integrate a PEG-style parser into your Telegram bot to enhance its intelligence—like interpreting user commands, extracting structured data, or enabling natural language triggers.
+
+We’ll use pyparsing, a powerful PEG-style parsing library, and build a module called strargy.py that plugs into your bot.
+
+---
+
+🧠 Goal
+Enhance your Telegram bot with a parser that can:
+- Understand commands like "predict 10 22 11"
+- Extract arguments from messages
+- Trigger model predictions based on parsed input
+
+---
+
+📦 Step 1: Install pyparsing
+
+Run this in your environment:
+
+`bash
+pip install pyparsing
+`
+
+---
+
+📁 Step 2: Create strargy.py
+
+```python
+
+strargy.py
+
+from pyparsing import Word, alphas, nums, Group, OneOrMore
+import tensorflow as tf
+import numpy as np
+
+class StrategyEngine:
+    def init(self, modelpath='petgen.h5', inputshape=(16, 16)):
+        self.modelpath = modelpath
+        self.inputshape = inputshape
+        self.model = self.loadmodel()
+        self.grammar = self.buildgrammar()
+
+    def loadmodel(self):
+        try:
+            model = tf.keras.models.loadmodel(self.modelpath)
+            print(f"✅ Loaded model from {self.model_path}")
+        except Exception as e:
+            print(f"❌ Model load failed: {e}")
+            model = None
+        return model
+
+    def buildgrammar(self):
+        # Grammar: command followed by numbers
+        command = Word(alphas)
+        numbers = OneOrMore(Word(nums))
+        return Group(command + numbers)
+
+    def parse_command(self, text):
+        try:
+            result = self.grammar.parse_string(text)
+            cmd = result[0]
+            args = list(map(int, result[1:]))
+            print(f"🔍 Parsed command: {cmd}, args: {args}")
+            return cmd, args
+        except Exception as e:
+            print(f"❌ Parse error: {e}")
+            return None, []
+
+    def predict(self, args):
+        if not self.model:
+            return "Model not loaded."
+        # Pad input to (16, 16)
+        row = args + [0] * (16 - len(args))
+        inputdata = [row for  in range(16)]
+        inputtensor = tf.converttotensor([inputdata])
+        prediction = self.model.predict(input_tensor)
+        label = np.argmax(prediction[0])
+        confidence = np.max(prediction[0])
+        return f"🎯 Prediction: {label} (Confidence: {confidence:.2f})"
+```
+
+---
+
+🤖 Step 3: Update bot.py
+
+Add this to the top:
+
+```python
+from strargy import StrategyEngine
+engine = StrategyEngine()
+```
+
+Then add a new command handler:
+
+```python
+async def interpret(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text.replace("/interpret", "").strip()
+    cmd, args = engine.parse_command(text)
+    if cmd == "predict" and args:
+        result = engine.predict(args)
+        await update.message.reply_text(result)
+    else:
+        await update.message.reply_text("❌ Invalid command format. Try: /interpret predict 10 22 11")
+```
+
+Register the handler in main():
+
+```python
+app.add_handler(CommandHandler("interpret", interpret))
+```
+
+---
+
+🧪 Example Usage
+
+User sends:
+```
+/interpret predict 10 22 11
+```
+
+Bot replies:
+```
+🎯 Prediction: 3 (Confidence: 0.87)
+```
+
+---
+
+``Would you like to expand this parser to support more commands like /train, /analyze, or even natural language like “What’s the prediction for 10, 22, and 11 on Trading Wining Secrects?!``
