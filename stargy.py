@@ -42,7 +42,7 @@ class StrategyEngine:
 
 from pyparsing import Word, alphas, nums, Group, OneOrMore
 
-class StrategyParse:
+class Strategy:
     def __init__(self, model_path='petgen.h5', input_shape=(16, 16)):
         self.model_path = model_path
         self.input_shape = input_shape
