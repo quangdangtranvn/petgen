@@ -237,7 +237,6 @@ async def main():
     app.add_handler(CommandHandler("ask", ask))
     app.add_handler(CommandHandler("go", go))
 app.add_handler(MessageHandler(Filters.photo, handle_photo))
-    
     app.add_handler(CommandHandler("reward", reward_observation))
 
 from sub import connect, SubProcessor
