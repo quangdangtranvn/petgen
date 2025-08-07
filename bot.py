@@ -136,10 +136,6 @@ def go_command(update: Update, context: CallbackContext) -> None:
     # Sending the message to the user
     update.message.reply_text(message, parse_mode='Markdown')
 
-def go_command(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text("🚀 Bot đã khởi động bằng DeepSeek API!")
-
-
 def go() -> None:
     # Create the Updater and pass it your bot's token
     updater = Updater(AI, use_context = true) # Take DeepSeek API Tokens Key Config
@@ -147,6 +143,8 @@ def go() -> None:
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
     # Register the command handler
+update.message.reply_text("🚀 Bot đã khởi động bằng DeepSeek API!")
+
     dispatcher.add_handler(CommandHandler("go", go_command))
 
     # Start the Bot
@@ -238,6 +236,8 @@ async def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("ask", ask))
     app.add_handler(CommandHandler("go", go))
+app.add_handler(MessageHandler(Filters.photo, handle_photo))
+    
     app.add_handler(CommandHandler("reward", reward_observation))
 
 from sub import connect, SubProcessor
