@@ -1,4 +1,4 @@
-[Autobot Trading PetGen](https://github.com/quangdangtranvn/petgen/blob/main/bot.md)
+[Autobot Trading PetGen](https://github.com/quangdangtranvn/petgen/blob/main/bot.md)|[Multilang LLM Programing Think](https://github.com/quangdangtranvn/petgen/blob/main/think.md)
 ___
 ![copilot_image_1753743569585.jpeg](https://github.com/user-attachments/assets/7b67e7b2-71d3-43d7-a066-6f6410d2e7bd)
 ![copilot_image_1753410721619.jpeg](https://github.com/user-attachments/assets/5091496a-1be2-4927-a7d8-9e4ea5bfeec7)
