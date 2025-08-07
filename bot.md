@@ -88,9 +88,9 @@ Enhance your Telegram bot with a parser that can:
 
 Run this in your environment:
 
-`bash
+```bash
 pip install pyparsing
-`
+```
 
 ---
 
